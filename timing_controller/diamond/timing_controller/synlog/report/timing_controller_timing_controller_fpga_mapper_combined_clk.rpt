@@ -1,0 +1,29 @@
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+9 gated/generated clock tree(s) driving 426 clock pin(s) of sequential element(s)
+0 instances converted, 426 sequential instances remain driven by gated/generated clocks
+
+= Non-Gated/Non-Generated Clocks =
+************** None **************
+----------------------------------
+==================================
+===================================================================================================================================================================================== Gated/Generated Clocks ======================================================================================================================================================================================
+Clock Tree ID                                                                                                                            Driving Element                                       Drive Element Type     Fanout     Sample Instance                     Explanation                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:"@|S:pat_gen.N_116_i@|E:pat_gen.wb_stb_d1@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001"                                         pat_gen.N_116_i                                       ORCALUT4               2          pat_gen.wb_stb_d1                   Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:"@|S:OSCInst0@|E:lm8_inst_uart_u_rxcver_sin_d0io@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002"                                 OSCInst0                                              OSCH                   304        lm8_inst_uart_u_rxcver_sin_d0io     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_13_0_a2@|E:pat_gen.reg_D7_i[0]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003"                 pat_gen.wb_dat_local_0_sqmuxa_13_0_a2                 ORCALUT4               32         pat_gen.reg_D7_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_3_1_a2@|E:pat_gen.reg_03_i[0]@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004"                  pat_gen.wb_dat_local_0_sqmuxa_3_1_a2                  ORCALUT4               16         pat_gen.reg_03_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_5_1_a2@|E:pat_gen.reg_05_i[0]@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005"                  pat_gen.wb_dat_local_0_sqmuxa_5_1_a2                  ORCALUT4               16         pat_gen.reg_05_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_9_0_a2@|E:pat_gen.reg_09_i[0]@|F:@syn_sample_clock_path==CKID0006@|M:ClockId0006"                  pat_gen.wb_dat_local_0_sqmuxa_9_0_a2                  ORCALUT4               16         pat_gen.reg_09_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_5_1_a3_0_RNI5M8S3@|E:pat_gen.reg_07_i[0]@|F:@syn_sample_clock_path==CKID0007@|M:ClockId0007"       pat_gen.wb_dat_local_0_sqmuxa_5_1_a3_0_RNI5M8S3       ORCALUT4               16         pat_gen.reg_07_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_8_0_a3_0_RNI8DB22_0@|E:pat_gen.reg_00_i[0]@|F:@syn_sample_clock_path==CKID0008@|M:ClockId0008"     pat_gen.wb_dat_local_0_sqmuxa_8_0_a3_0_RNI8DB22_0     ORCALUT4               16         pat_gen.reg_00_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.un1_wb_cyc_i_4_i_a2@|E:pat_gen.wb_dat_o[0]@|F:@syn_sample_clock_path==CKID0009@|M:ClockId0009"                           pat_gen.un1_wb_cyc_i_4_i_a2                           ORCALUT4               8          pat_gen.wb_dat_o[0]                 No clocks found on inputs                                                                                                     
+===================================================================================================================================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

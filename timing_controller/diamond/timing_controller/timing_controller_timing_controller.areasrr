@@ -1,0 +1,351 @@
+----------------------------------------------------------------------
+Report for cell timing_controller_top.behavioral
+
+Register bits: 306 of 6864 (4%)
+Latch bits:      120
+PIC Latch:       0
+I/O cells:       31
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       61       100.0
+                            FD1P3BX       28       100.0
+                            FD1P3DX      112       100.0
+                            FD1P3IX        8       100.0
+                            FD1S1AY        8       100.0
+                             FD1S1D      112       100.0
+                            FD1S3AX       32       100.0
+                            FD1S3BX        9       100.0
+                            FD1S3DX      113       100.0
+                            FD1S3IX        3       100.0
+                                GSR        1       100.0
+                                 IB        1       100.0
+                           IFS1P3DX        1       100.0
+                                INV        8       100.0
+                            L6MUX21        8       100.0
+                                 OB       30       100.0
+                           ORCALUT4      622       100.0
+                               OSCH        1       100.0
+                              PFUMX       53       100.0
+                                PUR        1       100.0
+                                VHI       15       100.0
+                                VLO       16       100.0
+          pmi_addsub_8s_8s_off_MachXO2_pmi_addsub        1       100.0
+          pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1        2       100.0
+          pmi_distributed_spram_16s_4s_12s_noreg_none_binary_MachXO2_pmi_distributed_spram_1_layer1        1       100.0
+               pmi_ram_dq_Z5_layer1        1       100.0
+               pmi_ram_dq_Z6_layer1        1       100.0
+SUB MODULES 
+               arbiter2_8s_8s_8s_8s        1       100.0
+                     gpio_Z7_layer1        1       100.0
+                  intface_Z8_layer1        1       100.0
+                        led_blinker        1       100.0
+                      lm8_Z4_layer1        1       100.0
+                    lm8_alu_MachXO2        1       100.0
+                 lm8_core_Z2_layer1        1       100.0
+          lm8_flow_cntl_4s_16s_0s_10s_MachXO2        1       100.0
+                       lm8_idec_10s        1       100.0
+                   lm8_interrupt_8s        1       100.0
+                        lm8_io_cntl        1       100.0
+                    reset_generator        1       100.0
+          rxcver_8s_0s_0_1_2_3_4_MachXO2        1       100.0
+                  timing_controller        1       100.0
+          txmitt_8s_0s_0_1_2_3_4_5_6        1       100.0
+                uart_core_Z9_layer1        1       100.0
+            wb_to_timing_controller        1       100.0
+                            
+                         TOTAL          1266           
+----------------------------------------------------------------------
+Report for cell timing_controller.netlist
+     Instance path:  lm8_inst
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       32        52.5
+                            FD1P3BX       28       100.0
+                            FD1P3DX      112       100.0
+                            FD1P3IX        8       100.0
+                            FD1S3AX        1         3.1
+                            FD1S3BX        7        77.8
+                            FD1S3DX       88        77.9
+                            FD1S3IX        3       100.0
+                                INV        7        87.5
+                           ORCALUT4      492        79.1
+                              PFUMX       28        52.8
+                                VHI       11        73.3
+                                VLO       12        75.0
+          pmi_addsub_8s_8s_off_MachXO2_pmi_addsub        1       100.0
+          pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1        2       100.0
+          pmi_distributed_spram_16s_4s_12s_noreg_none_binary_MachXO2_pmi_distributed_spram_1_layer1        1       100.0
+               pmi_ram_dq_Z5_layer1        1       100.0
+               pmi_ram_dq_Z6_layer1        1       100.0
+SUB MODULES 
+               arbiter2_8s_8s_8s_8s        1       100.0
+                     gpio_Z7_layer1        1       100.0
+                  intface_Z8_layer1        1       100.0
+                      lm8_Z4_layer1        1       100.0
+                    lm8_alu_MachXO2        1       100.0
+                 lm8_core_Z2_layer1        1       100.0
+          lm8_flow_cntl_4s_16s_0s_10s_MachXO2        1       100.0
+                       lm8_idec_10s        1       100.0
+                   lm8_interrupt_8s        1       100.0
+                        lm8_io_cntl        1       100.0
+          rxcver_8s_0s_0_1_2_3_4_MachXO2        1       100.0
+          txmitt_8s_0s_0_1_2_3_4_5_6        1       100.0
+                uart_core_Z9_layer1        1       100.0
+                            
+                         TOTAL           848           
+----------------------------------------------------------------------
+Report for cell uart_core_Z9_layer1.netlist
+     Instance path:  lm8_inst.uart
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       23        37.7
+                            FD1P3BX       19        67.9
+                            FD1P3DX       80        71.4
+                            FD1S3BX        5        55.6
+                            FD1S3DX       40        35.4
+                                INV        4        50.0
+                           ORCALUT4      201        32.3
+                              PFUMX       13        24.5
+                                VHI        3        20.0
+                                VLO        3        18.8
+SUB MODULES 
+                  intface_Z8_layer1        1       100.0
+          rxcver_8s_0s_0_1_2_3_4_MachXO2        1       100.0
+          txmitt_8s_0s_0_1_2_3_4_5_6        1       100.0
+                            
+                         TOTAL           394           
+----------------------------------------------------------------------
+Report for cell txmitt_8s_0s_0_1_2_3_4_5_6.netlist
+     Instance path:  lm8_inst.uart.u_txmitt
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        9        14.8
+                            FD1P3BX        4        14.3
+                            FD1P3DX       24        21.4
+                            FD1S3BX        1        11.1
+                            FD1S3DX       13        11.5
+                                INV        1        12.5
+                           ORCALUT4       61         9.8
+                                VHI        1         6.7
+                                VLO        1         6.3
+                            
+                         TOTAL           115           
+----------------------------------------------------------------------
+Report for cell rxcver_8s_0s_0_1_2_3_4_MachXO2.netlist
+     Instance path:  lm8_inst.uart.u_rxcver
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       14        23.0
+                            FD1P3BX        1         3.6
+                            FD1P3DX       28        25.0
+                            FD1S3BX        4        44.4
+                            FD1S3DX       22        19.5
+                                INV        1        12.5
+                           ORCALUT4       92        14.8
+                              PFUMX        4         7.5
+                                VHI        1         6.7
+                                VLO        1         6.3
+                            
+                         TOTAL           168           
+----------------------------------------------------------------------
+Report for cell intface_Z8_layer1.netlist
+     Instance path:  lm8_inst.uart.u_intface
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3BX       14        50.0
+                            FD1P3DX       28        25.0
+                            FD1S3DX        5         4.4
+                                INV        2        25.0
+                           ORCALUT4       48         7.7
+                              PFUMX        9        17.0
+                                VHI        1         6.7
+                                VLO        1         6.3
+                            
+                         TOTAL           108           
+----------------------------------------------------------------------
+Report for cell gpio_Z7_layer1.netlist
+     Instance path:  lm8_inst.LED
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3DX        1         0.9
+                           ORCALUT4        2         0.3
+                                VHI        1         6.7
+                            
+                         TOTAL             4           
+----------------------------------------------------------------------
+Report for cell lm8_Z4_layer1.netlist
+     Instance path:  lm8_inst.LM8
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        9        14.8
+                            FD1P3BX        9        32.1
+                            FD1P3DX       32        28.6
+                            FD1P3IX        8       100.0
+                            FD1S3AX        1         3.1
+                            FD1S3BX        2        22.2
+                            FD1S3DX       43        38.1
+                            FD1S3IX        3       100.0
+                                INV        2        25.0
+                           ORCALUT4      255        41.0
+                              PFUMX       15        28.3
+                                VHI        5        33.3
+                                VLO        7        43.8
+          pmi_addsub_8s_8s_off_MachXO2_pmi_addsub        1       100.0
+          pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1        2       100.0
+          pmi_distributed_spram_16s_4s_12s_noreg_none_binary_MachXO2_pmi_distributed_spram_1_layer1        1       100.0
+               pmi_ram_dq_Z5_layer1        1       100.0
+               pmi_ram_dq_Z6_layer1        1       100.0
+SUB MODULES 
+                    lm8_alu_MachXO2        1       100.0
+                 lm8_core_Z2_layer1        1       100.0
+          lm8_flow_cntl_4s_16s_0s_10s_MachXO2        1       100.0
+                       lm8_idec_10s        1       100.0
+                   lm8_interrupt_8s        1       100.0
+                        lm8_io_cntl        1       100.0
+                            
+                         TOTAL           403           
+----------------------------------------------------------------------
+Report for cell lm8_core_Z2_layer1.netlist
+     Instance path:  lm8_inst.LM8.u1_isp8_core
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        9        14.8
+                            FD1P3BX        9        32.1
+                            FD1P3DX       32        28.6
+                            FD1S3AX        1         3.1
+                            FD1S3BX        2        22.2
+                            FD1S3DX       40        35.4
+                            FD1S3IX        1        33.3
+                                INV        1        12.5
+                           ORCALUT4      217        34.9
+                              PFUMX       15        28.3
+                                VHI        4        26.7
+                                VLO        6        37.5
+          pmi_addsub_8s_8s_off_MachXO2_pmi_addsub        1       100.0
+          pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1        2       100.0
+          pmi_distributed_spram_16s_4s_12s_noreg_none_binary_MachXO2_pmi_distributed_spram_1_layer1        1       100.0
+SUB MODULES 
+                    lm8_alu_MachXO2        1       100.0
+          lm8_flow_cntl_4s_16s_0s_10s_MachXO2        1       100.0
+                       lm8_idec_10s        1       100.0
+                   lm8_interrupt_8s        1       100.0
+                        lm8_io_cntl        1       100.0
+                            
+                         TOTAL           346           
+----------------------------------------------------------------------
+Report for cell lm8_interrupt_8s.netlist
+     Instance path:  lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3BX        8        28.6
+                            FD1P3DX        1         0.9
+                            FD1S3DX        2         1.8
+                           ORCALUT4       12         1.9
+                                VHI        1         6.7
+                                VLO        1         6.3
+                            
+                         TOTAL            25           
+----------------------------------------------------------------------
+Report for cell lm8_io_cntl.netlist
+     Instance path:  lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3DX       20        17.7
+                           ORCALUT4       14         2.3
+                                VHI        1         6.7
+                                VLO        1         6.3
+                            
+                         TOTAL            36           
+----------------------------------------------------------------------
+Report for cell lm8_flow_cntl_4s_16s_0s_10s_MachXO2.netlist
+     Instance path:  lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        9        14.8
+                            FD1P3BX        1         3.6
+                            FD1P3DX       23        20.5
+                            FD1S3AX        1         3.1
+                            FD1S3BX        2        22.2
+                            FD1S3DX        8         7.1
+                            FD1S3IX        1        33.3
+                                INV        1        12.5
+                           ORCALUT4       69        11.1
+                              PFUMX        4         7.5
+                                VHI        1         6.7
+                                VLO        1         6.3
+          pmi_distributed_spram_16s_4s_12s_noreg_none_binary_MachXO2_pmi_distributed_spram_1_layer1        1       100.0
+                            
+                         TOTAL           122           
+----------------------------------------------------------------------
+Report for cell lm8_alu_MachXO2.netlist
+     Instance path:  lm8_inst.LM8.u1_isp8_core.u1_lm8_alu
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4       47         7.6
+                              PFUMX       10        18.9
+                                VLO        1         6.3
+          pmi_addsub_8s_8s_off_MachXO2_pmi_addsub        1       100.0
+                            
+                         TOTAL            59           
+----------------------------------------------------------------------
+Report for cell lm8_idec_10s.netlist
+     Instance path:  lm8_inst.LM8.u1_isp8_core.u1_lm8_idec
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4       34         5.5
+                              PFUMX        1         1.9
+                                VLO        1         6.3
+                            
+                         TOTAL            36           
+----------------------------------------------------------------------
+Report for cell arbiter2_8s_8s_8s_8s.netlist
+     Instance path:  lm8_inst.arbiter
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3DX        1         0.9
+                           ORCALUT4       31         5.0
+                                VHI        1         6.7
+                                VLO        1         6.3
+                            
+                         TOTAL            34           
+----------------------------------------------------------------------
+Report for cell wb_to_timing_controller.netlist
+     Instance path:  pat_gen
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S1AY        8       100.0
+                             FD1S1D      112       100.0
+                            FD1S3BX        2        22.2
+                            L6MUX21        8       100.0
+                           ORCALUT4       99        15.9
+                              PFUMX       24        45.3
+                                VHI        1         6.7
+                                VLO        1         6.3
+                            
+                         TOTAL           255           
+----------------------------------------------------------------------
+Report for cell led_blinker.netlist
+     Instance path:  led0_blinker
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       13        21.3
+                            FD1S3DX       25        22.1
+                                INV        1        12.5
+                           ORCALUT4       18         2.9
+                                VHI        1         6.7
+                                VLO        1         6.3
+                            
+                         TOTAL            59           
+----------------------------------------------------------------------
+Report for cell reset_generator.netlist
+     Instance path:  reset_gen
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       16        26.2
+                            FD1S3AX       31        96.9
+                           ORCALUT4       13         2.1
+                              PFUMX        1         1.9
+                                VHI        1         6.7
+                                VLO        1         6.3
+                            
+                         TOTAL            63           

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="2.0" title="timing_controller" device="LCMXO2-7000HE-4TG144C" default_implementation="timing_controller">
+    <Options/>
+    <Implementation title="timing_controller" dir="timing_controller" description="timing_controller" default_strategy="Area">
+        <Options def_top="timing_controller_top" top="timing_controller_top"/>
+        <Source name="../firmware/timing_controller_top.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="timing_controller_top"/>
+        </Source>
+        <Source name="../firmware/datarom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../firmware/instrom.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../firmware/ucontroller.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../firmware/led_blinker.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../firmware/reset_generator_v0p1.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../firmware/video_generator.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../firmware/edgedetect.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../firmware/dual_edge_counter.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../firmware/wb_to_timing_controller.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="timing_controller.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="timing_controller/sim_behavioral/sim_behavioral.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="timing_controller/sim_map/sim_map.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="timing_controller/sim_par/sim_par.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Strategy1.sty"/>
+</BaliProject>

@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [TIMING_MEMORY_XTAL_PROTO.PrjPcb]
+   Generated File[TIMING_MEMORY_XTAL_PROTO.TXT]
+   Generated File[TIMING_MEMORY_XTAL_PROTO.LDP]
+   Generated File[TIMING_MEMORY_XTAL_PROTO.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 12:35:31 AM On 9/23/2013

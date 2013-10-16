@@ -1,0 +1,105 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Jun 03 23:46:37 2013
+#
+
+
+Top view:               timing_controller_top
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        3
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 0.657
+
+                                                       Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                         Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+timing_controller_top|clk_i_inferred_clock             1.0 MHz       158.7 MHz     1000.000      6.300         993.700     inferred     Inferred_clkgroup_0
+timing_controller_top|delayClk_4x_i_inferred_clock     1.0 MHz       20.7 MHz      1000.000      48.237        475.881     inferred     Inferred_clkgroup_1
+System                                                 1.0 MHz       NA            1000.000      NA            NA          system       system_clkgroup    
+===========================================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                  |    rise  to  rise   |    fall  to  fall   |    rise  to  fall     |    fall  to  rise   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                            Ending                                              |  constraint  slack  |  constraint  slack  |  constraint  slack    |  constraint  slack  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+timing_controller_top|clk_i_inferred_clock          System                                              |  0.000       2.604  |  No paths    -      |  No paths    -        |  No paths    -      
+timing_controller_top|clk_i_inferred_clock          timing_controller_top|clk_i_inferred_clock          |  0.000       1.099  |  No paths    -      |  No paths    -        |  No paths    -      
+timing_controller_top|clk_i_inferred_clock          timing_controller_top|delayClk_4x_i_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -        |  No paths    -      
+timing_controller_top|delayClk_4x_i_inferred_clock  System                                              |  No paths    -      |  No paths    -      |  No paths    -        |  0.000       2.554  
+timing_controller_top|delayClk_4x_i_inferred_clock  timing_controller_top|delayClk_4x_i_inferred_clock  |  0.000       1.504  |  0.000       0.657  |  500.000     499.626  |  500.000     507.724
+==================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port         Starting      User           Arrival     Required          
+Name         Reference     Constraint     Time        Time         Slack
+             Clock                                                      
+------------------------------------------------------------------------
+uart_sin     NA            NA             NA          NA           NA   
+========================================================================
+
+
+Output Ports: 
+
+Port               Starting                                                         User           Arrival     Required          
+Name               Reference                                                        Constraint     Time        Time         Slack
+                   Clock                                                                                                         
+---------------------------------------------------------------------------------------------------------------------------------
+clock_out[0]       timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.699       0.000        2.699
+clock_out[1]       timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.554       0.000        2.554
+clock_out[2]       timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+clock_out[3]       timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+clock_out[4]       timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.554       0.000        2.554
+clock_out[5]       timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.554       0.000        2.554
+clock_out[6]       NA                                                               NA             NA          NA           NA   
+clock_out[7]       timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.554       0.000        2.554
+led0               timing_controller_top|clk_i_inferred_clock (rising)              NA             2.604       0.000        2.604
+leds_out[0]        NA                                                               NA             NA          NA           NA   
+leds_out[1]        NA                                                               NA             NA          NA           NA   
+leds_out[2]        NA                                                               NA             NA          NA           NA   
+leds_out[3]        NA                                                               NA             NA          NA           NA   
+uart_sout          NA                                                               NA             NA          NA           NA   
+video_data[0]      timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.699       0.000        2.699
+video_data[1]      timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.649       0.000        2.649
+video_data[2]      timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+video_data[3]      timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+video_data[4]      timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+video_data[5]      timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+video_data[6]      timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+video_data[7]      timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+video_data[8]      timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+video_data[9]      timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+video_data[10]     timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.699       0.000        2.699
+video_data[11]     timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.677       0.000        2.677
+video_data[12]     timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.649       0.000        2.649
+video_data[13]     timing_controller_top|delayClk_4x_i_inferred_clock (falling)     NA             2.604       0.000        2.604
+video_data[14]     NA                                                               NA             NA          NA           NA   
+video_data[15]     NA                                                               NA             NA          NA           NA   
+=================================================================================================================================
+
+
+##### END OF TIMING REPORT #####]
+

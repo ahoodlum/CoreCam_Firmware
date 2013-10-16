@@ -1,0 +1,84 @@
+%%% protect protected_file
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|timing_controller_top|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-fileorder|C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\timing_controller\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\bin64\\c_vhdl.exe":1352744672
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\location.map":1352755998
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\std.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\std1164.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\numeric.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\arith.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1352744958
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\timing_controller_top.vhd":1378131019
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\datarom.vhd":1361525116
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\instrom.vhd":1361525116
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\ucontroller.vhd":1367991623
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\led_blinker.vhd":1366008457
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\reset_generator_v0p1.vhd":1361528613
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\video_generator.vhd":1366002418
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\edgedetect.vhd":1365910858
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\dual_edge_counter.vhd":1366001427
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\wb_to_timing_controller.vhd":1378075762
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\firmware\\linedelay.vhd":1156441946
+0 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd" vhdl
+1 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd" vhdl
+2 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\instrom.vhd" vhdl
+3 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\ucontroller.vhd" vhdl
+4 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\led_blinker.vhd" vhdl
+5 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\reset_generator_v0p1.vhd" vhdl
+6 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\video_generator.vhd" vhdl
+7 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\edgedetect.vhd" vhdl
+8 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd" vhdl
+9 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd" vhdl
+10 "C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\firmware\linedelay.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 5 6 4 9 
+1 -1
+2 -1
+3 1 2 
+4 -1
+5 -1
+6 7 8 
+7 -1
+8 -1
+9 3 10 
+10 7 
+
+# Dependency Lists (Users Of)
+0 -1
+1 3 
+2 3 
+3 9 
+4 0 
+5 0 
+6 0 
+7 10 6 
+8 6 
+9 0 
+10 9 
+
+# Design Unit to File Association
+arch work timing_controller_top behavioral 0
+module work timing_controller_top 0
+arch work datarom behavior 1
+module work datarom 1
+arch work instrom behavior 2
+module work instrom 2
+arch work ucontrolroicclk behavioral 3
+module work ucontrolroicclk 3
+arch work led_blinker behavioral 4
+module work led_blinker 4
+arch work reset_generator behavioral 5
+module work reset_generator 5
+arch work video_generator behavioral 6
+module work video_generator 6
+arch work edgedetect behavioral 7
+module work edgedetect 7
+arch work dual_edge_counter structural 8
+module work dual_edge_counter 8
+arch work wb_to_timing_controller behavioral 9
+module work wb_to_timing_controller 9
+arch work linedelay behavioral 10
+module work linedelay 10

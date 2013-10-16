@@ -1,0 +1,7 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
+MESSAGE "File: C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\uController_tb.vhd" 
+MESSAGE "Compile Entity "TB_UCONTROLROICCLK"" 
+MESSAGE "Compile Architecture "BEH" of Entity "TB_UCONTROLROICCLK"" 
+WARNING ELAB1_0026: "There is no default binding for component "uControlRoicClk". (Port "MCLK" is not on the entity)." "C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\uController_tb.vhd" 64 0
+MESSAGE "Compile Configuration "CFG_TB_UCONTROLROICCLK"" 
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]" 

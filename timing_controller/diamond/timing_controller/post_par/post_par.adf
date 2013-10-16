@@ -1,0 +1,60 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=work
+
+[Library]
+post_par=.\post_par.LIB
+work=.\work\work.lib
+
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work;
+LibNames=ovi_machxo2;
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+post_par=.
+work=.
+
+[LocalVerilogDirs]
+Count=0
+
+[DefineMacro]
+Global=
+
+[Files]
+/..\..\timing_controller_timing_controller_vho.vho=-1
+/..\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\uController_tb.vhd=-1
+/..\..\timing_controller_timing_controller_vho.sdf=-1
+
+[Files.Data]
+.\..\timing_controller_timing_controller_vho.vho=VHDL Source Code
+.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\uController_tb.vhd=VHDL Source Code
+.\..\timing_controller_timing_controller_vho.sdf=SDF File
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=tb_ucontrolroicclk|BEH|0 
+ShowHide=ShowTopLevel
+Selected=

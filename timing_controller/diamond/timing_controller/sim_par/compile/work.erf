@@ -1,0 +1,6 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
+MESSAGE "File: C:\my_designs\pattern_generator\pattern_generator_v0p1\src\TestBench\timing_controller_TB.vhd" 
+MESSAGE "Compile Entity "timing_controller_top_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "timing_controller_top_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_timing_controller_top"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

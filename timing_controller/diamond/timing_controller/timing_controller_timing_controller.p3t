@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "timing_controller_timing_controller.log"
+-o "timing_controller_timing_controller.csv"
+-pr "timing_controller_timing_controller.prf"

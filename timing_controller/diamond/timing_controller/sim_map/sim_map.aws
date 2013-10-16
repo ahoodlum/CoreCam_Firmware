@@ -1,0 +1,14 @@
+[Version]
+Version=9.1
+[Designs]
+sim_map=sim_map.adf
+[Settings]
+Active=sim_map
+[Expand]
+sim_map=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

@@ -1,0 +1,399 @@
+#OPTIONS:"|-mixedhdl|-top|timing_controller_top|-layerid|0|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\bin64\\c_vhdl.exe":1352744672
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\location.map":1352755998
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\std.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\std1164.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\numeric.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\arith.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1352744958
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\datarom.vhd":1361525116
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\instrom.vhd":1361525116
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\led_blinker.vhd":1366008457
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\reset_generator_v0p1.vhd":1361528613
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\edgedetect.vhd":1365910858
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\dual_edge_counter.vhd":1366001427
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\ucontroller.vhd":1367991623
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\video_generator.vhd":1366002418
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\firmware\\linedelay.vhd":1156441946
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\wb_to_timing_controller.vhd":1378075762
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\timing_controller_top.vhd":1378131019
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\cpld\\lattice.vhd":1352744786
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\lucent\\machxo2.vhd":1347650694
+#OPTIONS:"|-mixedhdl|-modhint|_verilog_hintfile|-top|work.timing_controller|-layerid|1|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-I|C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond|-I|C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\timing_controller\\|-I|C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\lucent\\machxo2.v|-devicelib|C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\bin64\\c_ver.exe":1352744672
+#CUR:"_verilog_hintfile":1378131023
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\lucent\\machxo2.v":1347650694
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\lucent\\pmi_def.v":1352744792
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vlog\\umr_capim.v":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vlog\\scemi_objects.v":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vlog\\scemi_pipes.svh":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vlog\\hypermods.v":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\cae_library\\synthesis\\verilog\\machxo2.v":1347654294
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\timing_controller.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/lm8/rtl/verilog/lm8_include_all.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\pmi_def.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/lm8/rtl/verilog/lm8_include.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/lm8/rtl/verilog/lm8_interrupt.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/lm8/rtl/verilog/lm8_io_cntl.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/lm8/rtl/verilog/lm8_flow_cntl.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/lm8/rtl/verilog/lm8_idec.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/lm8/rtl/verilog/lm8_alu.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/lm8/rtl/verilog/lm8_core.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/lm8/rtl/verilog/lm8_top.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/gpio/rtl/verilog/gpio.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/gpio/rtl/verilog/tpio.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/uart_core/rtl/verilog/uart_core.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/uart_core/rtl/verilog\\intface.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/uart_core/rtl/verilog\\txcver_fifo.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/uart_core/rtl/verilog\\rxcver.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/uart_core/rtl/verilog\\rxcver_fifo.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/uart_core/rtl/verilog\\txmitt.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/slave_passthru/rtl/verilog/slave_passthru.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\../components/slave_passthru/rtl/verilog/passthru.v":1375653311
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\msb\\timing_controller\\soc\\system_conf.v":1378130767
+0			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd" vhdl
+1			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\instrom.vhd" vhdl
+2			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\led_blinker.vhd" vhdl
+3			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\reset_generator_v0p1.vhd" vhdl
+4			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\edgedetect.vhd" vhdl
+5			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd" vhdl
+6			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\ucontroller.vhd" vhdl
+7			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\video_generator.vhd" vhdl
+8			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\firmware\linedelay.vhd" vhdl
+9			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd" vhdl
+10			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd" vhdl
+11			"C:\lscc\diamond\2.1_x64\cae_library\synthesis\verilog\machxo2.v" verilog
+12			"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\timing_controller.v" verilog
+13		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\system_conf.v" verilog
+14		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_include_all.v" verilog
+15		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\pmi_def.v" verilog
+16		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\system_conf.v" verilog
+17		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_include.v" verilog
+18		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_interrupt.v" verilog
+19		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\system_conf.v" verilog
+20		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_io_cntl.v" verilog
+21		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v" verilog
+22		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_idec.v" verilog
+23		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_alu.v" verilog
+24		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_core.v" verilog
+25		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_top.v" verilog
+26		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\gpio.v" verilog
+27		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\system_conf.v" verilog
+28		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v" verilog
+29		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\system_conf.v" verilog
+30		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\uart_core.v" verilog
+31		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\system_conf.v" verilog
+32		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\intface.v" verilog
+33		*	"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\msb\timing_controller\soc\system_conf.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 -1
+12 -1
+13 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33
+14 -1
+15 -1
+16 -1
+17 -1
+18 -1
+19 -1
+20 -1
+21 -1
+22 -1
+23 -1
+24 -1
+25 -1
+26 -1
+27 -1
+28 -1
+29 -1
+30 -1
+31 -1
+32 -1
+33 -1
+#Dependency Lists(Users Of)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 -1
+12 -1
+13 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33
+14 -1
+15 -1
+16 -1
+17 -1
+18 -1
+19 -1
+20 -1
+21 -1
+22 -1
+23 -1
+24 -1
+25 -1
+26 -1
+27 -1
+28 -1
+29 -1
+30 -1
+31 -1
+32 -1
+33 -1
+#Design Unit to File Association
+module work timing_controller 12
+module work slave_passthru 32
+module work passthru 33
+module work uart_core 26
+module work txmitt 31
+module work rxcver 29
+module work rxcver_fifo 30
+module work intface 27
+module work txcver_fifo 28
+module work gpio 24
+module work TRI_PIO 25
+module work lm8 23
+module work lm8_core 22
+module work lm8_alu 21
+module work lm8_idec 20
+module work lm8_flow_cntl 19
+module work lm8_io_cntl 18
+module work lm8_interrupt 17
+module work pmi_fifo 15
+module work pmi_fifo_dc 15
+module work pmi_rom 15
+module work pmi_ram_dq 15
+module work pmi_ram_dp 15
+module work pmi_addsub 15
+module work pmi_distributed_spram 15
+module work pmi_distributed_dpram 15
+module work arbiter2 12
+module work TSALL 11
+module work EFB 11
+module work OSCH 11
+module work PLLREFCS 11
+module work EHXPLLJ 11
+module work PG 11
+module work LVDSOB 11
+module work INRDB 11
+module work BCLVDSO 11
+module work BCINRD 11
+module work PCNTR 11
+module work CLKFBBUFA 11
+module work DLLDELC 11
+module work DELAYD 11
+module work DELAYE 11
+module work DQSDLLC 11
+module work DQSBUFH 11
+module work TDDRA 11
+module work ODDRX71A 11
+module work ODDRDQSX1A 11
+module work ODDRX4B 11
+module work ODDRX2E 11
+module work ODDRXE 11
+module work IDDRX71A 11
+module work IDDRDQSX1A 11
+module work IDDRX4B 11
+module work IDDRX2E 11
+module work IDDRXE 11
+module work SEDFB 11
+module work SEDFA 11
+module work START 11
+module work JTAGF 11
+module work DCCA 11
+module work ECLKBRIDGECS 11
+module work ECLKSYNCA 11
+module work DCMA 11
+module work CLKDIVC 11
+module work FIFO8KB 11
+module work SP8KC 11
+module work PDPW8KC 11
+module work DP8KC 11
+module work SGSR 11
+module work SPR16X4C 11
+module work DPR16X4C 11
+module work IFS1S1J 11
+module work IFS1S1I 11
+module work IFS1S1D 11
+module work IFS1S1B 11
+module work XOR5 11
+module work XOR4 11
+module work XOR3 11
+module work XOR21 11
+module work XOR2 11
+module work XOR11 11
+module work XNOR5 11
+module work XNOR4 11
+module work XNOR3 11
+module work XNOR2 11
+module work VLO 11
+module work VHI 11
+module work CCU2D 11
+module work ROM64X1A 11
+module work ROM32X1A 11
+module work ROM256X1A 11
+module work ROM16X1A 11
+module work ROM128X1A 11
+module work PUR 11
+module work PFUMX 11
+module work LUT8 11
+module work LUT7 11
+module work LUT6 11
+module work LUT5 11
+module work LUT4 11
+module work OR5 11
+module work OR4 11
+module work OR3 11
+module work OR2 11
+module work OLVDS 11
+module work OFS1P3JX 11
+module work OFS1P3IX 11
+module work OFS1P3DX 11
+module work OFS1P3BX 11
+module work OBZPU 11
+module work OBZ 11
+module work OBCO 11
+module work OB 11
+module work NR5 11
+module work NR4 11
+module work NR3 11
+module work NR2 11
+module work ND5 11
+module work ND4 11
+module work ND3 11
+module work ND2 11
+module work MUX81 11
+module work MUX41 11
+module work MUX321 11
+module work MUX21 11
+module work MUX161 11
+module work MULT2 11
+module work LU2P3JX 11
+module work LU2P3IX 11
+module work LU2P3DX 11
+module work LU2P3BX 11
+module work LU2P3AY 11
+module work LU2P3AX 11
+module work LD2P3JX 11
+module work LD2P3IX 11
+module work LD2P3DX 11
+module work LD2P3BX 11
+module work LD2P3AY 11
+module work LD2P3AX 11
+module work LB2P3JX 11
+module work LB2P3IX 11
+module work LB2P3DX 11
+module work LB2P3BX 11
+module work LB2P3AY 11
+module work LB2P3AX 11
+module work L6MUX21 11
+module work INV 11
+module work ILVDS 11
+module work IFS1P3JX 11
+module work IFS1P3IX 11
+module work IFS1P3DX 11
+module work IFS1P3BX 11
+module work IBPU 11
+module work IBPD 11
+module work IB 11
+module work GSR 11
+module work FSUB2B 11
+module work FL1S3AY 11
+module work FL1S3AX 11
+module work FL1S1J 11
+module work FL1S1I 11
+module work FL1S1D 11
+module work FL1S1B 11
+module work FL1S1AY 11
+module work FL1S1A 11
+module work FL1P3JY 11
+module work FL1P3IY 11
+module work FL1P3DX 11
+module work FL1P3BX 11
+module work FL1P3AZ 11
+module work FL1P3AY 11
+module work FD1S3JX 11
+module work FD1S3IX 11
+module work FD1S3DX 11
+module work FD1S3BX 11
+module work FD1S3AY 11
+module work FD1S3AX 11
+module work FD1S1J 11
+module work FD1S1I 11
+module work FD1S1D 11
+module work FD1S1B 11
+module work FD1S1AY 11
+module work FD1S1A 11
+module work FD1P3JX 11
+module work FD1P3IX 11
+module work FD1P3DX 11
+module work FD1P3BX 11
+module work FD1P3AY 11
+module work FD1P3AX 11
+module work FADSU2 11
+module work FADD2B 11
+module work CU2 11
+module work CD2 11
+module work CB2 11
+module work BBW 11
+module work BBPU 11
+module work BBPD 11
+module work BB 11
+module work ANEB2 11
+module work AND5 11
+module work AND4 11
+module work AND3 11
+module work AND2 11
+module work ALEB2 11
+module work AGEB2 11
+module work timing_controller_top 10
+arch work timing_controller_top behavioral 10
+module work wb_to_timing_controller 9
+arch work wb_to_timing_controller behavioral 9
+module work linedelay 8
+arch work linedelay behavioral 8
+module work video_generator 7
+arch work video_generator behavioral 7
+module work ucontrolroicclk 6
+arch work ucontrolroicclk behavioral 6
+module work dual_edge_counter 5
+arch work dual_edge_counter structural 5
+module work edgedetect 4
+arch work edgedetect behavioral 4
+module work reset_generator 3
+arch work reset_generator behavioral 3
+module work led_blinker 2
+arch work led_blinker behavioral 2
+module work instrom 1
+arch work instrom behavior 1
+module work datarom 0
+arch work datarom behavior 0

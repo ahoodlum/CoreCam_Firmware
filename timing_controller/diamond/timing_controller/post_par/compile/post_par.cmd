@@ -1,0 +1,1 @@
+-w -s "C:\lscc\diamond\2.0\examples\timing_controller\post_par\library.cfg"  -j "C:\lscc\diamond\2.0\examples\timing_controller\post_par\projlib.cfg"  -d "C:\lscc\diamond\2.0\examples\timing_controller\post_par\compile"   -work work  -O3 -e 100 "C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\uController_tb.vhd"

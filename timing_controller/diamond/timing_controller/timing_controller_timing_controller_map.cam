@@ -1,0 +1,102 @@
+[ START MERGED ]
+timing_controllerrst_i_i_1_i timing_controllerrst_i_i_1
+lm8_inst/uart/u_txmitt/tx_state_i[0] lm8_inst/uart/u_txmitt/tx_state[0]
+lm8_inst/LM8/rst_n_i lm8_inst/LM8/rst_n
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/dec0_wre3 lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_nxt9
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/add_sub_inv lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/add_sel_i
+[ END MERGED ]
+[ START CLIPPED ]
+reset_gen/GND
+led0_blinker/GND
+lm8_inst/LM8/VCC
+lm8_inst/LM8/GND
+lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vlo
+lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vhi
+lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vlo
+lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vhi
+lm8_inst/LM8/u1_isp8_core/VCC
+lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/scuba_vhi
+lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/scuba_vhi
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vlo
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/VCC
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/scuba_vhi
+lm8_inst/uart/u_rxcver/GND
+lm8_inst/uart/u_txmitt/GND
+VCC
+reset_gen/counter_cry_0_COUT[29]
+reset_gen/counter_cry_0_S0[0]
+led0_blinker/un10_count_cry_0_0_S1
+led0_blinker/un10_count_cry_0_0_S0
+led0_blinker/un10_count_s_23_0_S1
+led0_blinker/un10_count_s_23_0_COUT
+lm8_inst/LM8/u1_isp8_core/GND
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vhi
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsub_0/S0
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd/S1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/co4d
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd/COUT
+lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/co4
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_cry_0_0_S1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_cry_0_0_S0
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_s_3_0_S1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_s_3_0_COUT
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_0_0_S1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_0_0_S0
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_s_9_0_S1
+lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_s_9_0_COUT
+lm8_inst/uart/u_rxcver/counter_11_cry_0_0_S1
+lm8_inst/uart/u_rxcver/counter_11_cry_0_0_S0
+lm8_inst/uart/u_rxcver/counter_11_s_15_0_S1
+lm8_inst/uart/u_rxcver/counter_11_s_15_0_COUT
+lm8_inst/uart/u_rxcver/cs_state12_0_N_37
+lm8_inst/uart/u_rxcver/cs_state12_0_I_1_0_S0
+lm8_inst/uart/u_rxcver/cs_state12_0_I_9_0_S1
+lm8_inst/uart/u_rxcver/cs_state12_0_I_9_0_S0
+lm8_inst/uart/u_rxcver/cs_state12_0_I_27_0_S1
+lm8_inst/uart/u_rxcver/cs_state12_0_I_27_0_S0
+lm8_inst/uart/u_rxcver/cs_state12_0_I_33_0_S1
+lm8_inst/uart/u_rxcver/cs_state12_0_I_33_0_S0
+lm8_inst/uart/u_rxcver/cs_state12_0_I_21_0_S0
+lm8_inst/uart/u_rxcver/cs_state12_0_I_21_0_COUT
+lm8_inst/uart/u_txmitt/counter_cry_0_S0[0]
+lm8_inst/uart/u_txmitt/counter_s_0_S1[15]
+lm8_inst/uart/u_txmitt/counter_s_0_COUT[15]
+stdby_sed_stub_i
+[ END CLIPPED ]
+[ START OSC ]
+clk_i_c 88.67
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 2.1.0.103 -- WARNING: Map write only section -- Mon Sep 02 07:11:48 2013
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE ;
+LOCATE COMP "led0" SITE "97" ;
+LOCATE COMP "video_data[15]" SITE "59" ;
+LOCATE COMP "video_data[14]" SITE "65" ;
+LOCATE COMP "video_data[13]" SITE "57" ;
+LOCATE COMP "video_data[12]" SITE "58" ;
+LOCATE COMP "video_data[11]" SITE "60" ;
+LOCATE COMP "video_data[10]" SITE "61" ;
+LOCATE COMP "video_data[9]" SITE "54" ;
+LOCATE COMP "video_data[8]" SITE "95" ;
+LOCATE COMP "video_data[7]" SITE "75" ;
+LOCATE COMP "video_data[6]" SITE "76" ;
+LOCATE COMP "video_data[5]" SITE "42" ;
+LOCATE COMP "video_data[4]" SITE "93" ;
+LOCATE COMP "video_data[3]" SITE "98" ;
+LOCATE COMP "video_data[2]" SITE "43" ;
+LOCATE COMP "video_data[1]" SITE "47" ;
+LOCATE COMP "video_data[0]" SITE "48" ;
+LOCATE COMP "clock_out[6]" SITE "94" ;
+LOCATE COMP "clock_out[5]" SITE "68" ;
+LOCATE COMP "clock_out[4]" SITE "96" ;
+LOCATE COMP "clock_out[3]" SITE "69" ;
+LOCATE COMP "clock_out[2]" SITE "62" ;
+LOCATE COMP "clock_out[1]" SITE "70" ;
+LOCATE COMP "clock_out[0]" SITE "71" ;
+FREQUENCY NET "clk_i_c" 88.670000 MHz ;
+USE PRIMARY NET "clk_i_c" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

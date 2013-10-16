@@ -1,0 +1,669 @@
+    Lattice Mapping Report File for Design Module 'timing_controller_top'
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     timing_controller_timing_controller.ngd -o
+     timing_controller_timing_controller_map.ncd -pr
+     timing_controller_timing_controller.prf -mp
+     timing_controller_timing_controller.mrp C:/Users/AndrewPC1/Documents/GitHub
+     /CoreCam_Firmware/timing_controller/diamond/timing_controller.lpf -c 0
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 2.1.0.103
+Mapped on:  09/02/13  07:11:47
+
+Design Summary
+--------------
+
+   Number of registers:    426
+      PFU registers:    425
+      PIO registers:    1
+   Number of SLICEs:           431 out of  3432 (13%)
+      SLICEs(logic/ROM):       398 out of   858 (46%)
+      SLICEs(logic/ROM/RAM):    33 out of  2574 (1%)
+          As RAM:           33 out of  2574 (1%)
+          As Logic/ROM:      0 out of  2574 (0%)
+   Number of logic LUT4s:     650
+   Number of distributed RAM:  33 (66 LUT4s)
+   Number of ripple logic:     66 (132 LUT4s)
+   Number of shift registers:   0
+   Total number of LUT4s:     848
+   Number of PIO sites used: 31 out of 115 (27%)
+   Number of block RAMs:  3 out of 26 (12%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  17
+     Net clk_i_c: 220 loads, 220 rising, 0 falling (Driver: OSCInst0 )
+
+                                    Page 1
+
+
+
+
+Design:  timing_controller_top                         Date:  09/02/13  07:11:47
+
+Design Summary (cont)
+---------------------
+     Net pat_gen/N_116_i: 1 loads, 1 rising, 0 falling (Driver: pat_gen/N_116_i
+     )
+     Net pat_gen/wb_dat_local_0_sqmuxa: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_8_0_a3_0_RNI8DB22_0 )
+     Net pat_gen/N_134: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/un1_wb_cyc_i_4_i_a2 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_1: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_8_0_a3_0_RNI8DB22 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_7: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_5_1_a3_0_RNI5M8S3 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_6: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_5_1_a3_0_RNI5M8S3_0 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_13: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_13_0_a2 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_12: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_12_0_a2 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_11: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_11_0_a2 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_10: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_10_0_a2 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_9: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_9_0_a2 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_8: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_8_0_a2 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_5: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_5_1_a2 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_4: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_4_0_a2 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_3: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_3_1_a2 )
+     Net pat_gen/wb_dat_local_0_sqmuxa_2: 4 loads, 4 rising, 0 falling (Driver:
+     pat_gen/wb_dat_local_0_sqmuxa_2_1_a2 )
+   Number of Clock Enables:  28
+     Net lm8_inst/uart/u_txmitt/tx_state_5: 5 loads, 5 LSLICEs
+     Net lm8_inst/uart/u_txmitt/un1_thr_wr_1: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_txmitt/un1_tsr_empty5: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_txmitt/tx_state[0]: 10 loads, 10 LSLICEs
+     Net lm8_inst/uart/u_rxcver/un1_rbr_rd_1: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_rxcver/rx_frame_err_RNO: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_rxcver/un1_cs_state_2_i: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_rxcver/databit_recved_nume: 6 loads, 6 LSLICEs
+     Net lm8_inst/uart/u_rxcver/rbr20: 7 loads, 7 LSLICEs
+     Net lm8_inst/uart/u_rxcver/un1_hunt_1_0: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_rxcver/N_32: 1 loads, 1 LSLICEs
+     Net lm8_inst/uart/u_rxcver/un1_lsr_rd: 4 loads, 4 LSLICEs
+     Net lm8_inst/uart/u_intface/divisorce[8]: 4 loads, 4 LSLICEs
+     Net lm8_inst/uart/u_intface/thr_nonfifo_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net lm8_inst/uart/u_intface/lcr_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net lm8_inst/uart/u_intface/ier_1_sqmuxa: 2 loads, 2 LSLICEs
+     Net lm8_inst/uart/u_intface/lsr_rd_1: 6 loads, 6 LSLICEs
+     Net lm8_inst/uart/u_intface/divisorce[0]: 4 loads, 4 LSLICEs
+     Net lm8_inst/LM8D_ACK_I: 4 loads, 4 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/page_ptr16: 5 loads, 5 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_interrupt/im_nxt4: 4 loads, 4 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_interrupt/un1_ie_nxt5: 1 loads, 1
+     LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  timing_controller_top                         Date:  09/02/13  07:11:47
+
+Design Summary (cont)
+---------------------
+     Net lm8_inst/LM8/u1_isp8_core/addr_cyc: 6 loads, 6 LSLICEs
+     Net lm8_inst/LM8/data_cyc: 5 loads, 5 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un8_zero_flag_nxt_i: 1
+     loads, 1 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_next_address8_1: 1
+     loads, 1 LSLICEs
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un8_carry_flag_nxt_i: 1
+     loads, 1 LSLICEs
+     Net lm8_inst/LM8/prom_enable: 4 loads, 0 LSLICEs
+   Number of local set/reset loads for net timing_controllerrst_i_i_1 merged
+     into GSR:  261
+   Number of LSRs:  4
+     Net lm8_inst/LM8/rst_n: 63 loads, 63 LSLICEs
+     Net rst_i_i: 2 loads, 2 LSLICEs
+     Net pat_gen/N_197_i: 1 loads, 1 LSLICEs
+     Net rst_i: 16 loads, 16 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net lm8_inst/LM8/first_fetch: 77 loads
+     Net lm8_inst/LM8/rst_n: 66 loads
+     Net timing_controllerslv_adr_i[0]: 66 loads
+     Net timing_controllerslv_adr_i[1]: 66 loads
+     Net lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/ret_reg: 33 loads
+     Net lm8_inst.arbiter.selected[1]: 31 loads
+     Net GND: 28 loads
+     Net lm8_inst/LM8/instr[10]: 27 loads
+     Net lm8_inst/LM8/instr[11]: 27 loads
+     Net lm8_inst/LM8/instr[8]: 27 loads
+
+
+
+
+   Number of warnings:  8
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_contr
+     oller/diamond/timing_controller.lpf (52): Error in IOBUF PORT "clk_out"
+     IO_TYPE=LVCMOS33 ;
+: Port "clk_out" does not exist in the design. Disbale
+     this preference.
+WARNING - map: C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_contr
+     oller/diamond/timing_controller.lpf (53): Error in IOBUF PORT "rst_out"
+     IO_TYPE=LVCMOS33 ;
+: Port "rst_out" does not exist in the design. Disbale
+     this preference.
+WARNING - map: Preference parsing results:  2 semantic errors detected
+WARNING - map: There are errors in the preference file, "C:/Users/AndrewPC1/Docu
+     ments/GitHub/CoreCam_Firmware/timing_controller/diamond/timing_controller.l
+     pf".
+WARNING - map: Using local reset signal 'timing_controllerrst_i_i_1' to infer
+     global GSR net.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_r
+     am_dqMnhprom_initsadn18101024p164162ca_0_1_0' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
+     global reset is disabled via GSR property. To control the EBR reset, either
+
+                                    Page 3
+
+
+
+
+Design:  timing_controller_top                         Date:  09/02/13  07:11:47
+
+Design Errors/Warnings (cont)
+-----------------------------
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_r
+     am_dqMnhprom_initsadn18101024p164162ca_0_0_1' cannot be controlled. The
+     local reset is not connected to any control signal and set to GND. The
+     global reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+WARNING - map: The reset of EBR 'lm8_inst/LM8/genblk4.u1_scratchpad/pmi_ram_dqMn
+     hscratchpad_initsadn8101024p168f1e86_0_0_0' cannot be controlled. The local
+     reset is not connected to any control signal and set to GND. The global
+     reset is disabled via GSR property. To control the EBR reset, either
+     connect the local reset to a control signal or force the GSR property to be
+     enabled.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| uart_sout           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| uart_sin            | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| led0                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds_out[3]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds_out[2]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds_out[1]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| leds_out[0]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| video_data[15]      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[14]      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[13]      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[12]      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[11]      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[10]      | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[9]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[8]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[7]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[6]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 4
+
+
+
+
+Design:  timing_controller_top                         Date:  09/02/13  07:11:47
+
+IO (PIO) Attributes (cont)
+--------------------------
+| video_data[5]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[4]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[3]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[2]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[1]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| video_data[0]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clock_out[7]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clock_out[6]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clock_out[5]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clock_out[4]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clock_out[3]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clock_out[2]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clock_out[1]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clock_out[0]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block VCC undriven or does not drive anything - clipped.
+Block pat_gen/GND undriven or does not drive anything - clipped.
+Block pat_gen/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/GND undriven or does not drive anything - clipped.
+Block lm8_inst/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/arbiter/GND undriven or does not drive anything - clipped.
+Block lm8_inst/arbiter/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/GND undriven or does not drive anything -
+     clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/GND undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/GND undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vhi_inst undriven or
+     does not drive anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd undriven or does
+     not drive anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_cntl_u1/VCC undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_cntl_u1/GND undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_interrupt/VCC undriven or does not drive
+     anything - clipped.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_interrupt/GND undriven or does not drive
+
+                                    Page 5
+
+
+
+
+Design:  timing_controller_top                         Date:  09/02/13  07:11:47
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Block lm8_inst/LED/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/uart/u_intface/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/uart/u_intface/GND undriven or does not drive anything - clipped.
+Block lm8_inst/uart/u_rxcver/VCC undriven or does not drive anything - clipped.
+Block lm8_inst/uart/u_txmitt/VCC undriven or does not drive anything - clipped.
+Signal timing_controllerrst_i_i_1_i was merged into signal
+     timing_controllerrst_i_i_1
+Signal lm8_inst/LM8/rst_n_i was merged into signal lm8_inst/LM8/rst_n
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/add_sub_inv was merged
+     into signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/add_sel_i
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/dec0_wre3 was
+     merged into signal
+     lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/stack_ptr_nxt9
+Signal lm8_inst/uart/u_txmitt/tx_state_i[0] was merged into signal
+     lm8_inst/uart/u_txmitt/tx_state[0]
+Signal reset_gen/GND undriven or does not drive anything - clipped.
+Signal led0_blinker/GND undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/VCC undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/GND undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vlo undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vhi undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vlo undriven or does not
+     drive anything - clipped.
+Signal lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vhi undriven or does not
+     drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/VCC undriven or does not drive anything -
+     clipped.
+Signal lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/scuba_vhi undriven or does
+     not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/scuba_vhi undriven or does
+     not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vlo undriven or
+     does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/VCC undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/scuba_vhi
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/uart/u_rxcver/GND undriven or does not drive anything - clipped.
+Signal lm8_inst/uart/u_txmitt/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal reset_gen/counter_cry_0_COUT[29] undriven or does not drive anything -
+     clipped.
+Signal reset_gen/counter_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal led0_blinker/un10_count_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal led0_blinker/un10_count_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal led0_blinker/un10_count_s_23_0_S1 undriven or does not drive anything -
+     clipped.
+Signal led0_blinker/un10_count_s_23_0_COUT undriven or does not drive anything -
+
+                                    Page 6
+
+
+
+
+Design:  timing_controller_top                         Date:  09/02/13  07:11:47
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal lm8_inst/LM8/u1_isp8_core/GND undriven or does not drive anything -
+     clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vhi undriven or
+     does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsub_0/S0 undriven or
+     does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd/S1 undriven or
+     does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/co4d undriven or does not
+     drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/addsubd/COUT undriven or
+     does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/co4 undriven or does not
+     drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_cry_0_0_S1
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_cry_0_0_S0
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_s_3_0_S1
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/un1_stack_ptr_s_3_0_COUT
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_0_0_S1
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_cry_0_0_S0
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_s_9_0_S1
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/potential_address_s_9_0_COUT
+     undriven or does not drive anything - clipped.
+Signal lm8_inst/uart/u_rxcver/counter_11_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/counter_11_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/counter_11_s_15_0_S1 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/counter_11_s_15_0_COUT undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_N_37 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_27_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_33_0_S1 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_33_0_S0 undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_21_0_S0 undriven or does not drive
+
+                                    Page 7
+
+
+
+
+Design:  timing_controller_top                         Date:  09/02/13  07:11:47
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal lm8_inst/uart/u_rxcver/cs_state12_0_I_21_0_COUT undriven or does not
+     drive anything - clipped.
+Signal lm8_inst/uart/u_txmitt/counter_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_txmitt/counter_s_0_S1[15] undriven or does not drive
+     anything - clipped.
+Signal lm8_inst/uart/u_txmitt/counter_s_0_COUT[15] undriven or does not drive
+     anything - clipped.
+Signal stdby_sed_stub_i undriven or does not drive anything - clipped.
+Block lm8_inst/counter_RNI6GF1[2] was optimized away.
+Block lm8_inst/LM8/rst_n_RNI1N8F was optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/INV_0 was optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/LUT4_0 was
+     optimized away.
+Block lm8_inst/uart/u_txmitt/genblk2.genblk1.tx_state_i[0] was optimized away.
+Block reset_gen/GND was optimized away.
+Block led0_blinker/GND was optimized away.
+Block lm8_inst/LM8/VCC was optimized away.
+Block lm8_inst/LM8/GND was optimized away.
+Block lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vlo_inst was optimized away.
+Block lm8_inst/LM8/genblk4.u1_scratchpad/scuba_vhi_inst was optimized away.
+Block lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vlo_inst was optimized
+     away.
+Block lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/scuba_vhi_inst was optimized
+     away.
+Block lm8_inst/LM8/u1_isp8_core/VCC was optimized away.
+Block lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/scuba_vhi_inst was
+     optimized away.
+Block lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/scuba_vhi_inst was
+     optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_alu/u1_addsub8/scuba_vlo_inst was
+     optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/VCC was optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/GND was optimized away.
+Block lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem/scuba_vhi_inst
+     was optimized away.
+Block lm8_inst/uart/u_rxcver/GND was optimized away.
+Block lm8_inst/uart/u_txmitt/GND was optimized away.
+
+Memory Usage
+------------
+
+/lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18101024p164162ca_0_1_0:  TYPE=
+         DP8KC,  Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         prom_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18101024p164162ca__PMIS__1024__18__18H
+    -Contains EBR pmi_ram_dqMnhprom_initsadn18101024p164162ca_0_0_1:  TYPE=
+         DP8KC,  Width_A= 9,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+
+                                    Page 8
+
+
+
+
+Design:  timing_controller_top                         Date:  09/02/13  07:11:47
+
+Memory Usage (cont)
+-------------------
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         prom_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhprom_initsadn18101024p164162ca__PMIS__1024__18__18H
+/lm8_inst/LM8/genblk4.u1_scratchpad:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dqMnhscratchpad_initsadn8101024p168f1e86_0_0_0:  TYPE=
+         DP8KC,  Width_A= 8,  Depth_A= 1024,  REGMODE_A= NOREG,  REGMODE_B=
+         NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE=
+         scratchpad_init.mem,  MEM_LPC_FILE=
+         pmi_ram_dqMnhscratchpad_initsadn8101024p168f1e86__PMIS__1024__8__8H
+/lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem:
+    EBRs: 0
+    RAM SLICEs: 12
+    Logic SLICEs: 0
+    PFU Registers: 7
+/lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem:
+    EBRs: 0
+    RAM SLICEs: 12
+    Logic SLICEs: 0
+    PFU Registers: 0
+/lm8_inst/LM8/u1_isp8_core/u1_lm8_flow_cntl/u1_lm8_stkmem:
+    EBRs: 0
+    RAM SLICEs: 9
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSCInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk_i_c
+  OSC Nominal Frequency (MHz):                      88.67
+
+ASIC Components
+---------------
+
+Instance Name: OSCInst0
+         Type: OSCH
+Instance Name: lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_inits
+     adn18101024p164162ca_0_1_0
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_inits
+     adn18101024p164162ca_0_0_1
+         Type: DP8KC
+Instance Name: lm8_inst/LM8/genblk4.u1_scratchpad/pmi_ram_dqMnhscratchpad_initsa
+     dn8101024p168f1e86_0_0_0
+         Type: DP8KC
+
+                                    Page 9
+
+
+
+
+Design:  timing_controller_top                         Date:  09/02/13  07:11:47
+
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'timing_controllerrst_i_i_1' of the design has been
+        inferred as Global Set Reset (GSR). The reset signal used for GSR
+        control is 'timing_controllerrst_i_i_1'.
+
+GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 63 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 10
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor
+     Corporation,  All rights reserved.

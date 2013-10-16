@@ -1,0 +1,118 @@
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":12:7:12:27|Synthesizing work.timing_controller_top.behavioral 
+@N: CD630 :"C:\lscc\diamond\2.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":2289:10:2289:13|Synthesizing work.osch.syn_black_box 
+Post processing for work.osch.syn_black_box
+@N: CD630 :"C:\lscc\diamond\2.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":1902:10:1902:16|Synthesizing work.clkdivc.syn_black_box 
+Post processing for work.clkdivc.syn_black_box
+@W: CD280 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":119:11:119:19|Unbound component platform1 mapped to black box
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":154:8:154:33|Signal timing_controllerslv_err_i is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":155:8:155:33|Signal timing_controllerslv_rty_i is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":165:8:165:17|Signal rst_i_stub is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":176:8:176:15|Signal clk_stub is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":176:18:176:27|Signal fsync_stub is undriven 
+@W: CD638 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":176:30:176:39|Signal lsync_stub is undriven 
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":6:7:6:29|Synthesizing work.wb_to_timing_controller.behavioral 
+@W: CD434 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":120:8:120:15|Signal wb_clk_i in the sensitivity list is not used in the process
+@W: CG296 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":120:0:120:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":138:29:138:36|Referenced variable wb_stb_i is not in sensitivity list
+@W: CG290 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":138:8:138:15|Referenced variable wb_cyc_i is not in sensitivity list
+@W: CG290 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":139:7:139:15|Referenced variable wb_addr_i is not in sensitivity list
+@W: CG290 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":142:17:142:24|Referenced variable wb_dat_i is not in sensitivity list
+@W: CG290 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":141:8:141:9|Referenced variable wr is not in sensitivity list
+@W: CD280 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":52:10:52:20|Unbound component mux_36_to_1 mapped to black box
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":52:10:52:20|Synthesizing work.mux_36_to_1.syn_black_box 
+Post processing for work.mux_36_to_1.syn_black_box
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\firmware\linedelay.vhd":29:7:29:15|Synthesizing work.linedelay.behavioral 
+@W: CG296 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\firmware\linedelay.vhd":62:7:62:13|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\firmware\linedelay.vhd":65:16:65:18|Referenced variable o_i is not in sensitivity list
+@W: CG290 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\firmware\linedelay.vhd":68:21:68:21|Referenced variable i is not in sensitivity list
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\edgedetect.vhd":4:7:4:16|Synthesizing work.edgedetect.behavioral 
+Post processing for work.edgedetect.behavioral
+Post processing for work.linedelay.behavioral
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":47:7:47:21|Synthesizing work.ucontrolroicclk.behavioral 
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\instrom.vhd":11:7:11:13|Synthesizing work.instrom.behavior 
+Post processing for work.instrom.behavior
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":11:7:11:13|Synthesizing work.datarom.behavior 
+Post processing for work.datarom.behavior
+Post processing for work.ucontrolroicclk.behavioral
+Post processing for work.wb_to_timing_controller.behavioral
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal wb_dat_local(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_D7_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_D6_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_D5_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_D4_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_09_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_08_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_07_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_06_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_05_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_04_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_03_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_02_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_01_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL117 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Latch generated from process for signal reg_00_i(7 downto 0); possible missing assignment in an if or case statement.
+@W: CL116 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":110:2:110:3|Input data for signal wb_stb_d2 contains references to signal edges. An asynchronous reset may be missing from the sensitivity list.
+@W: CL116 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":99:2:99:3|Input data for signal wb_stb_d1 contains references to signal edges. An asynchronous reset may be missing from the sensitivity list.
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":119:11:119:19|Synthesizing work.platform1.syn_black_box 
+Post processing for work.platform1.syn_black_box
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\led_blinker.vhd":6:7:6:17|Synthesizing work.led_blinker.behavioral 
+Post processing for work.led_blinker.behavioral
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\video_generator.vhd":6:7:6:21|Synthesizing work.video_generator.behavioral 
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":6:7:6:23|Synthesizing work.dual_edge_counter.structural 
+@W: CG296 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":18:0:18:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:4:20:6|Referenced variable rst is not in sensitivity list
+Post processing for work.dual_edge_counter.structural
+Post processing for work.video_generator.behavioral
+@W: CL169 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\video_generator.vhd":70:2:70:3|Pruning register pixel_data(15 downto 0)  
+@W: CL271 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\video_generator.vhd":70:2:70:3|Pruning bits 10 to 4 of line_count(10 downto 0) -- not in use ... 
+@N: CD630 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\reset_generator_v0p1.vhd":5:7:5:21|Synthesizing work.reset_generator.behavioral 
+Post processing for work.reset_generator.behavioral
+Post processing for work.timing_controller_top.behavioral
+@W: CL240 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":176:30:176:39|lsync_stub is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":176:18:176:27|fsync_stub is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":176:8:176:15|clk_stub is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":155:8:155:33|timing_controllerslv_rty_i is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":154:8:154:33|timing_controllerslv_err_i is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":18:3:18:10|leds_out is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":16:3:16:11|clock_out is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL167 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":238:1:238:8|Input timing_controllerslv_err of instance lm8_inst is floating
+@W: CL167 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":238:1:238:8|Input timing_controllerslv_rty of instance lm8_inst is floating
+@W: CL167 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":222:2:222:10|Input clk of instance video_gen is floating
+@W: CL167 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":222:2:222:10|Input fsync of instance video_gen is floating
+@W: CL167 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":222:2:222:10|Input lsync of instance video_gen is floating
+@W: CL190 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Optimizing register bit counter(0) to a constant 0
+@W: CL260 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Pruning register bit 0 of counter(10 downto 0)  
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(1) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(3) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(4) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(14) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(17) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(18) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(19) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(20) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(22) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(23) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(24) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(25) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(26) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(27) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(28) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(29) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(30) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(31) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(32) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(33) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(34) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Register bit DOUT(35) is always 0, optimizing ...
+@W: CL279 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Pruning register bits 35 to 22 of DOUT(35 downto 0)  
+@W: CL279 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Pruning register bits 20 to 17 of DOUT(35 downto 0)  
+@W: CL260 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Pruning register bit 14 of DOUT(35 downto 0)  
+@W: CL279 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Pruning register bits 4 to 3 of DOUT(35 downto 0)  
+@W: CL260 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Pruning register bit 1 of DOUT(35 downto 0)  
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Register bit DOUT(24) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Register bit DOUT(34) is always 0, optimizing ...
+@W: CL189 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Register bit DOUT(35) is always 0, optimizing ...
+@W: CL279 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Pruning register bits 35 to 34 of DOUT(35 downto 0)  
+@W: CL260 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Pruning register bit 24 of DOUT(35 downto 0)  
+@W: CL279 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Pruning register bits 23 to 13 of DOUT(23 downto 0)  
+@W: CL159 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":49:11:49:18|Input delayClk is unused
+@W: CL159 :"C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":12:2:12:5|Input sync is unused

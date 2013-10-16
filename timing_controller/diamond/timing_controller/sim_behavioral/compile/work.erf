@@ -1,0 +1,83 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
+MESSAGE "File: C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\led_blinker.vhd" 
+MESSAGE "Compile Entity "led_blinker"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "led_blinker"" 
+MESSAGE "File: C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\instrom.vhd" 
+BEGINPROGRESS C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\instrom.vhd
+UPDATEPROGRESS 2
+MESSAGE "Compile Entity "instrom"" 
+UPDATEPROGRESS 3
+MESSAGE "Compile Architecture "behavior" of Entity "instrom"" 
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\instrom.vhd
+MESSAGE "File: C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\datarom.vhd" 
+BEGINPROGRESS C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\datarom.vhd
+MESSAGE "Compile Entity "datarom"" 
+MESSAGE "Compile Architecture "behavior" of Entity "datarom"" 
+UPDATEPROGRESS 90
+UPDATEPROGRESS 47
+UPDATEPROGRESS 48
+UPDATEPROGRESS 49
+UPDATEPROGRESS 50
+UPDATEPROGRESS 51
+UPDATEPROGRESS 52
+UPDATEPROGRESS 53
+UPDATEPROGRESS 54
+UPDATEPROGRESS 55
+UPDATEPROGRESS 56
+UPDATEPROGRESS 57
+UPDATEPROGRESS 58
+UPDATEPROGRESS 59
+UPDATEPROGRESS 60
+UPDATEPROGRESS 61
+UPDATEPROGRESS 62
+UPDATEPROGRESS 63
+UPDATEPROGRESS 64
+UPDATEPROGRESS 65
+UPDATEPROGRESS 66
+UPDATEPROGRESS 67
+UPDATEPROGRESS 68
+UPDATEPROGRESS 69
+UPDATEPROGRESS 70
+UPDATEPROGRESS 71
+UPDATEPROGRESS 72
+UPDATEPROGRESS 73
+UPDATEPROGRESS 74
+UPDATEPROGRESS 75
+UPDATEPROGRESS 76
+UPDATEPROGRESS 77
+UPDATEPROGRESS 78
+UPDATEPROGRESS 79
+UPDATEPROGRESS 80
+UPDATEPROGRESS 81
+UPDATEPROGRESS 82
+UPDATEPROGRESS 83
+UPDATEPROGRESS 84
+UPDATEPROGRESS 85
+UPDATEPROGRESS 86
+UPDATEPROGRESS 100
+ENDPROGRESS C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\datarom.vhd
+MESSAGE "File: C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\ucontroller.vhd" 
+MESSAGE "Compile Entity "uControlRoicClk"" 
+MESSAGE "Compile Architecture "Behavioral" of Entity "uControlRoicClk"" 
+MESSAGE "File: C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\reset_generator_v0p1.vhd" 
+MESSAGE "Compile Entity "reset_generator"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "reset_generator"" 
+MESSAGE "File: C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\timing_controller_top.vhd" 
+MESSAGE "Compile Entity "timing_controller_top"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "timing_controller_top"" 
+MESSAGE "File: C:\my_designs\pattern_generator\pattern_generator_v0p1\src\TestBench\timing_controller_TB.vhd" 
+MESSAGE "Compile Entity "timing_controller_top_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "timing_controller_top_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_timing_controller_top"" 
+MESSAGE "File: C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\dual_edge_counter.vhd" 
+MESSAGE "Compile Entity "dual_edge_counter"" 
+MESSAGE "Compile Architecture "Structural" of Entity "dual_edge_counter"" 
+MESSAGE "File: C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\edgedetect.vhd" 
+MESSAGE "Compile Entity "edgeDetect"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "edgeDetect"" 
+MESSAGE "File: C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\video_generator.vhd" 
+MESSAGE "Compile Entity "video_generator"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "video_generator"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]" 

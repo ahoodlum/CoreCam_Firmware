@@ -1,0 +1,15 @@
+[General]
+CurrentVersion=103
+[COMPILESTATUS|.\..\timing_controller_timing_controller_vho.vho]
+FileTimeLow=30296320
+Status=Compiled
+[COMPILESTATUS|.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\uController_tb.vhd]
+FileTimeLow=29825830
+Status=Warning
+[COMPILESTATUS|.\..\timing_controller_timing_controller_vho.sdf]
+FileTimeLow=30296320
+Status=Modified
+[CACHEDOC|Aldec.Project.Generic.7|.\post_par.adf|]
+Path=/tb_ucontrolroicclk/DUT
+[Gui config]
+RunFor=100 ns

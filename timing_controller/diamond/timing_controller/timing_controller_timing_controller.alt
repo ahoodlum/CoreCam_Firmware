@@ -1,0 +1,39 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sun Jul 14 22:23:25 2013 *
+NOTE DESIGN NAME: timing_controller_top *
+NOTE DEVICE NAME: LCMXO2-7000ZE-1TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS uart_sout : 28 : out *
+NOTE PINS uart_sin : 125 : in *
+NOTE PINS led0 : 97 : out *
+NOTE PINS leds_out[3] : 138 : out *
+NOTE PINS leds_out[2] : 143 : out *
+NOTE PINS leds_out[1] : 142 : out *
+NOTE PINS leds_out[0] : 121 : out *
+NOTE PINS video_data[15] : 59 : out *
+NOTE PINS video_data[14] : 65 : out *
+NOTE PINS video_data[13] : 57 : out *
+NOTE PINS video_data[12] : 58 : out *
+NOTE PINS video_data[11] : 60 : out *
+NOTE PINS video_data[10] : 61 : out *
+NOTE PINS video_data[9] : 54 : out *
+NOTE PINS video_data[8] : 95 : out *
+NOTE PINS video_data[7] : 75 : out *
+NOTE PINS video_data[6] : 76 : out *
+NOTE PINS video_data[5] : 42 : out *
+NOTE PINS video_data[4] : 93 : out *
+NOTE PINS video_data[3] : 98 : out *
+NOTE PINS video_data[2] : 43 : out *
+NOTE PINS video_data[1] : 47 : out *
+NOTE PINS video_data[0] : 48 : out *
+NOTE PINS clock_out[7] : 84 : out *
+NOTE PINS clock_out[6] : 94 : out *
+NOTE PINS clock_out[5] : 68 : out *
+NOTE PINS clock_out[4] : 96 : out *
+NOTE PINS clock_out[3] : 69 : out *
+NOTE PINS clock_out[2] : 62 : out *
+NOTE PINS clock_out[1] : 70 : out *
+NOTE PINS clock_out[0] : 71 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

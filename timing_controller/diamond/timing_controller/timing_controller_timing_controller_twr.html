@@ -1,0 +1,1609 @@
+<HTML>
+<HEAD><TITLE>Lattice TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Par_Twr"></A><B><U><big>Place & Route TRACE Report</big></U></B>
+
+Loading design for application trce from file timing_controller_timing_controller.ncd.
+Design name: timing_controller_top
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-7000ZE
+Package:     TQFP144
+Performance: 1
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.1_x64/ispfpga.
+Package Status:                     Final          Version 1.36
+Performance Hardware Data Status:   Final)         Version 23.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Par_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 2.1.0.103</big></U></B>
+Sun Jul 14 22:19:32 2013
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="ptwr_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o timing_controller_timing_controller.twr timing_controller_timing_controller.ncd timing_controller_timing_controller.prf 
+Design file:     timing_controller_timing_controller.ncd
+Preference file: timing_controller_timing_controller.prf
+Device,speed:    LCMXO2-7000ZE,1
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+<A name="ptwr_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#par_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "clk_i_c" 88.670000 MHz (4096 errors)</FONT></A></LI>
+</FONT>            4096 items scored, 4096 timing errors detected.
+Warning:  12.685MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="par_twr_pref_0_0"></A>Preference: FREQUENCY NET "clk_i_c" 88.670000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 67.556ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pat_gen/wb_dat_o[6]  (from pat_gen/N_125 +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0/RAM1  (to clk_i_c +)
+                   FF                        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0/RAM1
+
+   Delay:              17.305ns  (26.9% logic, 73.1% route), 6 logic levels.
+
+ Constraint Details:
+
+     17.305ns physical path delay pat_gen/SLICE_275 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0 exceeds
+     11.277ns delay constraint less
+     62.428ns skew and
+     -0.900ns WD_SET requirement (totaling -50.251ns) by 67.556ns
+
+ Physical Path Details:
+
+      Data path pat_gen/SLICE_275 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955    R18C13C.CLK to     R18C13C.Q0 pat_gen/SLICE_275 (from pat_gen/N_125)
+ROUTE         1     2.198     R18C13C.Q0 to     R17C12D.D0 timing_controllerslv_slave_data_i[6]
+CTOF_DEL    ---     0.923     R17C12D.D0 to     R17C12D.F0 lm8_inst/LM8/SLICE_120
+ROUTE         2     3.216     R17C12D.F0 to     R16C15D.D1 lm8_inst/LM8/LM8D_DAT_I[6]
+CTOF_DEL    ---     0.923     R16C15D.D1 to     R16C15D.F1 lm8_inst/LM8/SLICE_351
+ROUTE         2     1.043     R16C15D.F1 to     R16C15D.C0 lm8_inst/LM8/ext_io_din[6]
+CTOF_DEL    ---     0.923     R16C15D.C0 to     R16C15D.F0 lm8_inst/LM8/SLICE_351
+ROUTE         1     2.623     R16C15D.F0 to     R19C16B.D0 lm8_inst/LM8/u1_isp8_core/ext_mem_din_m[6]
+CTOF_DEL    ---     0.923     R19C16B.D0 to     R19C16B.F0 lm8_inst/LM8/u1_isp8_core/SLICE_173
+ROUTE         5     3.578     R19C16B.F0 to     R18C11C.C1 lm8_inst/LM8/u1_isp8_core/din_rd[6]
+ZERO_DEL    ---     0.000     R18C11C.C1 to   R18C11C.WDO2 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0.12
+ROUTE         1     0.000   R18C11C.WDO2 to    R18C11B.WD0 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0/WD2_INT (to clk_i_c)
+                  --------
+                   17.305   (26.9% logic, 73.1% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to pat_gen/SLICE_275:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.500        OSC.OSC to *R_R20C10.CLKA clk_i_c
+C2Q_DEL     ---     9.644 *R_R20C10.CLKA to *R_R20C10.DOA5 lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_initsadn18101024p1405ca14_0_1_0
+ROUTE        16     3.110 *R_R20C10.DOA5 to     R18C14D.D1 lm8_inst/LM8/instr_mem_out[14]
+CTOF_DEL    ---     0.923     R18C14D.D1 to     R18C14D.F1 lm8_inst/LM8/SLICE_336
+ROUTE        12     3.257     R18C14D.F1 to     R18C17B.B1 lm8_inst/LM8/instr_i_0[14]
+CTOF_DEL    ---     0.923     R18C17B.B1 to     R18C17B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_168
+ROUTE        20     1.860     R18C17B.F1 to     R18C16B.D0 lm8_inst/LM8/iels
+CTOF_DEL    ---     0.923     R18C16B.D0 to     R18C16B.F0 lm8_inst/SLICE_344
+ROUTE         4     4.375     R18C16B.F0 to     R17C16D.C0 lm8_inst/ext_addr8
+CTOF_DEL    ---     0.923     R17C16D.C0 to     R17C16D.F0 lm8_inst/LM8/SLICE_419
+ROUTE         3     2.603     R17C16D.F0 to     R16C15B.D1 lm8_inst/LM8/un12_external_sp_2
+CTOF_DEL    ---     0.923     R16C15B.D1 to     R16C15B.F1 lm8_inst/LM8/SLICE_348
+ROUTE         9     2.405     R16C15B.F1 to     R17C17A.D1 lm8_inst/LM8/un12_external_sp
+CTOF_DEL    ---     0.923     R17C17A.D1 to     R17C17A.F1 lm8_inst/LM8/SLICE_171
+ROUTE         6     1.640     R17C17A.F1 to     R16C17D.D1 lm8_inst/ext_cyc
+CTOF_DEL    ---     0.923     R16C17D.D1 to     R16C17D.F1 lm8_inst/SLICE_306
+ROUTE        15     2.268     R16C17D.F1 to     R17C17D.C0 lm8_inst.LM8D_STB_O
+CTOF_DEL    ---     0.923     R17C17D.C0 to     R17C17D.F0 lm8_inst/LM8/SLICE_345
+ROUTE         1     3.011     R17C17D.F0 to     R19C17D.B1 lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/timing_controllerS_en_1
+CTOF_DEL    ---     0.923     R19C17D.B1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     6.269     R19C17D.F1 to     R16C14A.B1 N_126
+CTOF_DEL    ---     0.923     R16C14A.B1 to     R16C14A.F1 pat_gen/SLICE_367
+ROUTE         5     4.604     R16C14A.F1 to     R23C12D.C1 pat_gen/N_128
+CTOF_DEL    ---     0.923     R23C12D.C1 to     R23C12D.F1 SLICE_268
+ROUTE         8     6.955     R23C12D.F1 to    R18C13C.CLK pat_gen/N_125
+                  --------
+                   71.654   (27.6% logic, 72.4% route), 12 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.226        OSC.OSC to    R18C11B.WCK clk_i_c
+                  --------
+                    9.226   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 67.556ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pat_gen/wb_dat_o[6]  (from pat_gen/N_125 +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_0/RAM1  (to clk_i_c +)
+                   FF                        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_0/RAM1
+
+   Delay:              17.305ns  (26.9% logic, 73.1% route), 6 logic levels.
+
+ Constraint Details:
+
+     17.305ns physical path delay pat_gen/SLICE_275 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_0.9 exceeds
+     11.277ns delay constraint less
+     62.428ns skew and
+     -0.900ns WD_SET requirement (totaling -50.251ns) by 67.556ns
+
+ Physical Path Details:
+
+      Data path pat_gen/SLICE_275 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_0.9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955    R18C13C.CLK to     R18C13C.Q0 pat_gen/SLICE_275 (from pat_gen/N_125)
+ROUTE         1     2.198     R18C13C.Q0 to     R17C12D.D0 timing_controllerslv_slave_data_i[6]
+CTOF_DEL    ---     0.923     R17C12D.D0 to     R17C12D.F0 lm8_inst/LM8/SLICE_120
+ROUTE         2     3.216     R17C12D.F0 to     R16C15D.D1 lm8_inst/LM8/LM8D_DAT_I[6]
+CTOF_DEL    ---     0.923     R16C15D.D1 to     R16C15D.F1 lm8_inst/LM8/SLICE_351
+ROUTE         2     1.043     R16C15D.F1 to     R16C15D.C0 lm8_inst/LM8/ext_io_din[6]
+CTOF_DEL    ---     0.923     R16C15D.C0 to     R16C15D.F0 lm8_inst/LM8/SLICE_351
+ROUTE         1     2.623     R16C15D.F0 to     R19C16B.D0 lm8_inst/LM8/u1_isp8_core/ext_mem_din_m[6]
+CTOF_DEL    ---     0.923     R19C16B.D0 to     R19C16B.F0 lm8_inst/LM8/u1_isp8_core/SLICE_173
+ROUTE         5     3.578     R19C16B.F0 to     R18C12C.C1 lm8_inst/LM8/u1_isp8_core/din_rd[6]
+ZERO_DEL    ---     0.000     R18C12C.C1 to   R18C12C.WDO2 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_0.8
+ROUTE         1     0.000   R18C12C.WDO2 to    R18C12B.WD0 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_0/WD2_INT (to clk_i_c)
+                  --------
+                   17.305   (26.9% logic, 73.1% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to pat_gen/SLICE_275:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.500        OSC.OSC to *R_R20C10.CLKA clk_i_c
+C2Q_DEL     ---     9.644 *R_R20C10.CLKA to *R_R20C10.DOA5 lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_initsadn18101024p1405ca14_0_1_0
+ROUTE        16     3.110 *R_R20C10.DOA5 to     R18C14D.D1 lm8_inst/LM8/instr_mem_out[14]
+CTOF_DEL    ---     0.923     R18C14D.D1 to     R18C14D.F1 lm8_inst/LM8/SLICE_336
+ROUTE        12     3.257     R18C14D.F1 to     R18C17B.B1 lm8_inst/LM8/instr_i_0[14]
+CTOF_DEL    ---     0.923     R18C17B.B1 to     R18C17B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_168
+ROUTE        20     1.860     R18C17B.F1 to     R18C16B.D0 lm8_inst/LM8/iels
+CTOF_DEL    ---     0.923     R18C16B.D0 to     R18C16B.F0 lm8_inst/SLICE_344
+ROUTE         4     4.375     R18C16B.F0 to     R17C16D.C0 lm8_inst/ext_addr8
+CTOF_DEL    ---     0.923     R17C16D.C0 to     R17C16D.F0 lm8_inst/LM8/SLICE_419
+ROUTE         3     2.603     R17C16D.F0 to     R16C15B.D1 lm8_inst/LM8/un12_external_sp_2
+CTOF_DEL    ---     0.923     R16C15B.D1 to     R16C15B.F1 lm8_inst/LM8/SLICE_348
+ROUTE         9     2.405     R16C15B.F1 to     R17C17A.D1 lm8_inst/LM8/un12_external_sp
+CTOF_DEL    ---     0.923     R17C17A.D1 to     R17C17A.F1 lm8_inst/LM8/SLICE_171
+ROUTE         6     1.640     R17C17A.F1 to     R16C17D.D1 lm8_inst/ext_cyc
+CTOF_DEL    ---     0.923     R16C17D.D1 to     R16C17D.F1 lm8_inst/SLICE_306
+ROUTE        15     2.268     R16C17D.F1 to     R17C17D.C0 lm8_inst.LM8D_STB_O
+CTOF_DEL    ---     0.923     R17C17D.C0 to     R17C17D.F0 lm8_inst/LM8/SLICE_345
+ROUTE         1     3.011     R17C17D.F0 to     R19C17D.B1 lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/timing_controllerS_en_1
+CTOF_DEL    ---     0.923     R19C17D.B1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     6.269     R19C17D.F1 to     R16C14A.B1 N_126
+CTOF_DEL    ---     0.923     R16C14A.B1 to     R16C14A.F1 pat_gen/SLICE_367
+ROUTE         5     4.604     R16C14A.F1 to     R23C12D.C1 pat_gen/N_128
+CTOF_DEL    ---     0.923     R23C12D.C1 to     R23C12D.F1 SLICE_268
+ROUTE         8     6.955     R23C12D.F1 to    R18C13C.CLK pat_gen/N_125
+                  --------
+                   71.654   (27.6% logic, 72.4% route), 12 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_0.9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.226        OSC.OSC to    R18C12B.WCK clk_i_c
+                  --------
+                    9.226   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 67.471ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pat_gen/wb_dat_o[6]  (from pat_gen/N_125 +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_0_0/RAM1  (to clk_i_c +)
+                   FF                        lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_0_0/RAM1
+
+   Delay:              17.220ns  (27.0% logic, 73.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     17.220ns physical path delay pat_gen/SLICE_275 to lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_0_0.1 exceeds
+     11.277ns delay constraint less
+     62.428ns skew and
+     -0.900ns WD_SET requirement (totaling -50.251ns) by 67.471ns
+
+ Physical Path Details:
+
+      Data path pat_gen/SLICE_275 to lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_0_0.1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955    R18C13C.CLK to     R18C13C.Q0 pat_gen/SLICE_275 (from pat_gen/N_125)
+ROUTE         1     2.198     R18C13C.Q0 to     R17C12D.D0 timing_controllerslv_slave_data_i[6]
+CTOF_DEL    ---     0.923     R17C12D.D0 to     R17C12D.F0 lm8_inst/LM8/SLICE_120
+ROUTE         2     3.216     R17C12D.F0 to     R16C15D.D1 lm8_inst/LM8/LM8D_DAT_I[6]
+CTOF_DEL    ---     0.923     R16C15D.D1 to     R16C15D.F1 lm8_inst/LM8/SLICE_351
+ROUTE         2     1.043     R16C15D.F1 to     R16C15D.C0 lm8_inst/LM8/ext_io_din[6]
+CTOF_DEL    ---     0.923     R16C15D.C0 to     R16C15D.F0 lm8_inst/LM8/SLICE_351
+ROUTE         1     2.623     R16C15D.F0 to     R19C16B.D0 lm8_inst/LM8/u1_isp8_core/ext_mem_din_m[6]
+CTOF_DEL    ---     0.923     R19C16B.D0 to     R19C16B.F0 lm8_inst/LM8/u1_isp8_core/SLICE_173
+ROUTE         5     3.493     R19C16B.F0 to     R18C19C.C1 lm8_inst/LM8/u1_isp8_core/din_rd[6]
+ZERO_DEL    ---     0.000     R18C19C.C1 to   R18C19C.WDO2 lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_0_0.0
+ROUTE         1     0.000   R18C19C.WDO2 to    R18C19B.WD0 lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_0_0/WD2_INT (to clk_i_c)
+                  --------
+                   17.220   (27.0% logic, 73.0% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to pat_gen/SLICE_275:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.500        OSC.OSC to *R_R20C10.CLKA clk_i_c
+C2Q_DEL     ---     9.644 *R_R20C10.CLKA to *R_R20C10.DOA5 lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_initsadn18101024p1405ca14_0_1_0
+ROUTE        16     3.110 *R_R20C10.DOA5 to     R18C14D.D1 lm8_inst/LM8/instr_mem_out[14]
+CTOF_DEL    ---     0.923     R18C14D.D1 to     R18C14D.F1 lm8_inst/LM8/SLICE_336
+ROUTE        12     3.257     R18C14D.F1 to     R18C17B.B1 lm8_inst/LM8/instr_i_0[14]
+CTOF_DEL    ---     0.923     R18C17B.B1 to     R18C17B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_168
+ROUTE        20     1.860     R18C17B.F1 to     R18C16B.D0 lm8_inst/LM8/iels
+CTOF_DEL    ---     0.923     R18C16B.D0 to     R18C16B.F0 lm8_inst/SLICE_344
+ROUTE         4     4.375     R18C16B.F0 to     R17C16D.C0 lm8_inst/ext_addr8
+CTOF_DEL    ---     0.923     R17C16D.C0 to     R17C16D.F0 lm8_inst/LM8/SLICE_419
+ROUTE         3     2.603     R17C16D.F0 to     R16C15B.D1 lm8_inst/LM8/un12_external_sp_2
+CTOF_DEL    ---     0.923     R16C15B.D1 to     R16C15B.F1 lm8_inst/LM8/SLICE_348
+ROUTE         9     2.405     R16C15B.F1 to     R17C17A.D1 lm8_inst/LM8/un12_external_sp
+CTOF_DEL    ---     0.923     R17C17A.D1 to     R17C17A.F1 lm8_inst/LM8/SLICE_171
+ROUTE         6     1.640     R17C17A.F1 to     R16C17D.D1 lm8_inst/ext_cyc
+CTOF_DEL    ---     0.923     R16C17D.D1 to     R16C17D.F1 lm8_inst/SLICE_306
+ROUTE        15     2.268     R16C17D.F1 to     R17C17D.C0 lm8_inst.LM8D_STB_O
+CTOF_DEL    ---     0.923     R17C17D.C0 to     R17C17D.F0 lm8_inst/LM8/SLICE_345
+ROUTE         1     3.011     R17C17D.F0 to     R19C17D.B1 lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/timing_controllerS_en_1
+CTOF_DEL    ---     0.923     R19C17D.B1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     6.269     R19C17D.F1 to     R16C14A.B1 N_126
+CTOF_DEL    ---     0.923     R16C14A.B1 to     R16C14A.F1 pat_gen/SLICE_367
+ROUTE         5     4.604     R16C14A.F1 to     R23C12D.C1 pat_gen/N_128
+CTOF_DEL    ---     0.923     R23C12D.C1 to     R23C12D.F1 SLICE_268
+ROUTE         8     6.955     R23C12D.F1 to    R18C13C.CLK pat_gen/N_125
+                  --------
+                   71.654   (27.6% logic, 72.4% route), 12 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_0_0.1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.226        OSC.OSC to    R18C19B.WCK clk_i_c
+                  --------
+                    9.226   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 66.749ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pat_gen/wb_dat_o[1]  (from pat_gen/N_125 +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1/RAM0  (to clk_i_c +)
+                   FF                        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1/RAM0
+
+   Delay:              16.498ns  (28.2% logic, 71.8% route), 6 logic levels.
+
+ Constraint Details:
+
+     16.498ns physical path delay pat_gen/SLICE_270 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1.10 exceeds
+     11.277ns delay constraint less
+     62.428ns skew and
+     -0.900ns WD_SET requirement (totaling -50.251ns) by 66.749ns
+
+ Physical Path Details:
+
+      Data path pat_gen/SLICE_270 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1.10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955    R18C13D.CLK to     R18C13D.Q0 pat_gen/SLICE_270 (from pat_gen/N_125)
+ROUTE         1     2.198     R18C13D.Q0 to     R17C12B.D1 timing_controllerslv_slave_data_i[1]
+CTOF_DEL    ---     0.923     R17C12B.D1 to     R17C12B.F1 lm8_inst/LM8/SLICE_117
+ROUTE         2     3.216     R17C12B.F1 to     R16C16A.D1 lm8_inst/LM8/LM8D_DAT_I[1]
+CTOF_DEL    ---     0.923     R16C16A.D1 to     R16C16A.F1 lm8_inst/LM8/SLICE_355
+ROUTE         2     1.523     R16C16A.F1 to     R16C16A.D0 lm8_inst/LM8/ext_io_din[1]
+CTOF_DEL    ---     0.923     R16C16A.D0 to     R16C16A.F0 lm8_inst/LM8/SLICE_355
+ROUTE         1     0.765     R16C16A.F0 to     R16C16B.D0 lm8_inst/LM8/u1_isp8_core/ext_mem_din_m[1]
+CTOF_DEL    ---     0.923     R16C16B.D0 to     R16C16B.F0 lm8_inst/LM8/u1_isp8_core/SLICE_137
+ROUTE         5     4.149     R16C16B.F0 to     R16C10C.B1 lm8_inst/LM8/u1_isp8_core/din_rd[1]
+ZERO_DEL    ---     0.000     R16C10C.B1 to   R16C10C.WDO1 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1
+ROUTE         1     0.000   R16C10C.WDO1 to    R16C10A.WD1 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1/WD1_INT (to clk_i_c)
+                  --------
+                   16.498   (28.2% logic, 71.8% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to pat_gen/SLICE_270:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.500        OSC.OSC to *R_R20C10.CLKA clk_i_c
+C2Q_DEL     ---     9.644 *R_R20C10.CLKA to *R_R20C10.DOA5 lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_initsadn18101024p1405ca14_0_1_0
+ROUTE        16     3.110 *R_R20C10.DOA5 to     R18C14D.D1 lm8_inst/LM8/instr_mem_out[14]
+CTOF_DEL    ---     0.923     R18C14D.D1 to     R18C14D.F1 lm8_inst/LM8/SLICE_336
+ROUTE        12     3.257     R18C14D.F1 to     R18C17B.B1 lm8_inst/LM8/instr_i_0[14]
+CTOF_DEL    ---     0.923     R18C17B.B1 to     R18C17B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_168
+ROUTE        20     1.860     R18C17B.F1 to     R18C16B.D0 lm8_inst/LM8/iels
+CTOF_DEL    ---     0.923     R18C16B.D0 to     R18C16B.F0 lm8_inst/SLICE_344
+ROUTE         4     4.375     R18C16B.F0 to     R17C16D.C0 lm8_inst/ext_addr8
+CTOF_DEL    ---     0.923     R17C16D.C0 to     R17C16D.F0 lm8_inst/LM8/SLICE_419
+ROUTE         3     2.603     R17C16D.F0 to     R16C15B.D1 lm8_inst/LM8/un12_external_sp_2
+CTOF_DEL    ---     0.923     R16C15B.D1 to     R16C15B.F1 lm8_inst/LM8/SLICE_348
+ROUTE         9     2.405     R16C15B.F1 to     R17C17A.D1 lm8_inst/LM8/un12_external_sp
+CTOF_DEL    ---     0.923     R17C17A.D1 to     R17C17A.F1 lm8_inst/LM8/SLICE_171
+ROUTE         6     1.640     R17C17A.F1 to     R16C17D.D1 lm8_inst/ext_cyc
+CTOF_DEL    ---     0.923     R16C17D.D1 to     R16C17D.F1 lm8_inst/SLICE_306
+ROUTE        15     2.268     R16C17D.F1 to     R17C17D.C0 lm8_inst.LM8D_STB_O
+CTOF_DEL    ---     0.923     R17C17D.C0 to     R17C17D.F0 lm8_inst/LM8/SLICE_345
+ROUTE         1     3.011     R17C17D.F0 to     R19C17D.B1 lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/timing_controllerS_en_1
+CTOF_DEL    ---     0.923     R19C17D.B1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     6.269     R19C17D.F1 to     R16C14A.B1 N_126
+CTOF_DEL    ---     0.923     R16C14A.B1 to     R16C14A.F1 pat_gen/SLICE_367
+ROUTE         5     4.604     R16C14A.F1 to     R23C12D.C1 pat_gen/N_128
+CTOF_DEL    ---     0.923     R23C12D.C1 to     R23C12D.F1 SLICE_268
+ROUTE         8     6.955     R23C12D.F1 to    R18C13D.CLK pat_gen/N_125
+                  --------
+                   71.654   (27.6% logic, 72.4% route), 12 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1.10:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.226        OSC.OSC to    R16C10A.WCK clk_i_c
+                  --------
+                    9.226   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 66.743ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pat_gen/wb_dat_o[2]  (from pat_gen/N_125 +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1/RAM1  (to clk_i_c +)
+                   FF                        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1/RAM1
+
+   Delay:              16.492ns  (28.2% logic, 71.8% route), 6 logic levels.
+
+ Constraint Details:
+
+     16.492ns physical path delay pat_gen/SLICE_271 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1.11 exceeds
+     11.277ns delay constraint less
+     62.428ns skew and
+     -0.900ns WD_SET requirement (totaling -50.251ns) by 66.743ns
+
+ Physical Path Details:
+
+      Data path pat_gen/SLICE_271 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1.11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955    R15C11B.CLK to     R15C11B.Q0 pat_gen/SLICE_271 (from pat_gen/N_125)
+ROUTE         1     2.435     R15C11B.Q0 to     R17C12C.C0 timing_controllerslv_slave_data_i[2]
+CTOF_DEL    ---     0.923     R17C12C.C0 to     R17C12C.F0 lm8_inst/LM8/SLICE_118
+ROUTE         2     3.216     R17C12C.F0 to     R16C16D.D1 lm8_inst/LM8/LM8D_DAT_I[2]
+CTOF_DEL    ---     0.923     R16C16D.D1 to     R16C16D.F1 lm8_inst/LM8/SLICE_354
+ROUTE         2     1.043     R16C16D.F1 to     R16C16D.C0 lm8_inst/LM8/ext_io_din[2]
+CTOF_DEL    ---     0.923     R16C16D.C0 to     R16C16D.F0 lm8_inst/LM8/SLICE_354
+ROUTE         1     1.578     R16C16D.F0 to     R16C16B.B1 lm8_inst/LM8/u1_isp8_core/ext_mem_din_m[2]
+CTOF_DEL    ---     0.923     R16C16B.B1 to     R16C16B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_137
+ROUTE         5     3.573     R16C16B.F1 to     R16C10C.C1 lm8_inst/LM8/u1_isp8_core/din_rd[2]
+ZERO_DEL    ---     0.000     R16C10C.C1 to   R16C10C.WDO2 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1
+ROUTE         1     0.000   R16C10C.WDO2 to    R16C10B.WD0 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1/WD2_INT (to clk_i_c)
+                  --------
+                   16.492   (28.2% logic, 71.8% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to pat_gen/SLICE_271:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.500        OSC.OSC to *R_R20C10.CLKA clk_i_c
+C2Q_DEL     ---     9.644 *R_R20C10.CLKA to *R_R20C10.DOA5 lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_initsadn18101024p1405ca14_0_1_0
+ROUTE        16     3.110 *R_R20C10.DOA5 to     R18C14D.D1 lm8_inst/LM8/instr_mem_out[14]
+CTOF_DEL    ---     0.923     R18C14D.D1 to     R18C14D.F1 lm8_inst/LM8/SLICE_336
+ROUTE        12     3.257     R18C14D.F1 to     R18C17B.B1 lm8_inst/LM8/instr_i_0[14]
+CTOF_DEL    ---     0.923     R18C17B.B1 to     R18C17B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_168
+ROUTE        20     1.860     R18C17B.F1 to     R18C16B.D0 lm8_inst/LM8/iels
+CTOF_DEL    ---     0.923     R18C16B.D0 to     R18C16B.F0 lm8_inst/SLICE_344
+ROUTE         4     4.375     R18C16B.F0 to     R17C16D.C0 lm8_inst/ext_addr8
+CTOF_DEL    ---     0.923     R17C16D.C0 to     R17C16D.F0 lm8_inst/LM8/SLICE_419
+ROUTE         3     2.603     R17C16D.F0 to     R16C15B.D1 lm8_inst/LM8/un12_external_sp_2
+CTOF_DEL    ---     0.923     R16C15B.D1 to     R16C15B.F1 lm8_inst/LM8/SLICE_348
+ROUTE         9     2.405     R16C15B.F1 to     R17C17A.D1 lm8_inst/LM8/un12_external_sp
+CTOF_DEL    ---     0.923     R17C17A.D1 to     R17C17A.F1 lm8_inst/LM8/SLICE_171
+ROUTE         6     1.640     R17C17A.F1 to     R16C17D.D1 lm8_inst/ext_cyc
+CTOF_DEL    ---     0.923     R16C17D.D1 to     R16C17D.F1 lm8_inst/SLICE_306
+ROUTE        15     2.268     R16C17D.F1 to     R17C17D.C0 lm8_inst.LM8D_STB_O
+CTOF_DEL    ---     0.923     R17C17D.C0 to     R17C17D.F0 lm8_inst/LM8/SLICE_345
+ROUTE         1     3.011     R17C17D.F0 to     R19C17D.B1 lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/timing_controllerS_en_1
+CTOF_DEL    ---     0.923     R19C17D.B1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     6.269     R19C17D.F1 to     R16C14A.B1 N_126
+CTOF_DEL    ---     0.923     R16C14A.B1 to     R16C14A.F1 pat_gen/SLICE_367
+ROUTE         5     4.604     R16C14A.F1 to     R23C12D.C1 pat_gen/N_128
+CTOF_DEL    ---     0.923     R23C12D.C1 to     R23C12D.F1 SLICE_268
+ROUTE         8     6.955     R23C12D.F1 to    R15C11B.CLK pat_gen/N_125
+                  --------
+                   71.654   (27.6% logic, 72.4% route), 12 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_0_1.11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.226        OSC.OSC to    R16C10B.WCK clk_i_c
+                  --------
+                    9.226   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 66.743ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pat_gen/wb_dat_o[2]  (from pat_gen/N_125 +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1/RAM1  (to clk_i_c +)
+                   FF                        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1/RAM1
+
+   Delay:              16.492ns  (28.2% logic, 71.8% route), 6 logic levels.
+
+ Constraint Details:
+
+     16.492ns physical path delay pat_gen/SLICE_271 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1.14 exceeds
+     11.277ns delay constraint less
+     62.428ns skew and
+     -0.900ns WD_SET requirement (totaling -50.251ns) by 66.743ns
+
+ Physical Path Details:
+
+      Data path pat_gen/SLICE_271 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1.14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955    R15C11B.CLK to     R15C11B.Q0 pat_gen/SLICE_271 (from pat_gen/N_125)
+ROUTE         1     2.435     R15C11B.Q0 to     R17C12C.C0 timing_controllerslv_slave_data_i[2]
+CTOF_DEL    ---     0.923     R17C12C.C0 to     R17C12C.F0 lm8_inst/LM8/SLICE_118
+ROUTE         2     3.216     R17C12C.F0 to     R16C16D.D1 lm8_inst/LM8/LM8D_DAT_I[2]
+CTOF_DEL    ---     0.923     R16C16D.D1 to     R16C16D.F1 lm8_inst/LM8/SLICE_354
+ROUTE         2     1.043     R16C16D.F1 to     R16C16D.C0 lm8_inst/LM8/ext_io_din[2]
+CTOF_DEL    ---     0.923     R16C16D.C0 to     R16C16D.F0 lm8_inst/LM8/SLICE_354
+ROUTE         1     1.578     R16C16D.F0 to     R16C16B.B1 lm8_inst/LM8/u1_isp8_core/ext_mem_din_m[2]
+CTOF_DEL    ---     0.923     R16C16B.B1 to     R16C16B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_137
+ROUTE         5     3.573     R16C16B.F1 to     R15C12C.C1 lm8_inst/LM8/u1_isp8_core/din_rd[2]
+ZERO_DEL    ---     0.000     R15C12C.C1 to   R15C12C.WDO2 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1
+ROUTE         1     0.000   R15C12C.WDO2 to    R15C12B.WD0 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1/WD2_INT (to clk_i_c)
+                  --------
+                   16.492   (28.2% logic, 71.8% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to pat_gen/SLICE_271:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.500        OSC.OSC to *R_R20C10.CLKA clk_i_c
+C2Q_DEL     ---     9.644 *R_R20C10.CLKA to *R_R20C10.DOA5 lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_initsadn18101024p1405ca14_0_1_0
+ROUTE        16     3.110 *R_R20C10.DOA5 to     R18C14D.D1 lm8_inst/LM8/instr_mem_out[14]
+CTOF_DEL    ---     0.923     R18C14D.D1 to     R18C14D.F1 lm8_inst/LM8/SLICE_336
+ROUTE        12     3.257     R18C14D.F1 to     R18C17B.B1 lm8_inst/LM8/instr_i_0[14]
+CTOF_DEL    ---     0.923     R18C17B.B1 to     R18C17B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_168
+ROUTE        20     1.860     R18C17B.F1 to     R18C16B.D0 lm8_inst/LM8/iels
+CTOF_DEL    ---     0.923     R18C16B.D0 to     R18C16B.F0 lm8_inst/SLICE_344
+ROUTE         4     4.375     R18C16B.F0 to     R17C16D.C0 lm8_inst/ext_addr8
+CTOF_DEL    ---     0.923     R17C16D.C0 to     R17C16D.F0 lm8_inst/LM8/SLICE_419
+ROUTE         3     2.603     R17C16D.F0 to     R16C15B.D1 lm8_inst/LM8/un12_external_sp_2
+CTOF_DEL    ---     0.923     R16C15B.D1 to     R16C15B.F1 lm8_inst/LM8/SLICE_348
+ROUTE         9     2.405     R16C15B.F1 to     R17C17A.D1 lm8_inst/LM8/un12_external_sp
+CTOF_DEL    ---     0.923     R17C17A.D1 to     R17C17A.F1 lm8_inst/LM8/SLICE_171
+ROUTE         6     1.640     R17C17A.F1 to     R16C17D.D1 lm8_inst/ext_cyc
+CTOF_DEL    ---     0.923     R16C17D.D1 to     R16C17D.F1 lm8_inst/SLICE_306
+ROUTE        15     2.268     R16C17D.F1 to     R17C17D.C0 lm8_inst.LM8D_STB_O
+CTOF_DEL    ---     0.923     R17C17D.C0 to     R17C17D.F0 lm8_inst/LM8/SLICE_345
+ROUTE         1     3.011     R17C17D.F0 to     R19C17D.B1 lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/timing_controllerS_en_1
+CTOF_DEL    ---     0.923     R19C17D.B1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     6.269     R19C17D.F1 to     R16C14A.B1 N_126
+CTOF_DEL    ---     0.923     R16C14A.B1 to     R16C14A.F1 pat_gen/SLICE_367
+ROUTE         5     4.604     R16C14A.F1 to     R23C12D.C1 pat_gen/N_128
+CTOF_DEL    ---     0.923     R23C12D.C1 to     R23C12D.F1 SLICE_268
+ROUTE         8     6.955     R23C12D.F1 to    R15C11B.CLK pat_gen/N_125
+                  --------
+                   71.654   (27.6% logic, 72.4% route), 12 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1.14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.226        OSC.OSC to    R15C12B.WCK clk_i_c
+                  --------
+                    9.226   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 66.736ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pat_gen/wb_dat_o[1]  (from pat_gen/N_125 +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1/RAM0  (to clk_i_c +)
+                   FF                        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1/RAM0
+
+   Delay:              16.485ns  (28.2% logic, 71.8% route), 6 logic levels.
+
+ Constraint Details:
+
+     16.485ns physical path delay pat_gen/SLICE_270 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1.15 exceeds
+     11.277ns delay constraint less
+     62.428ns skew and
+     -0.900ns WD_SET requirement (totaling -50.251ns) by 66.736ns
+
+ Physical Path Details:
+
+      Data path pat_gen/SLICE_270 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1.15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955    R18C13D.CLK to     R18C13D.Q0 pat_gen/SLICE_270 (from pat_gen/N_125)
+ROUTE         1     2.198     R18C13D.Q0 to     R17C12B.D1 timing_controllerslv_slave_data_i[1]
+CTOF_DEL    ---     0.923     R17C12B.D1 to     R17C12B.F1 lm8_inst/LM8/SLICE_117
+ROUTE         2     3.216     R17C12B.F1 to     R16C16A.D1 lm8_inst/LM8/LM8D_DAT_I[1]
+CTOF_DEL    ---     0.923     R16C16A.D1 to     R16C16A.F1 lm8_inst/LM8/SLICE_355
+ROUTE         2     1.523     R16C16A.F1 to     R16C16A.D0 lm8_inst/LM8/ext_io_din[1]
+CTOF_DEL    ---     0.923     R16C16A.D0 to     R16C16A.F0 lm8_inst/LM8/SLICE_355
+ROUTE         1     0.765     R16C16A.F0 to     R16C16B.D0 lm8_inst/LM8/u1_isp8_core/ext_mem_din_m[1]
+CTOF_DEL    ---     0.923     R16C16B.D0 to     R16C16B.F0 lm8_inst/LM8/u1_isp8_core/SLICE_137
+ROUTE         5     4.136     R16C16B.F0 to     R15C12C.B1 lm8_inst/LM8/u1_isp8_core/din_rd[1]
+ZERO_DEL    ---     0.000     R15C12C.B1 to   R15C12C.WDO1 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1
+ROUTE         1     0.000   R15C12C.WDO1 to    R15C12A.WD1 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1/WD1_INT (to clk_i_c)
+                  --------
+                   16.485   (28.2% logic, 71.8% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to pat_gen/SLICE_270:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.500        OSC.OSC to *R_R20C10.CLKA clk_i_c
+C2Q_DEL     ---     9.644 *R_R20C10.CLKA to *R_R20C10.DOA5 lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_initsadn18101024p1405ca14_0_1_0
+ROUTE        16     3.110 *R_R20C10.DOA5 to     R18C14D.D1 lm8_inst/LM8/instr_mem_out[14]
+CTOF_DEL    ---     0.923     R18C14D.D1 to     R18C14D.F1 lm8_inst/LM8/SLICE_336
+ROUTE        12     3.257     R18C14D.F1 to     R18C17B.B1 lm8_inst/LM8/instr_i_0[14]
+CTOF_DEL    ---     0.923     R18C17B.B1 to     R18C17B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_168
+ROUTE        20     1.860     R18C17B.F1 to     R18C16B.D0 lm8_inst/LM8/iels
+CTOF_DEL    ---     0.923     R18C16B.D0 to     R18C16B.F0 lm8_inst/SLICE_344
+ROUTE         4     4.375     R18C16B.F0 to     R17C16D.C0 lm8_inst/ext_addr8
+CTOF_DEL    ---     0.923     R17C16D.C0 to     R17C16D.F0 lm8_inst/LM8/SLICE_419
+ROUTE         3     2.603     R17C16D.F0 to     R16C15B.D1 lm8_inst/LM8/un12_external_sp_2
+CTOF_DEL    ---     0.923     R16C15B.D1 to     R16C15B.F1 lm8_inst/LM8/SLICE_348
+ROUTE         9     2.405     R16C15B.F1 to     R17C17A.D1 lm8_inst/LM8/un12_external_sp
+CTOF_DEL    ---     0.923     R17C17A.D1 to     R17C17A.F1 lm8_inst/LM8/SLICE_171
+ROUTE         6     1.640     R17C17A.F1 to     R16C17D.D1 lm8_inst/ext_cyc
+CTOF_DEL    ---     0.923     R16C17D.D1 to     R16C17D.F1 lm8_inst/SLICE_306
+ROUTE        15     2.268     R16C17D.F1 to     R17C17D.C0 lm8_inst.LM8D_STB_O
+CTOF_DEL    ---     0.923     R17C17D.C0 to     R17C17D.F0 lm8_inst/LM8/SLICE_345
+ROUTE         1     3.011     R17C17D.F0 to     R19C17D.B1 lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/timing_controllerS_en_1
+CTOF_DEL    ---     0.923     R19C17D.B1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     6.269     R19C17D.F1 to     R16C14A.B1 N_126
+CTOF_DEL    ---     0.923     R16C14A.B1 to     R16C14A.F1 pat_gen/SLICE_367
+ROUTE         5     4.604     R16C14A.F1 to     R23C12D.C1 pat_gen/N_128
+CTOF_DEL    ---     0.923     R23C12D.C1 to     R23C12D.F1 SLICE_268
+ROUTE         8     6.955     R23C12D.F1 to    R18C13D.CLK pat_gen/N_125
+                  --------
+                   71.654   (27.6% logic, 72.4% route), 12 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1.15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.226        OSC.OSC to    R15C12A.WCK clk_i_c
+                  --------
+                    9.226   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 66.730ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pat_gen/wb_dat_o[2]  (from pat_gen/N_125 +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_1_1/RAM1  (to clk_i_c +)
+                   FF                        lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_1_1/RAM1
+
+   Delay:              16.479ns  (28.2% logic, 71.8% route), 6 logic levels.
+
+ Constraint Details:
+
+     16.479ns physical path delay pat_gen/SLICE_271 to lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_1_1.7 exceeds
+     11.277ns delay constraint less
+     62.428ns skew and
+     -0.900ns WD_SET requirement (totaling -50.251ns) by 66.730ns
+
+ Physical Path Details:
+
+      Data path pat_gen/SLICE_271 to lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_1_1.7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955    R15C11B.CLK to     R15C11B.Q0 pat_gen/SLICE_271 (from pat_gen/N_125)
+ROUTE         1     2.435     R15C11B.Q0 to     R17C12C.C0 timing_controllerslv_slave_data_i[2]
+CTOF_DEL    ---     0.923     R17C12C.C0 to     R17C12C.F0 lm8_inst/LM8/SLICE_118
+ROUTE         2     3.216     R17C12C.F0 to     R16C16D.D1 lm8_inst/LM8/LM8D_DAT_I[2]
+CTOF_DEL    ---     0.923     R16C16D.D1 to     R16C16D.F1 lm8_inst/LM8/SLICE_354
+ROUTE         2     1.043     R16C16D.F1 to     R16C16D.C0 lm8_inst/LM8/ext_io_din[2]
+CTOF_DEL    ---     0.923     R16C16D.C0 to     R16C16D.F0 lm8_inst/LM8/SLICE_354
+ROUTE         1     1.578     R16C16D.F0 to     R16C16B.B1 lm8_inst/LM8/u1_isp8_core/ext_mem_din_m[2]
+CTOF_DEL    ---     0.923     R16C16B.B1 to     R16C16B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_137
+ROUTE         5     3.560     R16C16B.F1 to     R14C14C.C1 lm8_inst/LM8/u1_isp8_core/din_rd[2]
+ZERO_DEL    ---     0.000     R14C14C.C1 to   R14C14C.WDO2 lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_1_1.6
+ROUTE         1     0.000   R14C14C.WDO2 to    R14C14B.WD0 lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_1_1/WD2_INT (to clk_i_c)
+                  --------
+                   16.479   (28.2% logic, 71.8% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to pat_gen/SLICE_271:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.500        OSC.OSC to *R_R20C10.CLKA clk_i_c
+C2Q_DEL     ---     9.644 *R_R20C10.CLKA to *R_R20C10.DOA5 lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_initsadn18101024p1405ca14_0_1_0
+ROUTE        16     3.110 *R_R20C10.DOA5 to     R18C14D.D1 lm8_inst/LM8/instr_mem_out[14]
+CTOF_DEL    ---     0.923     R18C14D.D1 to     R18C14D.F1 lm8_inst/LM8/SLICE_336
+ROUTE        12     3.257     R18C14D.F1 to     R18C17B.B1 lm8_inst/LM8/instr_i_0[14]
+CTOF_DEL    ---     0.923     R18C17B.B1 to     R18C17B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_168
+ROUTE        20     1.860     R18C17B.F1 to     R18C16B.D0 lm8_inst/LM8/iels
+CTOF_DEL    ---     0.923     R18C16B.D0 to     R18C16B.F0 lm8_inst/SLICE_344
+ROUTE         4     4.375     R18C16B.F0 to     R17C16D.C0 lm8_inst/ext_addr8
+CTOF_DEL    ---     0.923     R17C16D.C0 to     R17C16D.F0 lm8_inst/LM8/SLICE_419
+ROUTE         3     2.603     R17C16D.F0 to     R16C15B.D1 lm8_inst/LM8/un12_external_sp_2
+CTOF_DEL    ---     0.923     R16C15B.D1 to     R16C15B.F1 lm8_inst/LM8/SLICE_348
+ROUTE         9     2.405     R16C15B.F1 to     R17C17A.D1 lm8_inst/LM8/un12_external_sp
+CTOF_DEL    ---     0.923     R17C17A.D1 to     R17C17A.F1 lm8_inst/LM8/SLICE_171
+ROUTE         6     1.640     R17C17A.F1 to     R16C17D.D1 lm8_inst/ext_cyc
+CTOF_DEL    ---     0.923     R16C17D.D1 to     R16C17D.F1 lm8_inst/SLICE_306
+ROUTE        15     2.268     R16C17D.F1 to     R17C17D.C0 lm8_inst.LM8D_STB_O
+CTOF_DEL    ---     0.923     R17C17D.C0 to     R17C17D.F0 lm8_inst/LM8/SLICE_345
+ROUTE         1     3.011     R17C17D.F0 to     R19C17D.B1 lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/timing_controllerS_en_1
+CTOF_DEL    ---     0.923     R19C17D.B1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     6.269     R19C17D.F1 to     R16C14A.B1 N_126
+CTOF_DEL    ---     0.923     R16C14A.B1 to     R16C14A.F1 pat_gen/SLICE_367
+ROUTE         5     4.604     R16C14A.F1 to     R23C12D.C1 pat_gen/N_128
+CTOF_DEL    ---     0.923     R23C12D.C1 to     R23C12D.F1 SLICE_268
+ROUTE         8     6.955     R23C12D.F1 to    R15C11B.CLK pat_gen/N_125
+                  --------
+                   71.654   (27.6% logic, 72.4% route), 12 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/genblk7.u1_lm8_rfmem/mem_1_1.7:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.226        OSC.OSC to    R14C14B.WCK clk_i_c
+                  --------
+                    9.226   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 66.655ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pat_gen/wb_dat_o[0]  (from pat_gen/N_125 +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1/RAM0  (to clk_i_c +)
+                   FF                        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1/RAM0
+
+   Delay:              16.404ns  (28.3% logic, 71.7% route), 6 logic levels.
+
+ Constraint Details:
+
+     16.404ns physical path delay pat_gen/SLICE_269 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1.15 exceeds
+     11.277ns delay constraint less
+     62.428ns skew and
+     -0.900ns WD_SET requirement (totaling -50.251ns) by 66.655ns
+
+ Physical Path Details:
+
+      Data path pat_gen/SLICE_269 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1.15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955    R17C14A.CLK to     R17C14A.Q0 pat_gen/SLICE_269 (from pat_gen/N_125)
+ROUTE         1     1.796     R17C14A.Q0 to     R17C12B.C0 timing_controllerslv_slave_data_i[0]
+CTOF_DEL    ---     0.923     R17C12B.C0 to     R17C12B.F0 lm8_inst/LM8/SLICE_117
+ROUTE         2     2.239     R17C12B.F0 to     R17C15C.D1 lm8_inst/LM8/LM8D_DAT_I[0]
+CTOF_DEL    ---     0.923     R17C15C.D1 to     R17C15C.F1 lm8_inst/LM8/SLICE_349
+ROUTE         2     1.043     R17C15C.F1 to     R17C15C.C0 lm8_inst/LM8/ext_io_din[0]
+CTOF_DEL    ---     0.923     R17C15C.C0 to     R17C15C.F0 lm8_inst/LM8/SLICE_349
+ROUTE         1     2.198     R17C15C.F0 to     R18C16D.D0 lm8_inst/LM8/u1_isp8_core/ext_mem_din_m[0]
+CTOF_DEL    ---     0.923     R18C16D.D0 to     R18C16D.F0 lm8_inst/LM8/u1_isp8_core/SLICE_172
+ROUTE         5     4.481     R18C16D.F0 to     R15C12C.A1 lm8_inst/LM8/u1_isp8_core/din_rd[0]
+ZERO_DEL    ---     0.000     R15C12C.A1 to   R15C12C.WDO0 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1
+ROUTE         1     0.000   R15C12C.WDO0 to    R15C12A.WD0 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1/WD0_INT (to clk_i_c)
+                  --------
+                   16.404   (28.3% logic, 71.7% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to pat_gen/SLICE_269:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.500        OSC.OSC to *R_R20C10.CLKA clk_i_c
+C2Q_DEL     ---     9.644 *R_R20C10.CLKA to *R_R20C10.DOA5 lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_initsadn18101024p1405ca14_0_1_0
+ROUTE        16     3.110 *R_R20C10.DOA5 to     R18C14D.D1 lm8_inst/LM8/instr_mem_out[14]
+CTOF_DEL    ---     0.923     R18C14D.D1 to     R18C14D.F1 lm8_inst/LM8/SLICE_336
+ROUTE        12     3.257     R18C14D.F1 to     R18C17B.B1 lm8_inst/LM8/instr_i_0[14]
+CTOF_DEL    ---     0.923     R18C17B.B1 to     R18C17B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_168
+ROUTE        20     1.860     R18C17B.F1 to     R18C16B.D0 lm8_inst/LM8/iels
+CTOF_DEL    ---     0.923     R18C16B.D0 to     R18C16B.F0 lm8_inst/SLICE_344
+ROUTE         4     4.375     R18C16B.F0 to     R17C16D.C0 lm8_inst/ext_addr8
+CTOF_DEL    ---     0.923     R17C16D.C0 to     R17C16D.F0 lm8_inst/LM8/SLICE_419
+ROUTE         3     2.603     R17C16D.F0 to     R16C15B.D1 lm8_inst/LM8/un12_external_sp_2
+CTOF_DEL    ---     0.923     R16C15B.D1 to     R16C15B.F1 lm8_inst/LM8/SLICE_348
+ROUTE         9     2.405     R16C15B.F1 to     R17C17A.D1 lm8_inst/LM8/un12_external_sp
+CTOF_DEL    ---     0.923     R17C17A.D1 to     R17C17A.F1 lm8_inst/LM8/SLICE_171
+ROUTE         6     1.640     R17C17A.F1 to     R16C17D.D1 lm8_inst/ext_cyc
+CTOF_DEL    ---     0.923     R16C17D.D1 to     R16C17D.F1 lm8_inst/SLICE_306
+ROUTE        15     2.268     R16C17D.F1 to     R17C17D.C0 lm8_inst.LM8D_STB_O
+CTOF_DEL    ---     0.923     R17C17D.C0 to     R17C17D.F0 lm8_inst/LM8/SLICE_345
+ROUTE         1     3.011     R17C17D.F0 to     R19C17D.B1 lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/timing_controllerS_en_1
+CTOF_DEL    ---     0.923     R19C17D.B1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     6.269     R19C17D.F1 to     R16C14A.B1 N_126
+CTOF_DEL    ---     0.923     R16C14A.B1 to     R16C14A.F1 pat_gen/SLICE_367
+ROUTE         5     4.604     R16C14A.F1 to     R23C12D.C1 pat_gen/N_128
+CTOF_DEL    ---     0.923     R23C12D.C1 to     R23C12D.F1 SLICE_268
+ROUTE         8     6.955     R23C12D.F1 to    R17C14A.CLK pat_gen/N_125
+                  --------
+                   71.654   (27.6% logic, 72.4% route), 12 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_1.15:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.226        OSC.OSC to    R15C12A.WCK clk_i_c
+                  --------
+                    9.226   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Error: The following path exceeds requirements by 66.637ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              pat_gen/wb_dat_o[7]  (from pat_gen/N_125 +)
+   Destination:    FF         Data in        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0/RAM1  (to clk_i_c +)
+                   FF                        lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0/RAM1
+
+   Delay:              16.386ns  (28.4% logic, 71.6% route), 6 logic levels.
+
+ Constraint Details:
+
+     16.386ns physical path delay pat_gen/SLICE_276 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0 exceeds
+     11.277ns delay constraint less
+     62.428ns skew and
+     -0.900ns WD_SET requirement (totaling -50.251ns) by 66.637ns
+
+ Physical Path Details:
+
+      Data path pat_gen/SLICE_276 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.955    R18C13B.CLK to     R18C13B.Q0 pat_gen/SLICE_276 (from pat_gen/N_125)
+ROUTE         1     2.198     R18C13B.Q0 to     R17C12D.D1 timing_controllerslv_slave_data_i[7]
+CTOF_DEL    ---     0.923     R17C12D.D1 to     R17C12D.F1 lm8_inst/LM8/SLICE_120
+ROUTE         2     2.573     R17C12D.F1 to     R16C15C.D1 lm8_inst/LM8/LM8D_DAT_I[7]
+CTOF_DEL    ---     0.923     R16C15C.D1 to     R16C15C.F1 lm8_inst/LM8/SLICE_350
+ROUTE         2     1.043     R16C15C.F1 to     R16C15C.C0 lm8_inst/LM8/ext_io_din[7]
+CTOF_DEL    ---     0.923     R16C15C.C0 to     R16C15C.F0 lm8_inst/LM8/SLICE_350
+ROUTE         1     2.623     R16C15C.F0 to     R19C16B.D1 lm8_inst/LM8/u1_isp8_core/ext_mem_din_m[7]
+CTOF_DEL    ---     0.923     R19C16B.D1 to     R19C16B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_173
+ROUTE         5     3.302     R19C16B.F1 to     R18C11C.D1 lm8_inst/LM8/u1_isp8_core/din_rd[7]
+ZERO_DEL    ---     0.000     R18C11C.D1 to   R18C11C.WDO3 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0.12
+ROUTE         1     0.000   R18C11C.WDO3 to    R18C11B.WD1 lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0/WD3_INT (to clk_i_c)
+                  --------
+                   16.386   (28.4% logic, 71.6% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to pat_gen/SLICE_276:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.500        OSC.OSC to *R_R20C10.CLKA clk_i_c
+C2Q_DEL     ---     9.644 *R_R20C10.CLKA to *R_R20C10.DOA5 lm8_inst/LM8/genblk1.genblk2.u1_isp8_prom/pmi_ram_dqMnhprom_initsadn18101024p1405ca14_0_1_0
+ROUTE        16     3.110 *R_R20C10.DOA5 to     R18C14D.D1 lm8_inst/LM8/instr_mem_out[14]
+CTOF_DEL    ---     0.923     R18C14D.D1 to     R18C14D.F1 lm8_inst/LM8/SLICE_336
+ROUTE        12     3.257     R18C14D.F1 to     R18C17B.B1 lm8_inst/LM8/instr_i_0[14]
+CTOF_DEL    ---     0.923     R18C17B.B1 to     R18C17B.F1 lm8_inst/LM8/u1_isp8_core/SLICE_168
+ROUTE        20     1.860     R18C17B.F1 to     R18C16B.D0 lm8_inst/LM8/iels
+CTOF_DEL    ---     0.923     R18C16B.D0 to     R18C16B.F0 lm8_inst/SLICE_344
+ROUTE         4     4.375     R18C16B.F0 to     R17C16D.C0 lm8_inst/ext_addr8
+CTOF_DEL    ---     0.923     R17C16D.C0 to     R17C16D.F0 lm8_inst/LM8/SLICE_419
+ROUTE         3     2.603     R17C16D.F0 to     R16C15B.D1 lm8_inst/LM8/un12_external_sp_2
+CTOF_DEL    ---     0.923     R16C15B.D1 to     R16C15B.F1 lm8_inst/LM8/SLICE_348
+ROUTE         9     2.405     R16C15B.F1 to     R17C17A.D1 lm8_inst/LM8/un12_external_sp
+CTOF_DEL    ---     0.923     R17C17A.D1 to     R17C17A.F1 lm8_inst/LM8/SLICE_171
+ROUTE         6     1.640     R17C17A.F1 to     R16C17D.D1 lm8_inst/ext_cyc
+CTOF_DEL    ---     0.923     R16C17D.D1 to     R16C17D.F1 lm8_inst/SLICE_306
+ROUTE        15     2.268     R16C17D.F1 to     R17C17D.C0 lm8_inst.LM8D_STB_O
+CTOF_DEL    ---     0.923     R17C17D.C0 to     R17C17D.F0 lm8_inst/LM8/SLICE_345
+ROUTE         1     3.011     R17C17D.F0 to     R19C17D.B1 lm8_inst/LM8/u1_isp8_core/u1_lm8_idec/timing_controllerS_en_1
+CTOF_DEL    ---     0.923     R19C17D.B1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     6.269     R19C17D.F1 to     R16C14A.B1 N_126
+CTOF_DEL    ---     0.923     R16C14A.B1 to     R16C14A.F1 pat_gen/SLICE_367
+ROUTE         5     4.604     R16C14A.F1 to     R23C12D.C1 pat_gen/N_128
+CTOF_DEL    ---     0.923     R23C12D.C1 to     R23C12D.F1 SLICE_268
+ROUTE         8     6.955     R23C12D.F1 to    R18C13B.CLK pat_gen/N_125
+                  --------
+                   71.654   (27.6% logic, 72.4% route), 12 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/genblk7.u2_lm8_rfmem/mem_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     9.226        OSC.OSC to    R18C11B.WCK clk_i_c
+                  --------
+                    9.226   (0.0% logic, 100.0% route), 0 logic levels.
+
+Warning:  12.685MHz is the maximum frequency for this preference.
+
+<A name="ptwr_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_i_c" 88.670000 MHz ; |   88.670 MHz|   12.685 MHz|   6 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/ext_cyc">lm8_inst/ext_cyc</a>                        |       6|    4008|     97.85%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/LM8/un12_external_sp">lm8_inst/LM8/un12_external_sp</a>           |       9|    4008|     97.85%
+                                        |        |        |
+lm8_inst.LM8D_STB_O                     |      15|    4008|     97.85%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/LM8/iels">lm8_inst/LM8/iels</a>                       |      20|    3857|     94.17%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/uartUART_en">lm8_inst/uartUART_en</a>                    |      10|    3330|     81.30%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/LM8/un12_external_sp_2">lm8_inst/LM8/un12_external_sp_2</a>         |       3|    3126|     76.32%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/ext_addr8">lm8_inst/ext_addr8</a>                      |       4|    3126|     76.32%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/uartUART_en_10">lm8_inst/uartUART_en_10</a>                 |       6|    2785|     67.99%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/LM8/u1_isp8_core/instr_l1_2">lm8_inst/LM8/u1_isp8_core/instr_l1_2</a>    |       4|    1624|     39.65%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/arbiter/LEDGPIO_en_2_RNI1OK41">lm8_inst/arbiter/LEDGPIO_en_2_RNI1OK41</a>  |       2|    1589|     38.79%
+                                        |        |        |
+lm8_inst/LM8/instr_i_0[14]              |      12|     896|     21.88%
+                                        |        |        |
+lm8_inst.LEDGPIO_en_2                   |       2|     883|     21.56%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/LEDGPIO_en_9_tz_tz_1">lm8_inst/LEDGPIO_en_9_tz_tz_1</a>           |       4|     882|     21.53%
+                                        |        |        |
+lm8_inst/LM8/instr_mem_out[14]          |      16|     877|     21.41%
+                                        |        |        |
+lm8_inst/LM8/instr_mem_out[16]          |      19|     858|     20.95%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/LM8/N_62">lm8_inst/LM8/N_62</a>                       |       2|     820|     20.02%
+                                        |        |        |
+lm8_inst/LM8/instr_mem_out[13]          |      25|     820|     20.02%
+                                        |        |        |
+lm8_inst/LM8/instr_mem_out[17]          |      13|     763|     18.63%
+                                        |        |        |
+lm8_inst.LEDGPIO_en_3                   |       3|     740|     18.07%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/LEDGPIO_en_11">lm8_inst/LEDGPIO_en_11</a>                  |       6|     684|     16.70%
+                                        |        |        |
+lm8_inst/LM8/LM8D_DAT_I[5]              |       2|     585|     14.28%
+                                        |        |        |
+lm8_inst/LM8/ext_io_din[5]              |       2|     584|     14.26%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/din_rd[5]     |       5|     584|     14.26%
+                                        |        |        |
+lm8_inst/LM8/LM8D_DAT_I[6]              |       2|     573|     13.99%
+                                        |        |        |
+lm8_inst/LM8/ext_io_din[6]              |       2|     572|     13.96%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/din_rd[6]     |       5|     572|     13.96%
+                                        |        |        |
+lm8_inst/timing_controllerslv_adr_i[15] |       2|     546|     13.33%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=N_126">N_126</a>                                   |      13|     530|     12.94%
+                                        |        |        |
+lm8_inst/LM8/instr_mem_out[15]          |      21|     517|     12.62%
+                                        |        |        |
+lm8_inst/LM8/LM8D_DAT_I[0]              |       2|     511|     12.48%
+                                        |        |        |
+lm8_inst/LM8/ext_io_din[0]              |       2|     510|     12.45%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/din_rd[0]     |       5|     510|     12.45%
+                                        |        |        |
+lm8_inst/LM8/LM8D_DAT_I[7]              |       2|     471|     11.50%
+                                        |        |        |
+lm8_inst/LM8/ext_io_din[7]              |       2|     470|     11.47%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/din_rd[7]     |       5|     470|     11.47%
+                                        |        |        |
+<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=lm8_inst/arbiter/uartUART_en_10_1_0">lm8_inst/arbiter/uartUART_en_10_1_0</a>     |       1|     465|     11.35%
+                                        |        |        |
+lm8_inst/LM8/LM8D_DAT_I[4]              |       2|     453|     11.06%
+                                        |        |        |
+lm8_inst/LM8/ext_io_din[4]              |       2|     452|     11.04%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/din_rd[4]     |       5|     452|     11.04%
+                                        |        |        |
+lm8_inst/LM8/LM8D_DAT_I[1]              |       2|     447|     10.91%
+                                        |        |        |
+lm8_inst/LM8/ext_io_din[1]              |       2|     446|     10.89%
+                                        |        |        |
+lm8_inst/LM8/u1_isp8_core/din_rd[1]     |       5|     446|     10.89%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="ptwr_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 7 clocks:
+
+Clock Domain: clk_i_c   Source: OSCInst0.OSC   Loads: 223
+   Covered under: FREQUENCY NET "clk_i_c" 88.670000 MHz ;
+
+   Data transfers from:
+   Clock Domain: pat_gen/N_118_i   Source: SLICE_397.F0
+      Covered under: FREQUENCY NET "clk_i_c" 88.670000 MHz ;   Transfers: 2
+
+   Clock Domain: pat_gen/N_125   Source: SLICE_268.F1
+      Covered under: FREQUENCY NET "clk_i_c" 88.670000 MHz ;   Transfers: 8
+
+Clock Domain: pat_gen/N_118_i   Source: SLICE_397.F0   Loads: 1
+   Covered under: FREQUENCY NET "clk_i_c" 88.670000 MHz ;
+
+   Data transfers from:
+   Clock Domain: clk_i_c   Source: OSCInst0.OSC
+      Covered under: FREQUENCY NET "clk_i_c" 88.670000 MHz ;   Transfers: 23
+
+Clock Domain: pat_gen/wb_dat_local_0_sqmuxa   Source: pat_gen/SLICE_367.F0   Loads: 4
+   No transfer within this clock domain is found
+
+Clock Domain: pat_gen/N_125   Source: SLICE_268.F1   Loads: 8
+   No transfer within this clock domain is found
+
+Clock Domain: pat_gen/wb_dat_local_0_sqmuxa_1   Source: pat_gen/SLICE_375.F0   Loads: 4
+   No transfer within this clock domain is found
+
+Clock Domain: pat_gen/wb_dat_local_0_sqmuxa_3   Source: pat_gen/SLICE_375.F1   Loads: 4
+   No transfer within this clock domain is found
+
+Clock Domain: pat_gen/wb_dat_local_0_sqmuxa_2   Source: SLICE_365.F1   Loads: 4
+   No transfer within this clock domain is found
+
+
+<A name="ptwr_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 198474868
+Cumulative negative slack: 198474868
+
+Constraints cover 94478 paths, 3 nets, and 3468 connections (96.8% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Par_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 2.1.0.103</big></U></B>
+Sun Jul 14 22:19:32 2013
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="ptwr_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 1 -sphld m -o timing_controller_timing_controller.twr timing_controller_timing_controller.ncd timing_controller_timing_controller.prf 
+Design file:     timing_controller_timing_controller.ncd
+Preference file: timing_controller_timing_controller.prf
+Device,speed:    LCMXO2-7000ZE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+<A name="ptwr_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#par_twr_pref_1_0' Target='right'>FREQUENCY NET "clk_i_c" 88.670000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="par_twr_pref_1_0"></A>Preference: FREQUENCY NET "clk_i_c" 88.670000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.687ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/uart/u_txmitt/tx_in_shift_s  (from clk_i_c +)
+   Destination:    FF         Data in        lm8_inst/uart/u_txmitt/tx_in_shift_s1  (to clk_i_c +)
+
+   Delay:               0.620ns  (41.5% logic, 58.5% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.620ns physical path delay SLICE_397 to SLICE_397 meets
+     -0.067ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.067ns) by 0.687ns
+
+ Physical Path Details:
+
+      Data path SLICE_397 to SLICE_397:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R19C18A.CLK to     R19C18A.Q0 SLICE_397 (from clk_i_c)
+ROUTE         3     0.363     R19C18A.Q0 to     R19C18A.M1 lm8_inst/uart/u_txmitt/tx_in_shift_s (to clk_i_c)
+                  --------
+                    0.620   (41.5% logic, 58.5% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to SLICE_397:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R19C18A.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCInst0 to SLICE_397:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R19C18A.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.687ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/uart/u_txmitt/tx_in_stop_s  (from clk_i_c +)
+   Destination:    FF         Data in        lm8_inst/uart/u_txmitt/tx_in_stop_s1  (to clk_i_c +)
+
+   Delay:               0.620ns  (41.5% logic, 58.5% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.620ns physical path delay SLICE_43 to SLICE_43 meets
+     -0.067ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.067ns) by 0.687ns
+
+ Physical Path Details:
+
+      Data path SLICE_43 to SLICE_43:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R23C10C.CLK to     R23C10C.Q0 SLICE_43 (from clk_i_c)
+ROUTE         3     0.363     R23C10C.Q0 to     R23C10C.M1 lm8_inst/uart/u_txmitt/tx_in_stop_s (to clk_i_c)
+                  --------
+                    0.620   (41.5% logic, 58.5% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to SLICE_43:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.935        OSC.OSC to    R23C10C.CLK clk_i_c
+                  --------
+                    2.935   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCInst0 to SLICE_43:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.935        OSC.OSC to    R23C10C.CLK clk_i_c
+                  --------
+                    2.935   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.707ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/uart/u_rxcver/rx_frame_err  (from clk_i_c +)
+   Destination:    FF         Data in        lm8_inst/uart/u_rxcver/rx_frame_err_d1  (to clk_i_c +)
+
+   Delay:               0.640ns  (40.2% logic, 59.8% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.640ns physical path delay lm8_inst/uart/u_rxcver/SLICE_223 to lm8_inst/uart/u_rxcver/SLICE_302 meets
+     -0.067ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.067ns) by 0.707ns
+
+ Physical Path Details:
+
+      Data path lm8_inst/uart/u_rxcver/SLICE_223 to lm8_inst/uart/u_rxcver/SLICE_302:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R15C24D.CLK to     R15C24D.Q0 lm8_inst/uart/u_rxcver/SLICE_223 (from clk_i_c)
+ROUTE         3     0.383     R15C24D.Q0 to     R15C22D.M0 lm8_inst/uart/u_rxcver/rx_frame_err (to clk_i_c)
+                  --------
+                    0.640   (40.2% logic, 59.8% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to lm8_inst/uart/u_rxcver/SLICE_223:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R15C24D.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/uart/u_rxcver/SLICE_302:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R15C22D.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.745ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/counter[2]  (from clk_i_c +)
+   Destination:    FF         Data in        pat_gen/wb_stb_d1  (to pat_gen/N_118_i +)
+
+   Delay:               2.040ns  (22.4% logic, 77.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.040ns physical path delay SLICE_268 to pat_gen/SLICE_251 meets
+     -0.032ns DIN_HLD and
+      0.000ns delay constraint less
+     -1.327ns skew requirement (totaling 1.295ns) by 0.745ns
+
+ Physical Path Details:
+
+      Data path SLICE_268 to pat_gen/SLICE_251:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R23C12D.CLK to     R23C12D.Q0 SLICE_268 (from clk_i_c)
+ROUTE         9     1.584     R23C12D.Q0 to     R19C17A.B0 timing_controllerrst_i_i_1
+CTOF_DEL    ---     0.199     R19C17A.B0 to     R19C17A.F0 pat_gen/SLICE_251
+ROUTE         1     0.000     R19C17A.F0 to    R19C17A.DI0 pat_gen/N_123_i (to pat_gen/N_118_i)
+                  --------
+                    2.040   (22.4% logic, 77.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to SLICE_268:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.935        OSC.OSC to    R23C12D.CLK clk_i_c
+                  --------
+                    2.935   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCInst0 to pat_gen/SLICE_251:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     3.222        OSC.OSC to     R19C18A.D0 clk_i_c
+CTOF_DEL    ---     0.292     R19C18A.D0 to     R19C18A.F0 SLICE_397
+ROUTE         1     0.748     R19C18A.F0 to    R19C17A.CLK pat_gen/N_118_i
+                  --------
+                    4.262   (6.9% logic, 93.1% route), 1 logic levels.
+
+
+Passed: The following path meets requirements by 0.745ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/counter[2]  (from clk_i_c +)
+   Destination:    FF         Data in        pat_gen/wb_stb_d2  (to pat_gen/N_118_i +)
+
+   Delay:               2.040ns  (22.4% logic, 77.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.040ns physical path delay SLICE_268 to pat_gen/SLICE_251 meets
+     -0.032ns DIN_HLD and
+      0.000ns delay constraint less
+     -1.327ns skew requirement (totaling 1.295ns) by 0.745ns
+
+ Physical Path Details:
+
+      Data path SLICE_268 to pat_gen/SLICE_251:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R23C12D.CLK to     R23C12D.Q0 SLICE_268 (from clk_i_c)
+ROUTE         9     1.584     R23C12D.Q0 to     R19C17A.B1 timing_controllerrst_i_i_1
+CTOF_DEL    ---     0.199     R19C17A.B1 to     R19C17A.F1 pat_gen/SLICE_251
+ROUTE         1     0.000     R19C17A.F1 to    R19C17A.DI1 pat_gen/wb_stb_d2_2 (to pat_gen/N_118_i)
+                  --------
+                    2.040   (22.4% logic, 77.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to SLICE_268:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.935        OSC.OSC to    R23C12D.CLK clk_i_c
+                  --------
+                    2.935   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCInst0 to pat_gen/SLICE_251:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     3.222        OSC.OSC to     R19C18A.D0 clk_i_c
+CTOF_DEL    ---     0.292     R19C18A.D0 to     R19C18A.F0 SLICE_397
+ROUTE         1     0.748     R19C18A.F0 to    R19C17A.CLK pat_gen/N_118_i
+                  --------
+                    4.262   (6.9% logic, 93.1% route), 1 logic levels.
+
+
+Passed: The following path meets requirements by 0.816ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/LM8/u1_isp8_core/genblk4.page_ptr1[7]  (from clk_i_c +)
+   Destination:    FF         Data in        pat_gen/wb_stb_d1  (to pat_gen/N_118_i +)
+
+   Delay:               2.084ns  (41.0% logic, 59.0% route), 4 logic levels.
+
+ Constraint Details:
+
+      2.084ns physical path delay lm8_inst/LM8/u1_isp8_core/SLICE_173 to pat_gen/SLICE_251 meets
+     -0.032ns DIN_HLD and
+      0.000ns delay constraint less
+     -1.300ns skew requirement (totaling 1.268ns) by 0.816ns
+
+ Physical Path Details:
+
+      Data path lm8_inst/LM8/u1_isp8_core/SLICE_173 to pat_gen/SLICE_251:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R19C16B.CLK to     R19C16B.Q1 lm8_inst/LM8/u1_isp8_core/SLICE_173 (from clk_i_c)
+ROUTE         2     0.565     R19C16B.Q1 to     R19C17B.A1 lm8_inst/page_ptr1[7]
+CTOF_DEL    ---     0.199     R19C17B.A1 to     R19C17B.F1 lm8_inst/arbiter/SLICE_285
+ROUTE         2     0.247     R19C17B.F1 to     R19C17D.C1 lm8_inst/timing_controllerslv_adr_i[15]
+CTOF_DEL    ---     0.199     R19C17D.C1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     0.418     R19C17D.F1 to     R19C17A.D0 N_126
+CTOF_DEL    ---     0.199     R19C17A.D0 to     R19C17A.F0 pat_gen/SLICE_251
+ROUTE         1     0.000     R19C17A.F0 to    R19C17A.DI0 pat_gen/N_123_i (to pat_gen/N_118_i)
+                  --------
+                    2.084   (41.0% logic, 59.0% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/SLICE_173:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R19C16B.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCInst0 to pat_gen/SLICE_251:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     3.222        OSC.OSC to     R19C18A.D0 clk_i_c
+CTOF_DEL    ---     0.292     R19C18A.D0 to     R19C18A.F0 SLICE_397
+ROUTE         1     0.748     R19C18A.F0 to    R19C17A.CLK pat_gen/N_118_i
+                  --------
+                    4.262   (6.9% logic, 93.1% route), 1 logic levels.
+
+
+Passed: The following path meets requirements by 0.816ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/LM8/u1_isp8_core/genblk4.page_ptr1[7]  (from clk_i_c +)
+   Destination:    FF         Data in        pat_gen/wb_stb_d2  (to pat_gen/N_118_i +)
+
+   Delay:               2.084ns  (41.0% logic, 59.0% route), 4 logic levels.
+
+ Constraint Details:
+
+      2.084ns physical path delay lm8_inst/LM8/u1_isp8_core/SLICE_173 to pat_gen/SLICE_251 meets
+     -0.032ns DIN_HLD and
+      0.000ns delay constraint less
+     -1.300ns skew requirement (totaling 1.268ns) by 0.816ns
+
+ Physical Path Details:
+
+      Data path lm8_inst/LM8/u1_isp8_core/SLICE_173 to pat_gen/SLICE_251:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R19C16B.CLK to     R19C16B.Q1 lm8_inst/LM8/u1_isp8_core/SLICE_173 (from clk_i_c)
+ROUTE         2     0.565     R19C16B.Q1 to     R19C17B.A1 lm8_inst/page_ptr1[7]
+CTOF_DEL    ---     0.199     R19C17B.A1 to     R19C17B.F1 lm8_inst/arbiter/SLICE_285
+ROUTE         2     0.247     R19C17B.F1 to     R19C17D.C1 lm8_inst/timing_controllerslv_adr_i[15]
+CTOF_DEL    ---     0.199     R19C17D.C1 to     R19C17D.F1 lm8_inst/SLICE_299
+ROUTE        13     0.418     R19C17D.F1 to     R19C17A.D1 N_126
+CTOF_DEL    ---     0.199     R19C17A.D1 to     R19C17A.F1 pat_gen/SLICE_251
+ROUTE         1     0.000     R19C17A.F1 to    R19C17A.DI1 pat_gen/wb_stb_d2_2 (to pat_gen/N_118_i)
+                  --------
+                    2.084   (41.0% logic, 59.0% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/SLICE_173:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R19C16B.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCInst0 to pat_gen/SLICE_251:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     3.222        OSC.OSC to     R19C18A.D0 clk_i_c
+CTOF_DEL    ---     0.292     R19C18A.D0 to     R19C18A.F0 SLICE_397
+ROUTE         1     0.748     R19C18A.F0 to    R19C17A.CLK pat_gen/N_118_i
+                  --------
+                    4.262   (6.9% logic, 93.1% route), 1 logic levels.
+
+
+Passed: The following path meets requirements by 0.831ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/LM8/u1_isp8_core/u1_lm8_cntl_u1/ext_addr[5]  (from clk_i_c +)
+   Destination:    DP8KC      Port           lm8_inst/LM8/genblk4.u1_scratchpad/pmi_ram_dqMnhscratchpad_initsadn8112048p1464d4df_0_1_0(ASIC)  (to clk_i_c +)
+
+   Delay:               0.986ns  (26.1% logic, 73.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.986ns physical path delay lm8_inst/LM8/u1_isp8_core/u1_lm8_cntl_u1/SLICE_167 to lm8_inst/LM8/genblk4.u1_scratchpad/pmi_ram_dqMnhscratchpad_initsadn8112048p1464d4df_0_1_0 meets
+      0.060ns ADDR_HLD and
+      0.000ns delay constraint less
+     -0.095ns skew requirement (totaling 0.155ns) by 0.831ns
+
+ Physical Path Details:
+
+      Data path lm8_inst/LM8/u1_isp8_core/u1_lm8_cntl_u1/SLICE_167 to lm8_inst/LM8/genblk4.u1_scratchpad/pmi_ram_dqMnhscratchpad_initsadn8112048p1464d4df_0_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R18C17A.CLK to     R18C17A.Q0 lm8_inst/LM8/u1_isp8_core/u1_lm8_cntl_u1/SLICE_167 (from clk_i_c)
+ROUTE         3     0.729     R18C17A.Q0 to *R_R20C16.ADA7 lm8_inst/ext_addr[5] (to clk_i_c)
+                  --------
+                    0.986   (26.1% logic, 73.9% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to lm8_inst/LM8/u1_isp8_core/u1_lm8_cntl_u1/SLICE_167:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R18C17A.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/LM8/genblk4.u1_scratchpad/pmi_ram_dqMnhscratchpad_initsadn8112048p1464d4df_0_1_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     3.057        OSC.OSC to *R_R20C16.CLKA clk_i_c
+                  --------
+                    3.057   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.838ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/uart/u_intface/genblk22.cs_state[0]  (from clk_i_c +)
+   Destination:    FF         Data in        lm8_inst/uart/u_intface/genblk22.cs_state[1]  (to clk_i_c +)
+
+   Delay:               0.806ns  (54.2% logic, 45.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.806ns physical path delay lm8_inst/uart/u_intface/SLICE_163 to lm8_inst/uart/u_intface/SLICE_164 meets
+     -0.032ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.032ns) by 0.838ns
+
+ Physical Path Details:
+
+      Data path lm8_inst/uart/u_intface/SLICE_163 to lm8_inst/uart/u_intface/SLICE_164:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R16C23C.CLK to     R16C23C.Q0 lm8_inst/uart/u_intface/SLICE_163 (from clk_i_c)
+ROUTE         6     0.369     R16C23C.Q0 to     R16C23A.M0 lm8_inst/cs_state[0]
+MTOOFX_DEL  ---     0.180     R16C23A.M0 to   R16C23A.OFX0 lm8_inst/uart/u_intface/SLICE_164
+ROUTE         1     0.000   R16C23A.OFX0 to    R16C23A.DI0 lm8_inst/uart/u_intface/cs_state_ns[1] (to clk_i_c)
+                  --------
+                    0.806   (54.2% logic, 45.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to lm8_inst/uart/u_intface/SLICE_163:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R16C23C.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/uart/u_intface/SLICE_164:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R16C23A.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.838ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              lm8_inst/uart/u_intface/genblk22.cs_state[0]  (from clk_i_c +)
+   Destination:    FF         Data in        lm8_inst/uart/u_intface/genblk22.cs_state[0]  (to clk_i_c +)
+
+   Delay:               0.806ns  (54.2% logic, 45.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.806ns physical path delay lm8_inst/uart/u_intface/SLICE_163 to lm8_inst/uart/u_intface/SLICE_163 meets
+     -0.032ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.032ns) by 0.838ns
+
+ Physical Path Details:
+
+      Data path lm8_inst/uart/u_intface/SLICE_163 to lm8_inst/uart/u_intface/SLICE_163:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.257    R16C23C.CLK to     R16C23C.Q0 lm8_inst/uart/u_intface/SLICE_163 (from clk_i_c)
+ROUTE         6     0.369     R16C23C.Q0 to     R16C23C.M0 lm8_inst/cs_state[0]
+MTOOFX_DEL  ---     0.180     R16C23C.M0 to   R16C23C.OFX0 lm8_inst/uart/u_intface/SLICE_163
+ROUTE         1     0.000   R16C23C.OFX0 to    R16C23C.DI0 lm8_inst/uart/u_intface/cs_state_ns[0] (to clk_i_c)
+                  --------
+                    0.806   (54.2% logic, 45.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path OSCInst0 to lm8_inst/uart/u_intface/SLICE_163:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R16C23C.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path OSCInst0 to lm8_inst/uart/u_intface/SLICE_163:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       223     2.962        OSC.OSC to    R16C23C.CLK clk_i_c
+                  --------
+                    2.962   (0.0% logic, 100.0% route), 0 logic levels.
+
+<A name="ptwr_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_i_c" 88.670000 MHz ; |            -|            -|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="ptwr_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 7 clocks:
+
+Clock Domain: clk_i_c   Source: OSCInst0.OSC   Loads: 223
+   Covered under: FREQUENCY NET "clk_i_c" 88.670000 MHz ;
+
+   Data transfers from:
+   Clock Domain: pat_gen/N_118_i   Source: SLICE_397.F0
+      Covered under: FREQUENCY NET "clk_i_c" 88.670000 MHz ;   Transfers: 2
+
+   Clock Domain: pat_gen/N_125   Source: SLICE_268.F1
+      Covered under: FREQUENCY NET "clk_i_c" 88.670000 MHz ;   Transfers: 8
+
+Clock Domain: pat_gen/N_118_i   Source: SLICE_397.F0   Loads: 1
+   Covered under: FREQUENCY NET "clk_i_c" 88.670000 MHz ;
+
+   Data transfers from:
+   Clock Domain: clk_i_c   Source: OSCInst0.OSC
+      Covered under: FREQUENCY NET "clk_i_c" 88.670000 MHz ;   Transfers: 23
+
+Clock Domain: pat_gen/wb_dat_local_0_sqmuxa   Source: pat_gen/SLICE_367.F0   Loads: 4
+   No transfer within this clock domain is found
+
+Clock Domain: pat_gen/N_125   Source: SLICE_268.F1   Loads: 8
+   No transfer within this clock domain is found
+
+Clock Domain: pat_gen/wb_dat_local_0_sqmuxa_1   Source: pat_gen/SLICE_375.F0   Loads: 4
+   No transfer within this clock domain is found
+
+Clock Domain: pat_gen/wb_dat_local_0_sqmuxa_3   Source: pat_gen/SLICE_375.F1   Loads: 4
+   No transfer within this clock domain is found
+
+Clock Domain: pat_gen/wb_dat_local_0_sqmuxa_2   Source: SLICE_365.F1   Loads: 4
+   No transfer within this clock domain is found
+
+
+<A name="ptwr_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 94478 paths, 3 nets, and 3464 connections (96.7% coverage)
+
+
+
+<A name="ptwr_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 198474868 (setup), 0 (hold)
+Cumulative negative slack: 198474868 (198474868+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

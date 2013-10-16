@@ -1,0 +1,876 @@
+<HTML>
+<HEAD><TITLE>Synthesis Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+Synopsys Lattice Technology Mapper, Version maplat201209latp1, Build 002R, Built Dec 20 2012 02:21:53
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09L-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 106MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 108MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 147MB)
+
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\gpio.v":121:30:121:41|Tristate driver PIO_BOTH_OUT_1 on net PIO_BOTH_OUT_1 has its enable tied to GND (module gpio_Z7_layer1) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\intface.v":383:8:383:20|Tristate driver fifo_full_thr on net fifo_full_thr has its enable tied to GND (module intface_Z8_layer1) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\intface.v":382:11:382:24|Tristate driver fifo_empty_thr on net fifo_empty_thr has its enable tied to GND (module intface_Z8_layer1) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":142:27:142:42|Tristate driver fifo_almost_full on net fifo_almost_full has its enable tied to GND (module rxcver_8s_0s_0_1_2_3_4_MachXO2) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":141:27:141:36|Tristate driver fifo_empty on net fifo_empty has its enable tied to GND (module rxcver_8s_0s_0_1_2_3_4_MachXO2) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":134:26:134:33|Tristate driver rbr_fifo_1 on net rbr_fifo_1 has its enable tied to GND (module rxcver_8s_0s_0_1_2_3_4_MachXO2) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":134:26:134:33|Tristate driver rbr_fifo_2 on net rbr_fifo_2 has its enable tied to GND (module rxcver_8s_0s_0_1_2_3_4_MachXO2) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":134:26:134:33|Tristate driver rbr_fifo_3 on net rbr_fifo_3 has its enable tied to GND (module rxcver_8s_0s_0_1_2_3_4_MachXO2) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":134:26:134:33|Tristate driver rbr_fifo_4 on net rbr_fifo_4 has its enable tied to GND (module rxcver_8s_0s_0_1_2_3_4_MachXO2) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":134:26:134:33|Tristate driver rbr_fifo_5 on net rbr_fifo_5 has its enable tied to GND (module rxcver_8s_0s_0_1_2_3_4_MachXO2) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":134:26:134:33|Tristate driver rbr_fifo_6 on net rbr_fifo_6 has its enable tied to GND (module rxcver_8s_0s_0_1_2_3_4_MachXO2) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":134:26:134:33|Tristate driver rbr_fifo_7 on net rbr_fifo_7 has its enable tied to GND (module rxcver_8s_0s_0_1_2_3_4_MachXO2) 
+@W: MO111 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":134:26:134:33|Tristate driver rbr_fifo_8 on net rbr_fifo_8 has its enable tied to GND (module rxcver_8s_0s_0_1_2_3_4_MachXO2) 
+@W: MO111 :|Tristate driver fifo_empty_thr_t on net fifo_empty_thr has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver fifo_full_thr_t on net fifo_full_thr has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver RBR_FIFO_t[0] on net RBR_FIFO[0] has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver RBR_FIFO_t[1] on net RBR_FIFO[1] has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver RBR_FIFO_t[2] on net RBR_FIFO[2] has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver RBR_FIFO_t[3] on net RBR_FIFO[3] has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver RBR_FIFO_t[4] on net RBR_FIFO[4] has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver RBR_FIFO_t[5] on net RBR_FIFO[5] has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver RBR_FIFO_t[6] on net RBR_FIFO[6] has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver RBR_FIFO_t[7] on net RBR_FIFO[7] has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver fifo_empty_t on net fifo_empty has its enable tied to GND (module uart_core_Z9_layer1) 
+@W: MO111 :|Tristate driver fifo_almost_full_t on net fifo_almost_full has its enable tied to GND (module uart_core_Z9_layer1) 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":123:3:123:8|Removing sequential instance genblk9\.itio_inst\[3\]\.TP.PIO_DATA_I of view:PrimLib.dffre(prim) in hierarchy view:work.gpio_Z7_layer1(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":123:3:123:8|Removing sequential instance genblk9\.itio_inst\[2\]\.TP.PIO_DATA_I of view:PrimLib.dffre(prim) in hierarchy view:work.gpio_Z7_layer1(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":123:3:123:8|Removing sequential instance genblk9\.itio_inst\[1\]\.TP.PIO_DATA_I of view:PrimLib.dffre(prim) in hierarchy view:work.gpio_Z7_layer1(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":123:3:123:8|Removing sequential instance genblk9\.itio_inst\[0\]\.TP.PIO_DATA_I of view:PrimLib.dffre(prim) in hierarchy view:work.gpio_Z7_layer1(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":117:3:117:8|Removing sequential instance LED.genblk9\.itio_inst\[3\]\.TP.PIO_DATA_O of view:PrimLib.dffre(prim) in hierarchy view:work.timing_controller(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":111:3:111:8|Removing sequential instance LED.genblk9\.itio_inst\[3\]\.TP.PIO_TRI of view:PrimLib.dffre(prim) in hierarchy view:work.timing_controller(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":117:3:117:8|Removing sequential instance LED.genblk9\.itio_inst\[2\]\.TP.PIO_DATA_O of view:PrimLib.dffre(prim) in hierarchy view:work.timing_controller(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":111:3:111:8|Removing sequential instance LED.genblk9\.itio_inst\[2\]\.TP.PIO_TRI of view:PrimLib.dffre(prim) in hierarchy view:work.timing_controller(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":117:3:117:8|Removing sequential instance LED.genblk9\.itio_inst\[1\]\.TP.PIO_DATA_O of view:PrimLib.dffre(prim) in hierarchy view:work.timing_controller(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":111:3:111:8|Removing sequential instance LED.genblk9\.itio_inst\[1\]\.TP.PIO_TRI of view:PrimLib.dffre(prim) in hierarchy view:work.timing_controller(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":117:3:117:8|Removing sequential instance LED.genblk9\.itio_inst\[0\]\.TP.PIO_DATA_O of view:PrimLib.dffre(prim) in hierarchy view:work.timing_controller(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\tpio.v":111:3:111:8|Removing sequential instance LED.genblk9\.itio_inst\[0\]\.TP.PIO_TRI of view:PrimLib.dffre(prim) in hierarchy view:work.timing_controller(verilog) because there are no references to its outputs 
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\edgedetect.vhd":24:6:24:7|Sequential instance video_gen.fsync_detect.rDin reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\edgedetect.vhd":24:6:24:7|Sequential instance video_gen.lsync_detect.rDin reduced to a combinational gate by constant propagation
+@W: MO171 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\edgedetect.vhd":24:6:24:7|Sequential instance pat_gen.linedelay2.edgeDet0.rDin reduced to a combinational gate by constant propagation 
+@W: MO171 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\edgedetect.vhd":24:6:24:7|Sequential instance pat_gen.linedelay1.edgeDet0.rDin reduced to a combinational gate by constant propagation 
+@W: MO171 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\edgedetect.vhd":24:6:24:7|Sequential instance pat_gen.linedelay0.edgeDet0.rDin reduced to a combinational gate by constant propagation 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":78:7:78:8|Removing sequential instance cnt[7:0] of view:PrimLib.dff(prim) in hierarchy view:work.lineDelay_linedelay0(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":67:6:67:7|Removing sequential instance cntStarted of view:PrimLib.dffr(prim) in hierarchy view:work.lineDelay_linedelay0(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":78:7:78:8|Removing sequential instance cntDone of view:PrimLib.dff(prim) in hierarchy view:work.lineDelay_linedelay0(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":78:7:78:8|Removing sequential instance cnt[7:0] of view:PrimLib.dff(prim) in hierarchy view:work.lineDelay_linedelay1(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":67:6:67:7|Removing sequential instance cntStarted of view:PrimLib.dffr(prim) in hierarchy view:work.lineDelay_linedelay1(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":78:7:78:8|Removing sequential instance cntDone of view:PrimLib.dff(prim) in hierarchy view:work.lineDelay_linedelay1(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":78:7:78:8|Removing sequential instance cnt[7:0] of view:PrimLib.dff(prim) in hierarchy view:work.lineDelay_linedelay2(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":67:6:67:7|Removing sequential instance cntStarted of view:PrimLib.dffr(prim) in hierarchy view:work.lineDelay_linedelay2(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":78:7:78:8|Removing sequential instance cntDone of view:PrimLib.dff(prim) in hierarchy view:work.lineDelay_linedelay2(behavioral) because there are no references to its outputs 
+@N: BN115 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":259:0:259:9|Removing instance linedelay2 of view:work.lineDelay_linedelay2(behavioral) because there are no references to its outputs 
+@N: BN115 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":251:0:251:9|Removing instance linedelay1 of view:work.lineDelay_linedelay1(behavioral) because there are no references to its outputs 
+@N: BN115 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":243:0:243:9|Removing instance linedelay0 of view:work.lineDelay_linedelay0(behavioral) because there are no references to its outputs 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":141:8:141:15|Net pat_gen.wb_dat_local_0_sqmuxa appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":146:3:146:15|Net pat_gen.wb_dat_local_0_sqmuxa_1 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":152:3:152:15|Net pat_gen.wb_dat_local_0_sqmuxa_2 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":158:3:158:15|Net pat_gen.wb_dat_local_0_sqmuxa_3 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":164:3:164:15|Net pat_gen.wb_dat_local_0_sqmuxa_4 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":170:3:170:15|Net pat_gen.wb_dat_local_0_sqmuxa_5 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":176:3:176:15|Net pat_gen.wb_dat_local_0_sqmuxa_6 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":182:3:182:15|Net pat_gen.wb_dat_local_0_sqmuxa_7 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":188:3:188:15|Net pat_gen.wb_dat_local_0_sqmuxa_8 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":194:3:194:15|Net pat_gen.wb_dat_local_0_sqmuxa_9 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":200:3:200:15|Net pat_gen.wb_dat_local_0_sqmuxa_10 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":206:3:206:15|Net pat_gen.wb_dat_local_0_sqmuxa_11 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":212:3:212:15|Net pat_gen.wb_dat_local_0_sqmuxa_12 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":218:3:218:15|Net pat_gen.wb_dat_local_0_sqmuxa_13 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT462 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":122:1:122:2|Net pat_gen.un1_wb_cyc_i_4 appears to be an unidentified clock source. Assuming default frequency. 
+@N: FA239 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":26:4:26:7|ROM DOUT_81[21] mapped in logic.
+@N: FA239 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":26:4:26:7|ROM DOUT_81[0] mapped in logic.
+@N: FA239 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":26:4:26:7|ROM DOUT_81[21] mapped in logic.
+@N: MO106 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":26:4:26:7|Found ROM, 'DOUT_81[21]', 4068 words by 1 bits 
+@N: FA239 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":26:4:26:7|ROM DOUT_81[0] mapped in logic.
+@N: MO106 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":26:4:26:7|Found ROM, 'DOUT_81[0]', 4068 words by 1 bits 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:43s; CPU Time elapsed 0h:00m:43s; Memory used current: 150MB peak: 190MB)
+
+@N:"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\reset_generator_v0p1.vhd":23:2:23:3|Found counter in view:work.timing_controller_top(behavioral) inst reset_gen.counter[30:0]
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Sequential instance video_gen.pixel_counter.counter[1] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Sequential instance video_gen.pixel_counter.counter[2] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Sequential instance video_gen.pixel_counter.counter[3] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Sequential instance video_gen.pixel_counter.counter[4] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Sequential instance video_gen.pixel_counter.counter[5] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Sequential instance video_gen.pixel_counter.counter[6] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Sequential instance video_gen.pixel_counter.counter[7] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Sequential instance video_gen.pixel_counter.counter[8] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Sequential instance video_gen.pixel_counter.counter[9] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\dual_edge_counter.vhd":20:1:20:2|Sequential instance video_gen.pixel_counter.counter[10] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\video_generator.vhd":70:2:70:3|Sequential instance video_gen.line_count[0] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\video_generator.vhd":70:2:70:3|Sequential instance video_gen.line_count[1] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\video_generator.vhd":70:2:70:3|Sequential instance video_gen.line_count[2] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\video_generator.vhd":70:2:70:3|Sequential instance video_gen.line_count[3] reduced to a combinational gate by constant propagation
+@N:"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Found counter in view:work.uControlRoicClk(behavioral) inst PC[18:0]
+@N:"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Found counter in view:work.uControlRoicClk(behavioral) inst C4[23:0]
+@N:"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Found counter in view:work.uControlRoicClk(behavioral) inst C2[23:0]
+@N:"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Found counter in view:work.uControlRoicClk(behavioral) inst C1[23:0]
+@N:"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Found counter in view:work.uControlRoicClk(behavioral) inst dPtr[19:0]
+@N:"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":78:7:78:8|Found counter in view:work.lineDelay_linedelay3(behavioral) inst cnt[7:0]
+Encoding state machine selected[2:0] (netlist:statemachine)
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@W: MO160 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\timing_controller.v":246:0:246:5|Register bit selected[0] is always 0, optimizing ...
+Encoding state machine genblk22\.cs_state[3:0] (netlist:statemachine)
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   011 -> 11
+Encoding state machine cs_state[4:0] (netlist:statemachine)
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+@N:"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":315:3:315:8|Found counter in view:work.rxcver_8s_0s_0_1_2_3_4_MachXO2(verilog) inst databit_recved_num[3:0]
+@N: MF179 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":332:10:332:30|Found 16 bit by 16 bit '==' comparator, 'cs_state12'
+Encoding state machine genblk2\.genblk1\.tx_state[6:0] (netlist:statemachine)
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+@N:"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\txmitt.v":333:3:333:8|Found counter in view:work.txmitt_8s_0s_0_1_2_3_4_5_6(verilog) inst genblk2\.genblk1\.counter[15:0]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":465:3:465:8|Removing instance lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.dout_alu_reg[0],  because it is equivalent to instance lm8_inst.LM8.u1_isp8_core.din_rd1[0]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":465:3:465:8|Removing instance lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.dout_alu_reg[1],  because it is equivalent to instance lm8_inst.LM8.u1_isp8_core.din_rd1[1]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":465:3:465:8|Removing instance lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.dout_alu_reg[2],  because it is equivalent to instance lm8_inst.LM8.u1_isp8_core.din_rd1[2]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":465:3:465:8|Removing instance lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.dout_alu_reg[3],  because it is equivalent to instance lm8_inst.LM8.u1_isp8_core.din_rd1[3]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":465:3:465:8|Removing instance lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.dout_alu_reg[4],  because it is equivalent to instance lm8_inst.LM8.u1_isp8_core.din_rd1[4]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":465:3:465:8|Removing instance lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.dout_alu_reg[5],  because it is equivalent to instance lm8_inst.LM8.u1_isp8_core.din_rd1[5]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":465:3:465:8|Removing instance lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.dout_alu_reg[6],  because it is equivalent to instance lm8_inst.LM8.u1_isp8_core.din_rd1[6]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":465:3:465:8|Removing instance lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.dout_alu_reg[7],  because it is equivalent to instance lm8_inst.LM8.u1_isp8_core.din_rd1[7]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG1[16],  because it is equivalent to instance pat_gen.pat_gen.JMPREG1[14]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG1[14],  because it is equivalent to instance pat_gen.pat_gen.JMPREG1[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG1[13],  because it is equivalent to instance pat_gen.pat_gen.JMPREG1[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG1[15],  because it is equivalent to instance pat_gen.pat_gen.JMPREG1[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG1[17],  because it is equivalent to instance pat_gen.pat_gen.JMPREG1[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG1[18],  because it is equivalent to instance pat_gen.pat_gen.JMPREG1[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG2[16],  because it is equivalent to instance pat_gen.pat_gen.JMPREG2[14]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG2[14],  because it is equivalent to instance pat_gen.pat_gen.JMPREG2[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG2[13],  because it is equivalent to instance pat_gen.pat_gen.JMPREG2[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG2[15],  because it is equivalent to instance pat_gen.pat_gen.JMPREG2[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG2[17],  because it is equivalent to instance pat_gen.pat_gen.JMPREG2[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG2[18],  because it is equivalent to instance pat_gen.pat_gen.JMPREG2[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG3[16],  because it is equivalent to instance pat_gen.pat_gen.JMPREG3[14]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG3[14],  because it is equivalent to instance pat_gen.pat_gen.JMPREG3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG3[13],  because it is equivalent to instance pat_gen.pat_gen.JMPREG3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG3[15],  because it is equivalent to instance pat_gen.pat_gen.JMPREG3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG3[17],  because it is equivalent to instance pat_gen.pat_gen.JMPREG3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.JMPREG3[18],  because it is equivalent to instance pat_gen.pat_gen.JMPREG3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[13],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[15],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[17],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[19],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[21],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[23],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[20],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[18],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[16],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[14],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@W: BN132 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing instance pat_gen.pat_gen.C3[22],  because it is equivalent to instance pat_gen.pat_gen.C3[12]
+@N: BN114 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":319:0:319:3|Removing instance pat_gen.mux7 of black_box view:work.mux_36_to_1(syn_black_box) because there are no references to its outputs 
+@N: BN114 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":313:0:313:3|Removing instance pat_gen.mux6 of black_box view:work.mux_36_to_1(syn_black_box) because there are no references to its outputs 
+@N: BN114 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":307:0:307:3|Removing instance pat_gen.mux5 of black_box view:work.mux_36_to_1(syn_black_box) because there are no references to its outputs 
+@N: BN114 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":301:0:301:3|Removing instance pat_gen.mux4 of black_box view:work.mux_36_to_1(syn_black_box) because there are no references to its outputs 
+@N: BN114 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":295:0:295:3|Removing instance pat_gen.mux3 of black_box view:work.mux_36_to_1(syn_black_box) because there are no references to its outputs 
+@N: BN114 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":289:0:289:3|Removing instance pat_gen.mux2 of black_box view:work.mux_36_to_1(syn_black_box) because there are no references to its outputs 
+@N: BN114 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":283:0:283:3|Removing instance pat_gen.mux1 of black_box view:work.mux_36_to_1(syn_black_box) because there are no references to its outputs 
+@N: BN114 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\wb_to_timing_controller.vhd":277:0:277:3|Removing instance pat_gen.mux0 of black_box view:work.mux_36_to_1(syn_black_box) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":67:6:67:7|Removing sequential instance pat_gen.linedelay3.cntStarted in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":78:7:78:8|Removing sequential instance pat_gen.linedelay3.cntDone in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\edgedetect.vhd":24:6:24:7|Removing sequential instance pat_gen.linedelay3.edgeDet0.E in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\edgedetect.vhd":24:6:24:7|Removing sequential instance pat_gen.linedelay3.edgeDet0.rrDin in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\edgedetect.vhd":24:6:24:7|Removing sequential instance pat_gen.linedelay3.edgeDet0.rDin in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\edgedetect.vhd":24:6:24:7|Boundary register pat_gen.linedelay3.edgeDet0.rDin packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":78:7:78:8|Removing sequential instance pat_gen.linedelay3.cnt[7:0] of view:PrimLib.counter(prim) in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":98:7:98:8|Removing sequential instance pat_gen.linedelay3.O_i in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\firmware\linedelay.vhd":98:7:98:8|Boundary register pat_gen.linedelay3.O_i packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[6] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[6] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[5] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[5] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[4] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[4] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[3] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[3] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[2] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[1] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[0] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[12] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[12] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[11] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[11] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[10] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[10] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[9] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[9] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[8] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[8] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C3[7] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C3[7] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.dPtr[19:0] of view:PrimLib.counter(prim) in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.dPtr[19:0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C1[23:0] of view:PrimLib.counter(prim) in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C1[23:0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C2[23:0] of view:PrimLib.counter(prim) in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C2[23:0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.C4[23:0] of view:PrimLib.counter(prim) in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.C4[23:0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.PC[18:0] of view:PrimLib.counter(prim) in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.PC[18:0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[12] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[12] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[11] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[11] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[10] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[10] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[9] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[9] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[8] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[8] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[7] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[7] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[6] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[6] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[5] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[5] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[4] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[4] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[3] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[3] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[2] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[1] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG1[0] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG1[0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[12] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[12] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[11] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[11] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[10] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[10] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[9] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[9] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[8] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[8] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[7] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[7] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[6] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[6] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[5] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[5] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[4] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[4] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[3] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[3] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[2] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[1] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG2[0] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG2[0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[12] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[12] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[11] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[11] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[10] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[10] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[9] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[9] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[8] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[8] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[7] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[7] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[6] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[6] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[5] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[5] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[4] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[4] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[3] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[3] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[2] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[1] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Removing sequential instance pat_gen.pat_gen.JMPREG3[0] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\ucontroller.vhd":144:4:144:5|Boundary register pat_gen.pat_gen.JMPREG3[0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[12] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[11] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[10] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[9] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[8] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[7] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[6] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[5] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[4] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[3] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[2] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[1] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[0] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[33] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[32] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[31] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[30] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[29] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[28] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[27] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[26] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\instrom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.iROM.DOUT_1[25] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[0] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[2] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[13] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[12] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[11] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[10] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[9] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[8] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[7] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[6] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[5] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[16] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[15] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Removing sequential instance pat_gen.pat_gen.dROM.DOUT_1[21] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@A: BN291 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\datarom.vhd":25:0:25:1|Boundary register pat_gen.pat_gen.dROM.DOUT_1[21] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN114 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":209:1:209:2|Removing instance I1 of black_box view:machxo2.CLKDIVC(syn_black_box) because there are no references to its outputs 
+
+Finished factoring (Real Time elapsed 0h:00m:56s; CPU Time elapsed 0h:00m:55s; Memory used current: 154MB peak: 190MB)
+
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\gpio.v":207:3:207:8|Removing sequential instance lm8_inst.LED.genblk3\.genblk1\.genblk1\[0\]\.PIO_DATA[0] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\gpio.v":207:3:207:8|Removing sequential instance lm8_inst.LED.genblk3\.genblk1\.genblk1\[1\]\.PIO_DATA[1] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\gpio.v":207:3:207:8|Removing sequential instance lm8_inst.LED.genblk3\.genblk1\.genblk1\[2\]\.PIO_DATA[2] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/gpio/rtl/verilog\gpio.v":207:3:207:8|Removing sequential instance lm8_inst.LED.genblk3\.genblk1\.genblk1\[3\]\.PIO_DATA[3] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:56s; CPU Time elapsed 0h:00m:55s; Memory used current: 148MB peak: 190MB)
+
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:56s; CPU Time elapsed 0h:00m:56s; Memory used current: 145MB peak: 190MB)
+
+@N: FA113 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":408:1:408:2|Pipelining module un1_stack_ptr[3:0]
+@N: MF169 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":465:3:465:8|Register stack_ptr[3:0] pushed in.
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_interrupt.v":122:3:122:8|Removing sequential instance lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.ip[3] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_interrupt.v":122:3:122:8|Removing sequential instance lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.ip[2] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_interrupt.v":122:3:122:8|Removing sequential instance lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.ip[7] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_interrupt.v":122:3:122:8|Removing sequential instance lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.ip[6] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_interrupt.v":122:3:122:8|Removing sequential instance lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.ip[5] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: BN362 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_interrupt.v":122:3:122:8|Removing sequential instance lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.ip[4] in hierarchy view:work.timing_controller_top(behavioral) because there are no references to its outputs 
+@N: FX404 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/uart_core/rtl/verilog\rxcver.v":324:13:324:16|Found addmux in view:work.timing_controller_top(behavioral) inst lm8_inst.uart.u_rxcver.counter_11[15:0] from lm8_inst.uart.u_rxcver.un1_counter_2[15:0] 
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:56s; CPU Time elapsed 0h:00m:56s; Memory used current: 145MB peak: 190MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:56s; CPU Time elapsed 0h:00m:56s; Memory used current: 145MB peak: 190MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:56s; CPU Time elapsed 0h:00m:56s; Memory used current: 145MB peak: 190MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:56s; CPU Time elapsed 0h:00m:56s; Memory used current: 145MB peak: 190MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:58s; Memory used current: 175MB peak: 190MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:58s; Memory used current: 151MB peak: 190MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:58s; Memory used current: 151MB peak: 190MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+9 gated/generated clock tree(s) driving 426 clock pin(s) of sequential element(s)
+0 instances converted, 426 sequential instances remain driven by gated/generated clocks
+
+= Non-Gated/Non-Generated Clocks =
+************** None **************
+----------------------------------
+==================================
+===================================================================================================================================================================================== Gated/Generated Clocks ======================================================================================================================================================================================
+Clock Tree ID                                                                                                                            Driving Element                                       Drive Element Type     Fanout     Sample Instance                     Explanation                                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:"@|S:pat_gen.N_116_i@|E:pat_gen.wb_stb_d1@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001"                                         pat_gen.N_116_i                                       ORCALUT4               2          pat_gen.wb_stb_d1                   Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:"@|S:OSCInst0@|E:lm8_inst_uart_u_rxcver_sin_d0io@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002"                                 OSCInst0                                              OSCH                   304        lm8_inst_uart_u_rxcver_sin_d0io     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_13_0_a2@|E:pat_gen.reg_D7_i[0]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003"                 pat_gen.wb_dat_local_0_sqmuxa_13_0_a2                 ORCALUT4               32         pat_gen.reg_D7_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_3_1_a2@|E:pat_gen.reg_03_i[0]@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004"                  pat_gen.wb_dat_local_0_sqmuxa_3_1_a2                  ORCALUT4               16         pat_gen.reg_03_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_5_1_a2@|E:pat_gen.reg_05_i[0]@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005"                  pat_gen.wb_dat_local_0_sqmuxa_5_1_a2                  ORCALUT4               16         pat_gen.reg_05_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_9_0_a2@|E:pat_gen.reg_09_i[0]@|F:@syn_sample_clock_path==CKID0006@|M:ClockId0006"                  pat_gen.wb_dat_local_0_sqmuxa_9_0_a2                  ORCALUT4               16         pat_gen.reg_09_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_5_1_a3_0_RNI5M8S3@|E:pat_gen.reg_07_i[0]@|F:@syn_sample_clock_path==CKID0007@|M:ClockId0007"       pat_gen.wb_dat_local_0_sqmuxa_5_1_a3_0_RNI5M8S3       ORCALUT4               16         pat_gen.reg_07_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.wb_dat_local_0_sqmuxa_8_0_a3_0_RNI8DB22_0@|E:pat_gen.reg_00_i[0]@|F:@syn_sample_clock_path==CKID0008@|M:ClockId0008"     pat_gen.wb_dat_local_0_sqmuxa_8_0_a3_0_RNI8DB22_0     ORCALUT4               16         pat_gen.reg_00_i[0]                 No clocks found on inputs                                                                                                     
+@K:"@|S:pat_gen.un1_wb_cyc_i_4_i_a2@|E:pat_gen.wb_dat_o[0]@|F:@syn_sample_clock_path==CKID0009@|M:ClockId0009"                           pat_gen.un1_wb_cyc_i_4_i_a2                           ORCALUT4               8          pat_gen.wb_dat_o[0]                 No clocks found on inputs                                                                                                     
+===================================================================================================================================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base C:\Users\AndrewPC1\Documents\GitHub\CoreCam_Firmware\timing_controller\diamond\timing_controller\timing_controller_timing_controller.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:59s; Memory used current: 150MB peak: 190MB)
+
+Writing EDIF Netlist and constraint files
+G-2012.09L-1 
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:59s; Memory used current: 154MB peak: 190MB)
+
+@W: MT246 :"c:\users\andrewpc1\documents\github\corecam_firmware\timing_controller\diamond\..\firmware\timing_controller_top.vhd":199:1:199:8|Blackbox OSCH is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_top.v":604:8:604:20|Blackbox pmi_ram_dq_Z6_layer1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_top.v":374:8:374:19|Blackbox pmi_ram_dq_Z5_layer1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_core.v":464:14:464:25|Blackbox pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_flow_cntl.v":451:3:451:15|Blackbox pmi_distributed_spram_16s_4s_12s_noreg_none_binary_MachXO2_pmi_distributed_spram_1_layer1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\andrewpc1\documents\github\corecam_firmware\msb\timing_controller\soc\../components/lm8/rtl/verilog\lm8_alu.v":102:18:102:27|Blackbox pmi_addsub_8s_8s_off_MachXO2_pmi_addsub is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock timing_controller_top|clk_i_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:clk_i"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Sep 02 07:11:41 2013
+#
+
+
+Top view:               timing_controller_top
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 982.848
+
+                                               Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                 Frequency     Frequency     Period        Period        Slack       Type         Group              
+---------------------------------------------------------------------------------------------------------------------------------------------------
+timing_controller_top|clk_i_inferred_clock     1.0 MHz       58.3 MHz      1000.000      17.152        982.848     inferred     Inferred_clkgroup_0
+System                                         1.0 MHz       67.4 MHz      1000.000      14.831        985.169     system       system_clkgroup    
+===================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                  |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                    Ending                                      |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                      System                                      |  1000.000    985.169  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                      timing_controller_top|clk_i_inferred_clock  |  1000.000    984.201  |  No paths    -      |  No paths    -      |  No paths    -    
+timing_controller_top|clk_i_inferred_clock  System                                      |  1000.000    983.815  |  No paths    -      |  No paths    -      |  No paths    -    
+timing_controller_top|clk_i_inferred_clock  timing_controller_top|clk_i_inferred_clock  |  1000.000    982.848  |  No paths    -      |  No paths    -      |  No paths    -    
+================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: timing_controller_top|clk_i_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                        Starting                                                                            Arrival            
+Instance                                                Reference                                      Type        Pin     Net              Time        Slack  
+                                                        Clock                                                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.genblk1\.genblk2\.first_fetch              timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       first_fetch      1.353       982.848
+lm8_inst.LM8.u1_isp8_core.genblk4\.page_ptr1[2]         timing_controller_top|clk_i_inferred_clock     FD1P3DX     Q       page_ptr1[2]     1.044       985.735
+lm8_inst.LM8.u1_isp8_core.genblk4\.page_ptr1[3]         timing_controller_top|clk_i_inferred_clock     FD1P3DX     Q       page_ptr1[3]     1.044       985.735
+lm8_inst.LM8.u1_isp8_core.genblk4\.page_ptr1[4]         timing_controller_top|clk_i_inferred_clock     FD1P3DX     Q       page_ptr1[4]     1.044       986.752
+lm8_inst.LM8.u1_isp8_core.genblk4\.page_ptr1[5]         timing_controller_top|clk_i_inferred_clock     FD1P3DX     Q       page_ptr1[5]     1.044       986.752
+lm8_inst.LM8.u1_isp8_core.genblk4\.page_ptr1[6]         timing_controller_top|clk_i_inferred_clock     FD1P3DX     Q       page_ptr1[6]     1.044       987.768
+lm8_inst.LM8.u1_isp8_core.genblk4\.page_ptr1[7]         timing_controller_top|clk_i_inferred_clock     FD1P3DX     Q       page_ptr1[7]     1.044       987.768
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_io_wr      timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       ext_io_wr        1.044       987.824
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_mem_wr     timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       ext_mem_wr       1.148       987.856
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_io_rd      timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       ext_io_rd        0.972       987.896
+===============================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                            Starting                                                                                 Required            
+Instance                                                    Reference                                      Type        Pin     Net                   Time         Slack  
+                                                            Clock                                                                                                        
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.uart.u_intface.genblk22\.cs_state[0]               timing_controller_top|clk_i_inferred_clock     FD1S3DX     D       cs_state_ns[0]        1000.462     982.848
+lm8_inst.uart.u_intface.genblk22\.cs_state[1]               timing_controller_top|clk_i_inferred_clock     FD1S3DX     D       cs_state_ns[1]        1000.462     982.848
+lm8_inst.uart.u_rxcver.genblk3\.break_int_int               timing_controller_top|clk_i_inferred_clock     FD1P3DX     SP      un1_lsr_rd            999.528      983.041
+lm8_inst.uart.u_rxcver.genblk3\.frame_err_int               timing_controller_top|clk_i_inferred_clock     FD1P3DX     SP      un1_lsr_rd            999.528      983.041
+lm8_inst.uart.u_rxcver.genblk3\.overrun_err_int             timing_controller_top|clk_i_inferred_clock     FD1P3DX     SP      un1_lsr_rd            999.528      983.041
+lm8_inst.uart.u_rxcver.genblk3\.parity_err_int              timing_controller_top|clk_i_inferred_clock     FD1P3DX     SP      un1_lsr_rd            999.528      983.041
+lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.data_cyc         timing_controller_top|clk_i_inferred_clock     FD1S3DX     D       data_cyc_nxt4         1000.089     983.632
+lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.ext_addr_cyc     timing_controller_top|clk_i_inferred_clock     FD1S3BX     D       ext_addr_cyc_nxt4     1000.089     983.632
+lm8_inst.LM8.u1_isp8_core.genblk4\.page_ptr1[0]             timing_controller_top|clk_i_inferred_clock     FD1P3DX     D       din_rd[0]             999.894      983.710
+lm8_inst.LM8.u1_isp8_core.genblk4\.page_ptr1[1]             timing_controller_top|clk_i_inferred_clock     FD1P3DX     D       din_rd[1]             999.894      983.710
+=========================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.462
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.462
+
+    - Propagation time:                      17.615
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     982.848
+
+    Number of logic level(s):                15
+    Starting point:                          lm8_inst.LM8.genblk1\.genblk2\.first_fetch / Q
+    Ending point:                            lm8_inst.uart.u_intface.genblk22\.cs_state[0] / D
+    The start point is clocked by            timing_controller_top|clk_i_inferred_clock [rising] on pin CK
+    The end   point is clocked by            timing_controller_top|clk_i_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                Pin      Pin               Arrival     No. of    
+Name                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.genblk1\.genblk2\.first_fetch                       FD1S3DX      Q        Out     1.353     1.353       -         
+first_fetch                                                      Net          -        -       -         -           50        
+lm8_inst.LM8.u1_isp8_core.u1_lm8_alu.cout_dout_alu_1_sn_m7_0     ORCALUT4     A        In      0.000     1.353       -         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_alu.cout_dout_alu_1_sn_m7_0     ORCALUT4     Z        Out     1.249     2.602       -         
+instr_l1_2                                                       Net          -        -       -         -           7         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_idec.iels                       ORCALUT4     D        In      0.000     2.602       -         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_idec.iels                       ORCALUT4     Z        Out     1.329     3.931       -         
+iels                                                             Net          -        -       -         -           21        
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp_1                ORCALUT4     C        In      0.000     3.931       -         
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp_1                ORCALUT4     Z        Out     1.017     4.948       -         
+un13_external_sp_1                                               Net          -        -       -         -           1         
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp_3                ORCALUT4     A        In      0.000     4.948       -         
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp_3                ORCALUT4     Z        Out     1.017     5.965       -         
+un13_external_sp_3                                               Net          -        -       -         -           1         
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp                  ORCALUT4     A        In      0.000     5.965       -         
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp                  ORCALUT4     Z        Out     1.281     7.245       -         
+un13_external_sp                                                 Net          -        -       -         -           11        
+lm8_inst.LM8.ext_cyc                                             ORCALUT4     D        In      0.000     7.245       -         
+lm8_inst.LM8.ext_cyc                                             ORCALUT4     Z        Out     1.249     8.494       -         
+ext_cyc                                                          Net          -        -       -         -           7         
+lm8_inst.arbiter.selected_RNIU3451[1]                            ORCALUT4     D        In      0.000     8.494       -         
+lm8_inst.arbiter.selected_RNIU3451[1]                            ORCALUT4     Z        Out     1.153     9.647       -         
+timing_controllerslv_adr_i[5]                                    Net          -        -       -         -           3         
+lm8_inst.arbiter.uartUART_en_2_0                                 ORCALUT4     D        In      0.000     9.647       -         
+lm8_inst.arbiter.uartUART_en_2_0                                 ORCALUT4     Z        Out     1.017     10.664      -         
+uartUART_en_2_0                                                  Net          -        -       -         -           1         
+lm8_inst.arbiter.uartUART_en_2                                   ORCALUT4     B        In      0.000     10.664      -         
+lm8_inst.arbiter.uartUART_en_2                                   ORCALUT4     Z        Out     1.153     11.817      -         
+LEDGPIO_en_2                                                     Net          -        -       -         -           3         
+lm8_inst.arbiter.uartUART_en                                     ORCALUT4     C        In      0.000     11.817      -         
+lm8_inst.arbiter.uartUART_en                                     ORCALUT4     Z        Out     1.301     13.117      -         
+uartUART_en                                                      Net          -        -       -         -           14        
+lm8_inst.uart.u_intface.lsr_rd_21                                ORCALUT4     A        In      0.000     13.117      -         
+lm8_inst.uart.u_intface.lsr_rd_21                                ORCALUT4     Z        Out     1.089     14.206      -         
+lsr_rd_21                                                        Net          -        -       -         -           2         
+lm8_inst.uart.u_intface.lsr_rd                                   ORCALUT4     A        In      0.000     14.206      -         
+lm8_inst.uart.u_intface.lsr_rd                                   ORCALUT4     Z        Out     1.089     15.295      -         
+lsr_rd                                                           Net          -        -       -         -           2         
+lm8_inst.uart.u_intface.genblk22\.cs_state18                     ORCALUT4     A        In      0.000     15.295      -         
+lm8_inst.uart.u_intface.genblk22\.cs_state18                     ORCALUT4     Z        Out     1.089     16.384      -         
+cs_state18                                                       Net          -        -       -         -           2         
+lm8_inst.uart.u_intface.genblk22\.cs_state_ns_1_0_.m10           ORCALUT4     A        In      0.000     16.384      -         
+lm8_inst.uart.u_intface.genblk22\.cs_state_ns_1_0_.m10           ORCALUT4     Z        Out     1.017     17.401      -         
+N_11                                                             Net          -        -       -         -           1         
+lm8_inst.uart.u_intface.genblk22\.cs_state_ns_1_0_.m11           PFUMX        ALUT     In      0.000     17.401      -         
+lm8_inst.uart.u_intface.genblk22\.cs_state_ns_1_0_.m11           PFUMX        Z        Out     0.214     17.615      -         
+cs_state_ns[0]                                                   Net          -        -       -         -           1         
+lm8_inst.uart.u_intface.genblk22\.cs_state[0]                    FD1S3DX      D        In      0.000     17.615      -         
+===============================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                Starting                                                               Arrival            
+Instance                                        Reference     Type                     Pin       Net                   Time        Slack  
+                                                Clock                                                                                     
+------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom     System        pmi_ram_dq_Z5_layer1     Q[16]     instr_mem_out[16]     0.000       984.201
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom     System        pmi_ram_dq_Z5_layer1     Q[17]     instr_mem_out[17]     0.000       984.201
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom     System        pmi_ram_dq_Z5_layer1     Q[13]     instr_mem_out[13]     0.000       985.001
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom     System        pmi_ram_dq_Z5_layer1     Q[14]     instr_mem_out[14]     0.000       985.001
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom     System        pmi_ram_dq_Z5_layer1     Q[15]     instr_mem_out[15]     0.000       985.001
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom     System        pmi_ram_dq_Z5_layer1     Q[1]      instr_mem_out[1]      0.000       985.431
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom     System        pmi_ram_dq_Z5_layer1     Q[12]     instr_mem_out[12]     0.000       993.379
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom     System        pmi_ram_dq_Z5_layer1     Q[0]      instr_mem_out[0]      0.000       994.286
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom     System        pmi_ram_dq_Z5_layer1     Q[2]      instr_mem_out[2]      0.000       994.546
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom     System        pmi_ram_dq_Z5_layer1     Q[3]      instr_mem_out[3]      0.000       994.994
+==========================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                            Starting                                                Required            
+Instance                                                    Reference     Type        Pin     Net                   Time         Slack  
+                                                            Clock                                                                       
+----------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.uart.u_intface.genblk22\.cs_state[0]               System        FD1S3DX     D       cs_state_ns[0]        1000.462     984.201
+lm8_inst.uart.u_intface.genblk22\.cs_state[1]               System        FD1S3DX     D       cs_state_ns[1]        1000.462     984.201
+lm8_inst.uart.u_rxcver.genblk3\.break_int_int               System        FD1P3DX     SP      un1_lsr_rd            999.528      984.394
+lm8_inst.uart.u_rxcver.genblk3\.frame_err_int               System        FD1P3DX     SP      un1_lsr_rd            999.528      984.394
+lm8_inst.uart.u_rxcver.genblk3\.overrun_err_int             System        FD1P3DX     SP      un1_lsr_rd            999.528      984.394
+lm8_inst.uart.u_rxcver.genblk3\.parity_err_int              System        FD1P3DX     SP      un1_lsr_rd            999.528      984.394
+lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.data_cyc         System        FD1S3DX     D       data_cyc_nxt4         1000.089     984.985
+lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.ext_addr_cyc     System        FD1S3BX     D       ext_addr_cyc_nxt4     1000.089     984.985
+lm8_inst.LM8.u1_isp8_core.genblk4\.page_ptr1[0]             System        FD1P3DX     D       din_rd[0]             999.894      985.063
+lm8_inst.LM8.u1_isp8_core.genblk4\.page_ptr1[1]             System        FD1P3DX     D       din_rd[1]             999.894      985.063
+========================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.462
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.462
+
+    - Propagation time:                      16.261
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 984.201
+
+    Number of logic level(s):                15
+    Starting point:                          lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom / Q[16]
+    Ending point:                            lm8_inst.uart.u_intface.genblk22\.cs_state[0] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            timing_controller_top|clk_i_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                            Pin       Pin               Arrival     No. of    
+Name                                                             Type                     Name      Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.genblk1\.genblk2\.u1_isp8_prom                      pmi_ram_dq_Z5_layer1     Q[16]     Out     0.000     0.000       -         
+instr_mem_out[16]                                                Net                      -         -       -         -           3         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_alu.cout_dout_alu_1_sn_m7_0     ORCALUT4                 C         In      0.000     0.000       -         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_alu.cout_dout_alu_1_sn_m7_0     ORCALUT4                 Z         Out     1.249     1.249       -         
+instr_l1_2                                                       Net                      -         -       -         -           7         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_idec.iels                       ORCALUT4                 D         In      0.000     1.249       -         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_idec.iels                       ORCALUT4                 Z         Out     1.329     2.578       -         
+iels                                                             Net                      -         -       -         -           21        
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp_1                ORCALUT4                 C         In      0.000     2.578       -         
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp_1                ORCALUT4                 Z         Out     1.017     3.594       -         
+un13_external_sp_1                                               Net                      -         -       -         -           1         
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp_3                ORCALUT4                 A         In      0.000     3.594       -         
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp_3                ORCALUT4                 Z         Out     1.017     4.611       -         
+un13_external_sp_3                                               Net                      -         -       -         -           1         
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp                  ORCALUT4                 A         In      0.000     4.611       -         
+lm8_inst.LM8.genblk4\.genblk1\.un13_external_sp                  ORCALUT4                 Z         Out     1.281     5.892       -         
+un13_external_sp                                                 Net                      -         -       -         -           11        
+lm8_inst.LM8.ext_cyc                                             ORCALUT4                 D         In      0.000     5.892       -         
+lm8_inst.LM8.ext_cyc                                             ORCALUT4                 Z         Out     1.249     7.141       -         
+ext_cyc                                                          Net                      -         -       -         -           7         
+lm8_inst.arbiter.selected_RNIU3451[1]                            ORCALUT4                 D         In      0.000     7.141       -         
+lm8_inst.arbiter.selected_RNIU3451[1]                            ORCALUT4                 Z         Out     1.153     8.294       -         
+timing_controllerslv_adr_i[5]                                    Net                      -         -       -         -           3         
+lm8_inst.arbiter.uartUART_en_2_0                                 ORCALUT4                 D         In      0.000     8.294       -         
+lm8_inst.arbiter.uartUART_en_2_0                                 ORCALUT4                 Z         Out     1.017     9.310       -         
+uartUART_en_2_0                                                  Net                      -         -       -         -           1         
+lm8_inst.arbiter.uartUART_en_2                                   ORCALUT4                 B         In      0.000     9.310       -         
+lm8_inst.arbiter.uartUART_en_2                                   ORCALUT4                 Z         Out     1.153     10.463      -         
+LEDGPIO_en_2                                                     Net                      -         -       -         -           3         
+lm8_inst.arbiter.uartUART_en                                     ORCALUT4                 C         In      0.000     10.463      -         
+lm8_inst.arbiter.uartUART_en                                     ORCALUT4                 Z         Out     1.301     11.764      -         
+uartUART_en                                                      Net                      -         -       -         -           14        
+lm8_inst.uart.u_intface.lsr_rd_21                                ORCALUT4                 A         In      0.000     11.764      -         
+lm8_inst.uart.u_intface.lsr_rd_21                                ORCALUT4                 Z         Out     1.089     12.853      -         
+lsr_rd_21                                                        Net                      -         -       -         -           2         
+lm8_inst.uart.u_intface.lsr_rd                                   ORCALUT4                 A         In      0.000     12.853      -         
+lm8_inst.uart.u_intface.lsr_rd                                   ORCALUT4                 Z         Out     1.089     13.942      -         
+lsr_rd                                                           Net                      -         -       -         -           2         
+lm8_inst.uart.u_intface.genblk22\.cs_state18                     ORCALUT4                 A         In      0.000     13.942      -         
+lm8_inst.uart.u_intface.genblk22\.cs_state18                     ORCALUT4                 Z         Out     1.089     15.030      -         
+cs_state18                                                       Net                      -         -       -         -           2         
+lm8_inst.uart.u_intface.genblk22\.cs_state_ns_1_0_.m10           ORCALUT4                 A         In      0.000     15.030      -         
+lm8_inst.uart.u_intface.genblk22\.cs_state_ns_1_0_.m10           ORCALUT4                 Z         Out     1.017     16.047      -         
+N_11                                                             Net                      -         -       -         -           1         
+lm8_inst.uart.u_intface.genblk22\.cs_state_ns_1_0_.m11           PFUMX                    ALUT      In      0.000     16.047      -         
+lm8_inst.uart.u_intface.genblk22\.cs_state_ns_1_0_.m11           PFUMX                    Z         Out     0.214     16.261      -         
+cs_state_ns[0]                                                   Net                      -         -       -         -           1         
+lm8_inst.uart.u_intface.genblk22\.cs_state[0]                    FD1S3DX                  D         In      0.000     16.261      -         
+============================================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 306 of 6864 (4%)
+Latch bits:      120
+PIC Latch:       0
+I/O cells:       31
+
+
+Details:
+CCU2D:          61
+FD1P3BX:        28
+FD1P3DX:        112
+FD1P3IX:        8
+FD1S1AY:        8
+FD1S1D:         112
+FD1S3AX:        32
+FD1S3BX:        9
+FD1S3DX:        113
+FD1S3IX:        3
+GSR:            1
+IB:             1
+IFS1P3DX:       1
+INV:            8
+L6MUX21:        8
+OB:             30
+ORCALUT4:       622
+PFUMX:          53
+PUR:            1
+VHI:            15
+VLO:            16
+false:          2
+true:           3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:01m:00s; CPU Time elapsed 0h:01m:00s; Memory used current: 45MB peak: 190MB)
+
+Process took 0h:01m:00s realtime, 0h:01m:00s cputime
+# Mon Sep 02 07:11:41 2013
+
+###########################################################]
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,63 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=work
+
+[Library]
+sim_map=.\sim_map.lib
+
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work;
+LibNames=ovi_machxo2;
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+sim_map=.
+work=.
+
+[LocalVerilogDirs]
+Count=0
+
+[DefineMacro]
+Global=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[sdf.ea.timing_controller_top_tb-TB_ARCHITECTURE]
+0=..\timing_controller_timing_controller_mapvho.sdf| /timing_controller_top_tb/UUT, Average, No
+
+[Files]
+/..\..\timing_controller_timing_controller_mapvho.vho=-1
+/..\..\..\..\..\..\..\my_designs\pattern_generator\pattern_generator_v0p1\src\TestBench\timing_controller_TB.vhd=-1
+/..\..\timing_controller_timing_controller_mapvho.sdf=-1
+
+[Files.Data]
+.\..\timing_controller_timing_controller_mapvho.vho=VHDL Source Code
+.\..\..\..\..\..\..\my_designs\pattern_generator\pattern_generator_v0p1\src\TestBench\timing_controller_TB.vhd=VHDL Source Code
+.\..\timing_controller_timing_controller_mapvho.sdf=SDF File
+

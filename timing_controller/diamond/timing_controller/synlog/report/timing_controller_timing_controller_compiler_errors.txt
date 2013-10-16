@@ -1,0 +1,3 @@
+@E: CD717 :"C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\timing_controller_top.vhd":20:4:20:23|entity: end identifier timing_generator_top does not match
+@E|Parse errors encountered - exiting
+

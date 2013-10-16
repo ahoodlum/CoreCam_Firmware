@@ -1,0 +1,75 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=work
+
+[Library]
+sim_behavioral=.\sim_behavioral.lib
+
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+fileopenfolder=C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work;
+LibNames=ovi_machxo2;
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+sim_behavioral=.
+work=.
+
+[LocalVerilogDirs]
+Count=0
+
+[DefineMacro]
+Global=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=timing_controller_top_tb|TB_ARCHITECTURE|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/..\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\led_blinker.vhd=-1
+/..\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\instrom.vhd=-1
+/..\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\datarom.vhd=-1
+/..\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\ucontroller.vhd=-1
+/..\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\reset_generator_v0p1.vhd=-1
+/..\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\timing_controller_top.vhd=-1
+/..\..\..\..\..\..\..\my_designs\pattern_generator\pattern_generator_v0p1\src\TestBench\timing_controller_TB.vhd=-1
+/..\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\dual_edge_counter.vhd=-1
+/..\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\edgedetect.vhd=-1
+/..\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\video_generator.vhd=-1
+
+[Files.Data]
+.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\led_blinker.vhd=VHDL Source Code
+.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\instrom.vhd=VHDL Source Code
+.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\datarom.vhd=VHDL Source Code
+.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\ucontroller.vhd=VHDL Source Code
+.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\reset_generator_v0p1.vhd=VHDL Source Code
+.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\timing_controller_top.vhd=VHDL Source Code
+.\..\..\..\..\..\..\my_designs\pattern_generator\pattern_generator_v0p1\src\TestBench\timing_controller_TB.vhd=VHDL Source Code
+.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\dual_edge_counter.vhd=VHDL Source Code
+.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\edgedetect.vhd=VHDL Source Code
+.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\video_generator.vhd=VHDL Source Code
+

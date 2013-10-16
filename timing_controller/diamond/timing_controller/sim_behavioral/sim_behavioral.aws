@@ -1,0 +1,14 @@
+[Version]
+Version=9.1
+[Designs]
+sim_behavioral=sim_behavioral.adf
+[Settings]
+Active=sim_behavioral
+[Expand]
+sim_behavioral=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

@@ -1,0 +1,112 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\bin64\\c_vhdl.exe":1352744672
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\location.map":1352755998
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\std.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\std1164.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\numeric.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\arith.vhd":1352744958
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1352744958
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\datarom.vhd":1361525116
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\instrom.vhd":1361525116
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\led_blinker.vhd":1366008457
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\reset_generator_v0p1.vhd":1361528613
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\edgedetect.vhd":1365910858
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\dual_edge_counter.vhd":1366001427
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\ucontroller.vhd":1367991623
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\video_generator.vhd":1366002418
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\firmware\\linedelay.vhd":1156441946
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\wb_to_timing_controller.vhd":1378075762
+#CUR:"C:\\Users\\AndrewPC1\\Documents\\GitHub\\CoreCam_Firmware\\timing_controller\\diamond\\..\\firmware\\timing_controller_top.vhd":1378131019
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\cpld\\lattice.vhd":1352744786
+#CUR:"C:\\lscc\\diamond\\2.1_x64\\synpbase\\lib\\lucent\\machxo2.vhd":1347650694
+@E8lFkRDC0HHlMOo_FsM0FCDDsF_0bH
+DLssN$FRIsF	
+kk0b0NRks#0_FRk04M
+HbRk0k0Ns_M#HRF4
+kk0b0DROF_O	FRk0Uk
+F00bkR8PHC8F_NR0N4Fn
+kk0b0CRD8F#_kc0R
+0FkbRk0DjC8RC4
+MF8l8CkD
+8lFkRDCI0L_FH_0loHM_MOF0DsFD
+CsDsHLNRs$I	Fs
+bHMkk0RBD_O	
+R4HkMb0CR8D_N$ORD	4M
+HbRk0sR#04M
+HbRk0#O$MRF4
+kk0b0DROF#O	_0FkRHU
+M0bkR_ILO_D	H
+R4HkMb0LRI_0s#_4HR
+bHMkI0RLN_80R_HUM
+HbRk0INL_8_8sH
+RUHkMb0LRI_OO$_4HR
+bHMkI0RL0_#LR_H4M
+HbRk0IIL_CR_H4k
+F00bkR_IL8_N0F
+RUFbk0kI0RLO_N	R_F4k
+F00bkR_ILH_M0F
+R4ClM8FD8kCF
+l8CkDRMDHCD7CND$
+HNLssI$RF
+s	HkMb0DRO	
+R4HkMb0#Rs0
+R4HkMb0RRQ4M
+HbRk08NCD$0BMRFU
+kk0b0RRm4M
+C88lFk
+DClkF8DPCRHF8C_MoCC0sNFDs
+HNLssI$RF
+s	HkMb0DRO	
+R4HkMb0#Rs0
+R4HkMb0#RV$RMO4M
+HbRk0DM#$O
+R4Fbk0kP0RHF8C_08NNnR4
+8CMlkF8DlC
+FD8kCBRkFsM0FFD)HDOB	H
+DLssN$FRIsH	
+M0bkROkBD4	R
+bHMk80RC$DNBRD	4M
+HbRk0sR#04M
+HbRk0#O$MRF4
+kk0b0DROF#O	_0FkR
+dnClM8FD8kCF
+l8CkDRN8kD8_CoOC_F0kMCDs
+HNLssI$RF
+s	HkMb0DRO	
+R4HkMb0#Rs0
+R4Fbk0kF0Rkk0b04R4
+8CMlkF8DlC
+FD8kC8RCoCC700CO
+LDHs$NsRsIF	M
+HbRk0ORD	4M
+HbRk0sR#04M
+HbRk0#F0sL4CR
+0FkbRk0 
+R4ClM8FD8kCF
+l8CkDR#sCCo0_CsMCNs0F
+LDHs$NsRsIF	M
+HbRk0ORD	4k
+F00bkR#sCC40R
+8CMlkF8DlC
+FD8kCCRD8D_LHCM	sH
+DLssN$FRIsH	
+M0bkR	ODRH4
+M0bkR0s#RF4
+kk0b0CRD8
+R4ClM8FD8kCF
+l8CkDR#HM0lsF
+LDHs$NsRsIF	M
+HbRk0BRpi4M
+HbRk0q)77R
+4gFbk0k70RmRzadCn
+MF8l8CkD
+8lFkRDC8NN0s
+FlDsHLNRs$I	Fs
+bHMkB0Rp4iR
+bHMkq0R7R7).Fj
+kk0b0mR7zdaRnM
+C88lFk
+DC

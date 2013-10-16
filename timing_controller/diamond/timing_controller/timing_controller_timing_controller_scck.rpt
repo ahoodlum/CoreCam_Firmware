@@ -1,0 +1,34 @@
+# Synospys Constraint Checker(syntax only), version maplat201209latp1, Build 002R, built Dec 20 2012
+# Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+# Written on Mon Sep 02 07:10:39 2013
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "timing_controller_top"
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+**************
+
+Start                                                  Requested     Requested     Clock                                                         Clock              
+Clock                                                  Frequency     Period        Type                                                          Group              
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                 1.0 MHz       1000.000      system                                                        system_clkgroup    
+timing_controller_top|clk_i_inferred_clock             1.0 MHz       1000.000      inferred                                                      Inferred_clkgroup_0
+timing_controller_top|delayClk_4x_i_inferred_clock     1.0 MHz       1000.000      inferred                                                      Inferred_clkgroup_1
+edgeDetect_edgeDet0_edgeDet0|E_derived_clock           1.0 MHz       1000.000      derived (from timing_controller_top|clk_i_inferred_clock)     Inferred_clkgroup_0
+edgeDetect_edgeDet0_edgeDet0_0|E_derived_clock         1.0 MHz       1000.000      derived (from timing_controller_top|clk_i_inferred_clock)     Inferred_clkgroup_0
+edgeDetect_edgeDet0_edgeDet0_1|E_derived_clock         1.0 MHz       1000.000      derived (from timing_controller_top|clk_i_inferred_clock)     Inferred_clkgroup_0
+edgeDetect_edgeDet0_edgeDet0_2|E_derived_clock         1.0 MHz       1000.000      derived (from timing_controller_top|clk_i_inferred_clock)     Inferred_clkgroup_0
+====================================================================================================================================================================

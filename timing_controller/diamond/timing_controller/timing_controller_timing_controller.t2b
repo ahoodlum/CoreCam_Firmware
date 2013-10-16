@@ -1,0 +1,4 @@
+
+
+-g RamCfg:Reset
+-path "C:/lscc/diamond/2.0/examples"  

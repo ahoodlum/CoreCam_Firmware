@@ -1,0 +1,14 @@
+[Version]
+Version=9.1
+[Designs]
+sim_par=sim_par.adf
+[Settings]
+Active=sim_par
+[Expand]
+sim_par=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

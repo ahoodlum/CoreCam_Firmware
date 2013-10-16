@@ -1,0 +1,310 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Sep 02 07:11:41 2013
+#
+
+
+Top view:               timing_controller_top
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.074
+
+                                               Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                 Frequency     Frequency     Period        Period        Slack       Type         Group              
+---------------------------------------------------------------------------------------------------------------------------------------------------
+timing_controller_top|clk_i_inferred_clock     1.0 MHz       58.3 MHz      1000.000      17.152        982.848     inferred     Inferred_clkgroup_0
+System                                         1.0 MHz       67.4 MHz      1000.000      14.831        985.169     system       system_clkgroup    
+===================================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                  |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                    Ending                                      |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                      System                                      |  0.000       0.000   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                      timing_controller_top|clk_i_inferred_clock  |  0.000       -0.074  |  No paths    -      |  No paths    -      |  No paths    -    
+timing_controller_top|clk_i_inferred_clock  System                                      |  0.000       0.731   |  No paths    -      |  No paths    -      |  No paths    -    
+timing_controller_top|clk_i_inferred_clock  timing_controller_top|clk_i_inferred_clock  |  0.000       0.242   |  No paths    -      |  No paths    -      |  No paths    -    
+===============================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: timing_controller_top|clk_i_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                         Starting                                                                             Arrival          
+Instance                                                 Reference                                      Type        Pin     Net               Time        Slack
+                                                         Clock                                                                                                 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.rst_n                                       timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       rst_n             0.803       0.241
+lm8_inst.uart.u_txmitt.genblk2\.genblk1\.tx_state[0]     timing_controller_top|clk_i_inferred_clock     FD1S3BX     Q       tx_state[0]       0.826       0.496
+lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.data_cyc      timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       data_cyc          0.890       0.560
+lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.addr_cyc      timing_controller_top|clk_i_inferred_clock     FD1S3BX     Q       addr_cyc          0.896       0.566
+lm8_inst.LM8.rff1                                        timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       rff1              0.680       0.606
+lm8_inst.uart.u_rxcver.rx_frame_err                      timing_controller_top|clk_i_inferred_clock     FD1P3DX     Q       rx_frame_err      0.775       0.702
+lm8_inst.uart.u_txmitt.tx_in_shift_s                     timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       tx_in_shift_s     0.775       0.702
+lm8_inst.uart.u_txmitt.tx_in_stop_s                      timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       tx_in_stop_s      0.775       0.702
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_addr[0]     timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       ext_addr[0]       0.731       0.731
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_addr[5]     timing_controller_top|clk_i_inferred_clock     FD1S3DX     Q       ext_addr[5]       0.731       0.731
+===============================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                             Starting                                                                       Required          
+Instance                                                     Reference                                      Type        Pin     Net         Time         Slack
+                                                             Clock                                                                                            
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.ext_wb_state                                    timing_controller_top|clk_i_inferred_clock     FD1S3IX     CD      rst_n_i     0.562        0.241
+lm8_inst.LM8.genblk3\.D_ACK_I_d                              timing_controller_top|clk_i_inferred_clock     FD1S3IX     CD      rst_n_i     0.562        0.241
+lm8_inst.LM8.u1_isp8_core.u1_lm8_flow_cntl.rst_exception     timing_controller_top|clk_i_inferred_clock     FD1S3IX     CD      rst_n_i     0.562        0.241
+lm8_inst.LM8.save_data[0]                                    timing_controller_top|clk_i_inferred_clock     FD1P3IX     CD      rst_n_i     0.562        0.241
+lm8_inst.LM8.save_data[1]                                    timing_controller_top|clk_i_inferred_clock     FD1P3IX     CD      rst_n_i     0.562        0.241
+lm8_inst.LM8.save_data[2]                                    timing_controller_top|clk_i_inferred_clock     FD1P3IX     CD      rst_n_i     0.562        0.241
+lm8_inst.LM8.save_data[3]                                    timing_controller_top|clk_i_inferred_clock     FD1P3IX     CD      rst_n_i     0.562        0.241
+lm8_inst.LM8.save_data[4]                                    timing_controller_top|clk_i_inferred_clock     FD1P3IX     CD      rst_n_i     0.562        0.241
+lm8_inst.LM8.save_data[5]                                    timing_controller_top|clk_i_inferred_clock     FD1P3IX     CD      rst_n_i     0.562        0.241
+lm8_inst.LM8.save_data[6]                                    timing_controller_top|clk_i_inferred_clock     FD1P3IX     CD      rst_n_i     0.562        0.241
+==============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.803
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.562
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.241
+
+    Number of logic level(s):                1
+    Starting point:                          lm8_inst.LM8.rst_n / Q
+    Ending point:                            lm8_inst.LM8.ext_wb_state / CD
+    The start point is clocked by            timing_controller_top|clk_i_inferred_clock [rising] on pin CK
+    The end   point is clocked by            timing_controller_top|clk_i_inferred_clock [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                           Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+lm8_inst.LM8.rst_n             FD1S3DX     Q        Out     0.803     0.803       -         
+rst_n                          Net         -        -       -         -           4         
+lm8_inst.LM8.rst_n_RNI1N8F     INV         A        In      0.000     0.803       -         
+lm8_inst.LM8.rst_n_RNI1N8F     INV         Z        Out     0.000     0.803       -         
+rst_n_i                        Net         -        -       -         -           95        
+lm8_inst.LM8.ext_wb_state      FD1S3IX     CD       In      0.000     0.803       -         
+============================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                    Starting                                                                                                                           Arrival           
+Instance                                            Reference     Type                                                                                         Pin      Net            Time        Slack 
+                                                    Clock                                                                                                                                                
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem     System        pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[0]     dout_rb[0]     0.000       -0.074
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem     System        pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[1]     dout_rb[1]     0.000       -0.074
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem     System        pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[2]     dout_rb[2]     0.000       -0.074
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem     System        pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[3]     dout_rb[3]     0.000       -0.074
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem     System        pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[4]     dout_rb[4]     0.000       -0.074
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem     System        pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[5]     dout_rb[5]     0.000       -0.074
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem     System        pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[6]     dout_rb[6]     0.000       -0.074
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem     System        pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[7]     dout_rb[7]     0.000       -0.074
+lm8_inst.LM8.u1_isp8_core.genblk7\.u2_lm8_rfmem     System        pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[0]     dout_rd[0]     0.000       -0.074
+lm8_inst.LM8.u1_isp8_core.genblk7\.u2_lm8_rfmem     System        pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[1]     dout_rd[1]     0.000       -0.074
+=========================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                         Starting                                         Required           
+Instance                                                 Reference     Type        Pin     Net            Time         Slack 
+                                                         Clock                                                               
+-----------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_dout[0]     System        FD1S3DX     D       dout_rd[0]     0.074        -0.074
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_dout[1]     System        FD1S3DX     D       dout_rd[1]     0.074        -0.074
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_dout[2]     System        FD1S3DX     D       dout_rd[2]     0.074        -0.074
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_dout[3]     System        FD1S3DX     D       dout_rd[3]     0.074        -0.074
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_dout[4]     System        FD1S3DX     D       dout_rd[4]     0.074        -0.074
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_dout[5]     System        FD1S3DX     D       dout_rd[5]     0.074        -0.074
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_dout[6]     System        FD1S3DX     D       dout_rd[6]     0.074        -0.074
+lm8_inst.LM8.u1_isp8_core.u1_lm8_cntl_u1.ext_dout[7]     System        FD1S3DX     D       dout_rd[7]     0.074        -0.074
+lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[0]         System        FD1P3BX     D       dout_rb[0]     0.074        -0.074
+lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[1]         System        FD1P3BX     D       dout_rb[1]     0.074        -0.074
+=============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.074
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.074
+
+    Number of logic level(s):                0
+    Starting point:                          lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem / Q[0]
+    Ending point:                            lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[0] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            timing_controller_top|clk_i_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type                                                                                         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem      pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[0]     Out     0.000     0.000       -         
+dout_rb[0]                                           Net                                                                                          -        -       -         -           8         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[0]     FD1P3BX                                                                                      D        In      0.000     0.000       -         
+===================================================================================================================================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.074
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.074
+
+    Number of logic level(s):                0
+    Starting point:                          lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem / Q[1]
+    Ending point:                            lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[1] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            timing_controller_top|clk_i_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type                                                                                         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem      pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[1]     Out     0.000     0.000       -         
+dout_rb[1]                                           Net                                                                                          -        -       -         -           6         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[1]     FD1P3BX                                                                                      D        In      0.000     0.000       -         
+===================================================================================================================================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.074
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.074
+
+    Number of logic level(s):                0
+    Starting point:                          lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem / Q[2]
+    Ending point:                            lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[2] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            timing_controller_top|clk_i_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type                                                                                         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem      pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[2]     Out     0.000     0.000       -         
+dout_rb[2]                                           Net                                                                                          -        -       -         -           5         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[2]     FD1P3BX                                                                                      D        In      0.000     0.000       -         
+===================================================================================================================================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.074
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.074
+
+    Number of logic level(s):                0
+    Starting point:                          lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem / Q[3]
+    Ending point:                            lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[3] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            timing_controller_top|clk_i_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type                                                                                         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem      pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[3]     Out     0.000     0.000       -         
+dout_rb[3]                                           Net                                                                                          -        -       -         -           5         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[3]     FD1P3BX                                                                                      D        In      0.000     0.000       -         
+===================================================================================================================================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.074
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.074
+
+    Number of logic level(s):                0
+    Starting point:                          lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem / Q[4]
+    Ending point:                            lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[4] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            timing_controller_top|clk_i_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                                                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type                                                                                         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+lm8_inst.LM8.u1_isp8_core.genblk7\.u1_lm8_rfmem      pmi_distributed_dpram_32s_5s_8s_noreg_none_binary_MachXO2_pmi_distributed_dpram_3_layer1     Q[4]     Out     0.000     0.000       -         
+dout_rb[4]                                           Net                                                                                          -        -       -         -           5         
+lm8_inst.LM8.u1_isp8_core.u1_lm8_interrupt.im[4]     FD1P3BX                                                                                      D        In      0.000     0.000       -         
+===================================================================================================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
