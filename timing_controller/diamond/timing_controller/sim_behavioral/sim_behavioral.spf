@@ -1,13 +1,17 @@
 <BaliSimProject version="1.3" path="timing_controller" stage="0" language="-1" name="sim_behavioral" simType="Active-HDL">
-    <Source worklib="work" path="../../../../Users/AndrewPC1/Documents/Work/fpga/pattern_generator/led_blinker.vhd" type="VHDL" include="none"/>
-    <Source worklib="work" path="../../../../Users/AndrewPC1/Documents/Work/fpga/pattern_generator/instrom.vhd" type="VHDL" include="none"/>
-    <Source worklib="work" path="../../../../Users/AndrewPC1/Documents/Work/fpga/pattern_generator/datarom.vhd" type="VHDL" include="none"/>
-    <Source worklib="work" path="../../../../Users/AndrewPC1/Documents/Work/fpga/pattern_generator/ucontroller.vhd" type="VHDL" include="none"/>
-    <Source worklib="work" path="../../../../Users/AndrewPC1/Documents/Work/fpga/pattern_generator/reset_generator_v0p1.vhd" type="VHDL" include="none"/>
-    <Source worklib="work" path="../../../../Users/AndrewPC1/Documents/Work/fpga/pattern_generator/timing_controller_top.vhd" type="VHDL" include="none"/>
-    <Source worklib="" path="../../../../my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/timing_controller_TB.vhd" type="none" include="none"/>
+    <Source worklib="work" path="../firmware/instrom.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="../firmware/datarom.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="../firmware/ucontroller.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="../firmware/wb_to_timing_controller.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="../firmware/led_blinker.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="../firmware/dual_edge_counter.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="../firmware/edgedetect.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="../firmware/video_generator.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="../firmware/reset_generator_v0p1.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="../firmware/timing_controller_top.vhd" type="VHDL" include="none"/>
+    <Source worklib="" path="../../../../../../../my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/ucontrolroicclk_TB.vhd" type="none" include="none"/>
     <SimLib value="pmi_work ovi_machxo2"/>
     <GlbInc value=""/>
     <Macro value=""/>
-    <TopModule instance="" language="VHDL" name="TESTBENCH_FOR_pat_gen_top"/>
+    <TopModule instance="" language="VHDL" name="TESTBENCH_FOR_ucontrolroicclk"/>
 </BaliSimProject>

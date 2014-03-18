@@ -1,2 +1,2 @@
-timing_generator_top,/,C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/timing_controller_top.vhd
-TESTBENCH_FOR_pat_gen_top,/,C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/timing_controller_TB.vhd
+timing_controller_top,/,C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/timing_controller_top.vhd
+TESTBENCH_FOR_ucontrolroicclk,/,C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/ucontrolroicclk_TB.vhd

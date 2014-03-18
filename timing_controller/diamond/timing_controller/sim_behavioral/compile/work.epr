@@ -1,11 +1,2 @@
-"C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\led_blinker.vhd" VHDL work 1 0 0 -02
-"C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\instrom.vhd" VHDL work 1 0 0 -02
-"C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\datarom.vhd" VHDL work 1 0 0 -02
-"C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\ucontroller.vhd" VHDL work 1 0 0 -02
-"C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\reset_generator_v0p1.vhd" VHDL work 1 0 0 -02
-"C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\timing_controller_top.vhd" VHDL work 1 0 0 -02
-"C:\my_designs\pattern_generator\pattern_generator_v0p1\src\TestBench\timing_controller_TB.vhd" VHDL work 1 0 0 -02
-"C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\dual_edge_counter.vhd" VHDL work 1 0 0 -02
-"C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\edgedetect.vhd" VHDL work 1 0 0 -02
-"C:\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\video_generator.vhd" VHDL work 1 0 0 -02
+"C:\my_designs\pattern_generator\pattern_generator_v0p1\src\TestBench\ucontrolroicclk_TB.vhd" VHDL work 1 0 0 -02
 . . 0 0 0

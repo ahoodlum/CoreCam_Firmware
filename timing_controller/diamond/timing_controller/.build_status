@@ -23,7 +23,7 @@
             <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1378131105"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1378131019"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1389291281"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
@@ -32,12 +32,12 @@
             <Task name="Translate" build_result="2" update_result="0" update_time="1378131107"/>
         </Milestone>
         <Report name="timing_controller_timing_controller.bgn" last_build_time="1373865805" last_build_size="4546"/>
-        <Report name="timing_controller_timing_controller.edi" last_build_time="1378131100" last_build_size="842307"/>
+        <Report name="timing_controller_timing_controller.edi" last_build_time="1378127500" last_build_size="842307"/>
         <Report name="timing_controller_timing_controller.jed" last_build_time="1373865805" last_build_size="1465586"/>
         <Report name="timing_controller_timing_controller.ncd" last_build_time="1373865801" last_build_size="876998"/>
-        <Report name="timing_controller_timing_controller.ngd" last_build_time="1378131107" last_build_size="768771"/>
+        <Report name="timing_controller_timing_controller.ngd" last_build_time="1378127507" last_build_size="768771"/>
         <Report name="timing_controller_timing_controller.twr" last_build_time="1373865572" last_build_size="84511"/>
-        <Report name="timing_controller_timing_controller_map.ncd" last_build_time="1378131108" last_build_size="652064"/>
+        <Report name="timing_controller_timing_controller_map.ncd" last_build_time="1378127508" last_build_size="652064"/>
         <Report name="timing_controller_timing_controller_mapvho.sdf" last_build_time="1373865772" last_build_size="796231"/>
         <Report name="timing_controller_timing_controller_mapvho.vho" last_build_time="1373865772" last_build_size="4524928"/>
     </Strategy>

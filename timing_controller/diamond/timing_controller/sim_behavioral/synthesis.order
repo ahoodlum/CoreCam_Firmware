@@ -9,3 +9,15 @@ i<>.\..\..\..\..\..\..\my_designs\pattern_generator\pattern_generator_v0p1\src\T
 i<>.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\dual_edge_counter.vhd
 i<>.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\edgedetect.vhd
 i<>.\..\..\..\..\..\..\Users\AndrewPC1\Documents\Work\fpga\pattern_generator\video_generator.vhd
+i<>.\..\..\..\firmware\instrom.vhd
+i<>.\..\..\..\firmware\datarom.vhd
+i<>.\..\..\..\firmware\ucontroller.vhd
+i<>.\..\..\..\firmware\wb_to_timing_controller.vhd
+i<>.\..\..\..\firmware\led_blinker.vhd
+i<>.\..\..\..\firmware\dual_edge_counter.vhd
+i<>.\..\..\..\firmware\edgedetect.vhd
+i<>.\..\..\..\firmware\video_generator.vhd
+i<>.\..\..\..\firmware\reset_generator_v0p1.vhd
+i<>.\..\..\..\firmware\timing_controller_top.vhd
+i<>.\..\..\..\..\..\..\..\..\..\my_designs\pattern_generator\pattern_generator_v0p1\src\TestBench\pat_gen_top_TB.vhd
+i<>.\..\..\..\..\..\..\..\..\..\my_designs\pattern_generator\pattern_generator_v0p1\src\TestBench\ucontrolroicclk_TB.vhd

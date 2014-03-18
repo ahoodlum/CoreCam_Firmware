@@ -1,141 +1,154 @@
-timestamp=1367991946242
+timestamp=1389292713974
 
 [datarom]
-A/behavior=21|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/datarom.vhd|19|1*2026110
-BinI32/behavior=3*493119
-I=0*52288
-I/behavior=0*459763
-M=11|0|v98|1367990493361|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/datarom.vhd|0*51799*0x3a50409a14ca0dd701b43cf0e71c4d80a0d506e0|0*52162*0xab32bc1a2daf049573e14469f634e0e6
-M/behavior=21|0|v98|1367991945575|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/datarom.vhd|0*52523*0x5b6c0006f3061758fe6011ffb96e4a6820128824|0*459625*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/datarom.vhd|11
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/behavior=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+A/behavior=21|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/datarom.vhd|19|1*36620
+BinI32/behavior=3*13413
+I=0*50631
+I/behavior=0*458152
+M=11|0|va7|1389292711465|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/datarom.vhd|0*50096*0xac4c70f1c7950c2a09fe10cdb8378b34d4a25235|0*50482*0xab32bc1a2daf049573e14469f634e0e6
+M/behavior=21|0|va7|1389292711554|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/datarom.vhd|0*50866*0xf95b1885c4a0d480dd87a4c2baca9e823feae030|0*457991*0x709bffb13f717892d87ccebf80172c3a
+R=C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/datarom.vhd|11
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
 
 [dual_edge_counter]
-A/structural=A/Structural 21|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/dual_edge_counter.vhd|13|1*2263181
-BinI32/structural=3*551830
-I=0*475257
-I/structural=I/Structural 0*476100
-M=11|0|v98|1367990550291|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/dual_edge_counter.vhd|0*474723*0x95b7cc38dc1c334f45d6d27ae0cb91701f4382d1|0*475111*0xab32bc1a2daf049573e14469f634e0e6
-M/structural=M/Structural 21|0|v98|1367991946100|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/dual_edge_counter.vhd|0*475502*0x2104b3f9ee3b21c0a225f6e2b5ddff9add2e9cfc|0*475940*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/dual_edge_counter.vhd|6
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/structural=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+A/structural=A/Structural 21|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/dual_edge_counter.vhd|13|1*274592
+BinI32/structural=3*121661
+I=0*474222
+I/structural=I/Structural 0*475111
+M=11|0|va7|1389292712735|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/dual_edge_counter.vhd|0*473642*0x7d6a6295471eb7485c1eaf301081148237b86fc7|0*474053*0xab32bc1a2daf049573e14469f634e0e6
+M/structural=M/Structural 21|0|va7|1389292712738|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/dual_edge_counter.vhd|0*474467*0xdf4fc8ea893b1e448171c533cda0d2b301f36589|0*474928*0x709bffb13f717892d87ccebf80172c3a
+R=C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/dual_edge_counter.vhd|6
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/structural=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
 
 [edgedetect]
-A/behavioral=21|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/edgedetect.vhd|16|1*2264946
-BinI32/behavioral=3*552598
-I=0*476984
-I/behavioral=0*477627
-M=11|0|v98|1367990550397|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/edgedetect.vhd|0*476546*0xb5da46dc2062a00da4efecced2a0bf2b3b5c2d29|0*476852*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|v98|1367991946140|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/edgedetect.vhd|0*477088*0x3c6efc90b9be060ab32cab4fbb6c93c9d9a1dc47|0*477481*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/edgedetect.vhd|4
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/behavioral=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+A/behavioral=21|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/edgedetect.vhd|16|1*276400
+BinI32/behavioral=3*122570
+I=0*476041
+I/behavioral=0*476730
+M=11|0|va7|1389292713080|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/edgedetect.vhd|0*475557*0x3b98952c499bc09af982e403edb300ec1e9514b9|0*475886*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|va7|1389292713082|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/edgedetect.vhd|0*476145*0x375d0704dd00c6586fe29feaeac291c264279be6|0*476561*0x709bffb13f717892d87ccebf80172c3a
+R=C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/edgedetect.vhd|4
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
 
 [instrom]
-A/behavior=21|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/instrom.vhd|19|1*1989528
-BinI32/behavior=3*485442
-I=0*2472
-I/behavior=0*51367
-M=11|0|v98|1367990492683|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/instrom.vhd|0*1983*0x23a80f7750c1b353fa574206ac0e1d40b8e2305a|0*2346*0xab32bc1a2daf049573e14469f634e0e6
-M/behavior=21|0|v98|1367991945406|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/instrom.vhd|0*2707*0xd7ffc6fc772a7f999e9f8db5cf26b1668d6d2917|0*51229*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/instrom.vhd|11
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/behavior=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+A/behavior=21|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/instrom.vhd|19|1*0
+BinI32/behavior=3*0
+I=0*723
+I/behavior=0*49664
+M=11|0|va7|1389292711159|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/instrom.vhd|0*188*0xb5b81d8956017b2f59b91a3b96d2d6a3b0617024|0*574*0xab32bc1a2daf049573e14469f634e0e6
+M/behavior=21|0|va7|1389292711165|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/instrom.vhd|0*958*0x9dfbc54c439809fd6ccd698c1ab36b4f02ad018f|0*49503*0x709bffb13f717892d87ccebf80172c3a
+R=C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/instrom.vhd|11
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavior=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
 
 [led_blinker]
-A/behavioral=21|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/led_blinker.vhd|14|1*1987747
-BinI32/behavioral=3*484786
-I=0*657
-I/behavioral=0*1545
-M=11|0|v98|1367990492296|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/led_blinker.vhd|0*172*0x599bfbdcb52ce2c74335d30a735aeb97a727017d|0*523*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|v98|1367991945331|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/led_blinker.vhd|0*896*0xf21e984e2bcb933ee81a65c57bf40051800daf9f|0*1397*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/led_blinker.vhd|6
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/behavioral=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+A/behavioral=21|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/led_blinker.vhd|14|1*272768
+BinI32/behavioral=3*120814
+I=0*472252
+I/behavioral=0*473186
+M=11|0|va7|1389292712500|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/led_blinker.vhd|0*471721*0x3a1d7f9b0131090bc18928f95e21ff3dc007b9db|0*472095*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|va7|1389292712502|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/led_blinker.vhd|0*472491*0xd67c36ceb4a2f0e3152d1d563289fa4b67528ca6|0*473015*0x709bffb13f717892d87ccebf80172c3a
+R=C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/led_blinker.vhd|6
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
 
 [reset_generator]
-A/behavioral=21|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/reset_generator_v0p1.vhd|12|1*2249606
-BinI32/behavioral=3*550640
-I=0*466354
-I/behavioral=0*467294
-M=11|0|v98|1367990495974|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/reset_generator_v0p1.vhd|0*465891*0x283429f14d32194ac87ab30db20c84697193e8af|0*466207*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|v98|1367991945936|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/reset_generator_v0p1.vhd|0*466525*0x35bdcbf645c2e793302b9f0fd2833058514b908f|0*467133*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/reset_generator_v0p1.vhd|5
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/behavioral=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+A/behavioral=21|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/reset_generator_v0p1.vhd|12|1*282125
+BinI32/behavioral=3*124401
+I=0*480491
+I/behavioral=0*481477
+M=11|0|va7|1389292713503|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/reset_generator_v0p1.vhd|0*479982*0x1cfce7c43e3f816fcb7409de943e680c6b76ccfc|0*480321*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|va7|1389292713508|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/reset_generator_v0p1.vhd|0*480662*0xe2e3da35e8ce3895f32c42a77abcc71017acee4b|0*481293*0x709bffb13f717892d87ccebf80172c3a
+R=C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/reset_generator_v0p1.vhd|5
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
 
-[testbench_for_timing_controller_top]
-Configures=timing_controller_top_tb.TB_ARCHITECTURE
-E=1*2262440
-I=0*474186
-M=2|0|v98|1367991946094|C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/timing_controller_TB.vhd|0*473543*0xe236c86aa685bbd7630884cc5adad514311476b7|0*473980*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/timing_controller_TB.vhd|49
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+[testbench_for_ucontrolroicclk]
+Configures=ucontrolroicclk_tb.TB_ARCHITECTURE
+E=1*305582
+I=0*492127
+M=2|0|va7|1389292713923|C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/ucontrolroicclk_TB.vhd|0*491542*0x566b94b4b1c27b136bb64844718601986e2e1f9e|0*491935*0x709bffb13f717892d87ccebf80172c3a
+R=C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/ucontrolroicclk_TB.vhd|65
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
 
 [timing_controller_top]
-A/behavioral=21|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/timing_controller_top.vhd|22|1*2251228
-BinI32/behavioral=3*551215
-I=0*468475
-I/behavioral=0*504927
-M=11|0|v98|1367990496618|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/timing_controller_top.vhd|0*467769*0x03a206a25788d0ccdae565001ca119a827abcdac|0*468321*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|v98|1367991946018|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/timing_controller_top.vhd|0*502340*0x3c96a253b0436d4ae6a93ebae8605dca29ed96d9|0*504759*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/timing_controller_top.vhd|12
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/behavioral=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-
-[timing_controller_top_tb]
-A/tb_architecture=A/TB_ARCHITECTURE 21|C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/timing_controller_TB.vhd|11|1*2259821
-I=0*472067
-I/tb_architecture=I/TB_ARCHITECTURE 0*473207
-M=11|0|v98|1367990497085|C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/timing_controller_TB.vhd|0*471558*0x155c26fcdc20ea0e749c08ca8cfc331799085ac7|0*471899*0xab32bc1a2daf049573e14469f634e0e6
-M/tb_architecture=M/TB_ARCHITECTURE 21|0|v98|1367991946091|C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/timing_controller_TB.vhd|0*472319*0x7e4ec1476a5842b7601d92eeefcbbb28cadb4de6|0*473020*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/timing_controller_TB.vhd|8
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/tb_architecture=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+A/behavioral=21|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/timing_controller_top.vhd|23|1*283861
+BinI32/behavioral=3*125204
+I=0*482787
+I/behavioral=0*489236
+M=11|0|va7|1389292713749|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/timing_controller_top.vhd|0*481992*0xd3b7caf9395039ae1622d2fa39d50b22cf91e046|0*482610*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|va7|1389292713757|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/timing_controller_top.vhd|0*483099*0xd6d07d190731f5351041cfcc34dbaeac4d667f39|0*489045*0x709bffb13f717892d87ccebf80172c3a
+R=C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/timing_controller_top.vhd|12
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
 
 [ucontrolroicclk]
-A/behavioral=A/Behavioral 21|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/ucontroller.vhd|56|1*2242016
-BinI32/behavioral=3*547391
-I=0*460829
-I/behavioral=I/Behavioral 0*498715
-M=11|0|v98|1367990495417|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/ucontroller.vhd|0*460259*0x54acfe0831f214c384be54ba18c361a364748471|0*460691*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=M/Behavioral 21|0|v98|1367991945880|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/ucontroller.vhd|0*494623*0x9be98b8999b41d5620751175808635f4b3d253fc|0*498563*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/ucontroller.vhd|47
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/behavioral=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+A/behavioral=A/Behavioral 21|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/ucontroller.vhd|56|1*252564
+BinI32/behavioral=3*112016
+I=0*459264
+I/behavioral=I/Behavioral 0*463645
+M=11|0|va7|1389292712053|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/ucontroller.vhd|0*458648*0x50d5fd583a37e4f9d6f22af82a263a785489e940|0*459103*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=M/Behavioral 21|0|va7|1389292712058|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/ucontroller.vhd|0*459507*0x5bbb338b33614f781477f5c77e07eb7f1980d68c|0*463470*0x709bffb13f717892d87ccebf80172c3a
+R=C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/ucontroller.vhd|47
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+
+[ucontrolroicclk_tb]
+A/tb_architecture=A/TB_ARCHITECTURE 21|C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/ucontrolroicclk_TB.vhd|11|1*302546
+BinI32/tb_architecture=3*125469
+I=0*489898
+I/tb_architecture=I/TB_ARCHITECTURE 0*491218
+M=11|0|va7|1389292713914|C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/ucontrolroicclk_TB.vhd|0*489417*0xa77906b67c8f0fefef7aea712f53c2714f4b81e0|0*489738*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|va7|1389292713916|C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/ucontrolroicclk_TB.vhd|0*490144*0x467272128258010866aab771c780a3c6b4af7c53|0*491039*0x709bffb13f717892d87ccebf80172c3a
+R=C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/ucontrolroicclk_TB.vhd|8
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/tb_architecture=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
 
 [video_generator]
-A/behavioral=21|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/video_generator.vhd|16|1*2266345
-BinI32/behavioral=3*553372
-I=0*478566
-I/behavioral=0*480246
-M=11|0|v98|1367990550500|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/video_generator.vhd|0*477990*0x3599492bb6615bc89a74c616bf1c0d207969eb35|0*478424*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|v98|1367991946187|C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/video_generator.vhd|0*478809*0xee1f87f723d50c270dab147245f7c867f43f890f|0*480090*0xb33770ff1c10522f9491560174ac8e6c
-R=C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/video_generator.vhd|6
-Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
-Version/behavioral=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+A/behavioral=21|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/video_generator.vhd|16|1*277837
+BinI32/behavioral=3*123325
+I=0*477715
+I/behavioral=0*479441
+M=11|0|va7|1389292713241|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/video_generator.vhd|0*477093*0x740ea08eb0f540eb48db833ad7f910b89709228a|0*477550*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|va7|1389292713244|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/video_generator.vhd|0*477958*0x68376271de175141c2607a3b51bd9c288014a782|0*479262*0x709bffb13f717892d87ccebf80172c3a
+R=C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/video_generator.vhd|6
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+
+[wb_to_timing_controller]
+A/behavioral=21|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/wb_to_timing_controller.vhd|30|1*260197
+BinI32/behavioral=3*116661
+I=0*465551
+I/behavioral=0*471466
+M=11|0|va7|1389292712282|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/wb_to_timing_controller.vhd|0*464573*0xe47f4d29f1911b112a894bb8b2683e4d3e703288|0*465370*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|va7|1389292712337|C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/wb_to_timing_controller.vhd|0*465802*0xd674319dfc75c731b096d5a1b10a93cddb1160ee|0*471271*0x709bffb13f717892d87ccebf80172c3a
+R=C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/wb_to_timing_controller.vhd|6
+Version=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
+Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000004789cd34d494a0700030f015b
 
 [~A]
-ModifyID=450
+ModifyID=58
 Version=73
 
 [~MFT]
-0=116|0work.mgf|504927|24571
-1=162|1work.mgf|2266345|1987747
-3=132|3work.mgf|553372|484786
+0=79|0work.mgf|492127|0
+1=11|1work.mgf|305582|0
+3=10|3work.mgf|125469|0
 
 [~U]
-datarom=11|0*51611|
-dual_edge_counter=11|0*474517|
-edgedetect=edgeDetect 11|0*476356|
-instrom=11|0*1795|
-led_blinker=11|0*0|
-reset_generator=11|0*465725|
-testbench_for_timing_controller_top=TESTBENCH_FOR_timing_controller_top 2||
-timing_controller_top=11|0*467476|
-timing_controller_top_tb=11|0*471440|
-ucontrolroicclk=uControlRoicClk 11|0*460007|
-video_generator=11|0*477742|
+datarom=11|0*49908|
+dual_edge_counter=11|0*473436|
+edgedetect=edgeDetect 11|0*475367|
+instrom=11|0*0|
+led_blinker=11|0*471549|
+reset_generator=11|0*479816|
+testbench_for_ucontrolroicclk=TESTBENCH_FOR_ucontrolroicclk 2||
+timing_controller_top=11|0*481659|
+ucontrolroicclk=uControlRoicClk 11|0*458396|
+ucontrolroicclk_tb=11|0*489317|
+video_generator=11|0*476845|
+wb_to_timing_controller=11|0*464007|
 

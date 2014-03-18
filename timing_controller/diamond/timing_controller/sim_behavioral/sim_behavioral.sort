@@ -1,8 +1,12 @@
-C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/led_blinker.vhd
-C:/lscc/diamond/2.0/examples/../../../../Users/AndrewPC1/Documents/Work/fpga/pattern_generator/instrom.vhd
-C:/lscc/diamond/2.0/examples/../../../../Users/AndrewPC1/Documents/Work/fpga/pattern_generator/datarom.vhd
-C:/lscc/diamond/2.0/examples/../../../../Users/AndrewPC1/Documents/Work/fpga/pattern_generator/ucontroller.vhd
-C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/reset_generator_v0p1.vhd
-C:/Users/AndrewPC1/Documents/Work/fpga/pattern_generator/timing_controller_top.vhd
 
-C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/timing_controller_TB.vhd
+C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/instrom.vhd
+C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/datarom.vhd
+C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/ucontroller.vhd
+C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/wb_to_timing_controller.vhd
+C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/led_blinker.vhd
+C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/dual_edge_counter.vhd
+C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/edgedetect.vhd
+C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/video_generator.vhd
+C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/reset_generator_v0p1.vhd
+C:/Users/AndrewPC1/Documents/GitHub/CoreCam_Firmware/timing_controller/firmware/timing_controller_top.vhd
+C:/my_designs/pattern_generator/pattern_generator_v0p1/src/TestBench/ucontrolroicclk_TB.vhd
